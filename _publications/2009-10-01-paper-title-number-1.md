@@ -3,6 +3,7 @@ title: "CM-Diff: A Single Generative Network for Bidirectional Cross-Modality Tr
 authors: "Bin Hu, Chenqiang Gao, Shurui Liu, Junjie Guo, Fang Chen, Fangcen Liu, Junwei Han"
 collection: publications
 category: manuscripts
+corresponding_authors: "Chenqiang Gao"
 # permalink: /publication/2009-10-01-paper-title-number-1
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 # date: 2009-10-01
