@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<span style="font-family: 'KaiTi', '楷体', serif;">
 Greetings! My name is Shurui Liu.
 I am a Master student at School of Computer Science, Sun Yat-sen University, Shenzhen, Guangdong, China.
 
@@ -14,6 +15,9 @@ During my undergraduate studies, I was supervised by Professor <a href="https://
 
 
 I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">PaperPanza.</a> Looking for any Co-Working or intern.
+</span>
+
+
 
 {% include base_path %}
 ## Interest
