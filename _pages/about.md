@@ -29,7 +29,7 @@ Looking for any Co-Working or intern.
 - Native 3D Generation & Interactive 3D Scene Generation
 ## News
 
-- Awarded the **National Scholarship** (2022), Ministry of Education, China, one of the highest academic honors for undergraduates in China (<0.2% recipients)
+- *2022.06* — Awarded the **National Scholarship**, Ministry of Education, China — one of the highest academic honors for undergraduates in China (<0.2% recipients)
 
 ## Publications
 
