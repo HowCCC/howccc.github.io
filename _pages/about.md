@@ -23,7 +23,7 @@ redirect_from:
 
 ## News
 
-- *2022.06* — <span style="font-family: 'FangSong', 'STFangsong', serif;">Awarded the **National Scholarship** — one of the highest honors for undergraduates in China (top 0.2%)</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">*2022.06* — Awarded the **National Scholarship** , one of the highest honors for undergraduates in China (top 0.2%)</span>
 
 ## Publications
 
