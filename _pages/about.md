@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 Greetings! My name is Shurui Liu.
-I am an undergraduate student at School of Intelligent Systems Engineering, Sun Yat-sen University, Shenzhen, Guangdong 518107, China.
+I am an undergraduate student at School of Intelligent Systems Engineering, Sun Yat-sen University, Shenzhen, Guangdong, China.
 
 
 During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">Chenqiang Gao </a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">Anchong Wu</a>.
