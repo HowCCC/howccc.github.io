@@ -23,7 +23,7 @@ redirect_from:
 
 ## News
 
-- *2022.06* — Awarded the **National Scholarship**, Ministry of Education, China — one of the highest academic honors for undergraduates in China (<0.2% recipients)
+- *2022.06* — <span style="font-family: 'FangSong', 'STFangsong', serif;">Awarded the **National Scholarship** — one of the highest honors for undergraduates in China (top 0.2%)</span>
 
 ## Publications
 
