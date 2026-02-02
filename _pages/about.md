@@ -30,16 +30,24 @@ I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">
 
 <ul>
 {% for post in site.publications reversed %}
+  {%- comment -%} Build an authors list (works with comma-separated string, array, or citation fallback) {%- endcomment -%}
   {% if post.authors %}
-    {% assign authors = post.authors %}
+    {% if post.authors contains ',' %}
+      {% assign authors_list = post.authors | split: ',' %}
+    {% else %}
+      {% assign authors_list = post.authors %}
+    {% endif %}
   {% elsif post.citation %}
     {% assign cit = post.citation | strip_html | replace: '&quot;','"' %}
-    {% assign authors = cit | split: '(' | first | strip %}
+    {% assign authors_str = cit | split: '(' | first | strip %}
+    {% assign authors_list = authors_str | split: ',' %}
   {% else %}
-    {% assign authors = '' %}
+    {% assign authors_list = '' %}
   {% endif %}
+
   <li>
-    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>{% if authors != '' %}, {{ authors }}{% endif %}{% if post.venue %}, {{ post.venue }}{% endif %}
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    {% if authors_list and authors_list != '' %}, {% for a in authors_list %}{% assign name = a | strip %}{% if name == site.author.name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% if post.corresponding_authors and post.corresponding_authors contains name %}*{% elsif post.corresponding and post.corresponding == name %}*{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}{% if post.venue %}, {{ post.venue }}{% endif %}
   </li>
 {% endfor %}
 </ul>
