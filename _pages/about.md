@@ -22,6 +22,8 @@ Looking for any Co-Working or intern.
 
 - Enhancing LLM
 - Native 3D Generation & Interactive 3D Scene Generation
+
+
 ## News
 
 - *2022.06* — Awarded the **National Scholarship**, Ministry of Education, China — one of the highest academic honors for undergraduates in China (<0.2% recipients)
