@@ -19,12 +19,7 @@ Looking for any Co-Working or intern.
 
 {% include base_path %}
 ## Interest
-<!-- <ul>
-  <li>Enhancing LLM</li>
-  <li>Native 3D Generation</li>
-  <li>Interactive 3D Scene Generation</li>
-  <!-- <li>Web Development (React, Next.js)</li> -->
-<!-- </ul> --> -->
+
 - Enhancing LLM
 - Native 3D Generation & Interactive 3D Scene Generation
 ## News
