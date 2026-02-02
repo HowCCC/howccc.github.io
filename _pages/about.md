@@ -15,7 +15,7 @@ redirect_from:
 </div>
 
 {% include base_path %}
-## Interest
+## Interests
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation</span>
