@@ -13,9 +13,7 @@ I am a Master student at School of Computer Science, Sun Yat-sen University, She
 During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">Chenqiang Gao </a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">Anchong Wu</a>.
 
 
-I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">PaperPanza.</a>
-
-Looking for any Co-Working or intern.
+I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">PaperPanza.</a> Looking for any Co-Working or intern.
 
 {% include base_path %}
 ## Interest
