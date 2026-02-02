@@ -19,17 +19,18 @@ Looking for any Co-Working or intern.
 
 {% include base_path %}
 ## Interest
-<ul>
+<!-- <ul>
   <li>Enhancing LLM</li>
   <li>Native 3D Generation</li>
   <li>Interactive 3D Scene Generation</li>
   <!-- <li>Web Development (React, Next.js)</li> -->
-</ul>
-
+<!-- </ul> --> -->
+- Enhancing LLM
+- Native 3D Generation & Interactive 3D Scene Generation
 ## News
-<ul>
-  <li>Awarded the **National Scholarship** (2022), Ministry of Education, China, one of the highest academic honors for undergraduates in China (<0.2% recipients)  </li>
-</ul>
+
+- Awarded the **National Scholarship** (2022), Ministry of Education, China, one of the highest academic honors for undergraduates in China (<0.2% recipients)
+
 ## Publications
 
 <ul>
