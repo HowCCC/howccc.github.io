@@ -9,7 +9,8 @@ redirect_from:
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
   <p>Greetings! My name is Shurui Liu. I am a Master's student at the School of Computer Science, Sun Yat-sen University, Guangzhou, Guangdong, China. During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">@Chenqiang Gao</a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">@Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">@Ancong Wu</a>.</p>
 
-  <p>I am also a co-founder of a startup. View our project <a href="https://paperpanza.com">@PaperPanza</a>. I'm currently seeking co-working opportunities or internships.</p>
+  <p>I am also a co-founder of a startup[ElysianAI, which developing AI research assistants that integrate emotional intelligence to enhance user
+experience.]. View our project <a href="https://paperpanza.com">@PaperPanza</a>. I'm currently seeking co-working opportunities or internships.</p>
 
   <p><span style="color: red;">Phone: +86 15066883213</span></p>
 </div>
