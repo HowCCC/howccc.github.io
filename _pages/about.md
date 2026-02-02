@@ -19,10 +19,21 @@ Looking for any Co-Working or intern.
 
 {% include base_path %}
 ## Interest
+## News
 ## Publications
 
 <ul>
 {% for post in site.publications reversed %}
-  <li><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%Y" }}</li>
+  {% if post.authors %}
+    {% assign authors = post.authors %}
+  {% elsif post.citation %}
+    {% assign cit = post.citation | strip_html | replace: '&quot;','"' %}
+    {% assign authors = cit | split: '(' | first | strip %}
+  {% else %}
+    {% assign authors = '' %}
+  {% endif %}
+  <li>
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>{% if authors != '' %}, {{ authors }}{% endif %}{% if post.venue %}, {{ post.venue }}{% endif %}
+  </li>
 {% endfor %}
 </ul>
