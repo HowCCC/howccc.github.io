@@ -17,8 +17,8 @@ redirect_from:
 {% include base_path %}
 ## Interest
 
-- Enhancing LLM
-- Native 3D Generation & Interactive 3D Scene Generation
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation</span>
 
 
 ## News
