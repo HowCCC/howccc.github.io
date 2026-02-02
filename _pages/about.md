@@ -6,14 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<span style="font-family: 'FangSong', 'STFangsong', serif;">
-Greetings! My name is Shurui Liu. I am a Master student at School of Computer Science, Sun Yat-sen University, Canton, Guangdong, China.
+<span style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
+Greetings! My name is Shurui Liu. I am a Master's student at the School of Computer Science, Sun Yat-sen University, Guangzhou, Guangdong, China.
 
+During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">Chenqiang Gao</a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">Ancong Wu</a>.
 
-During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">Chenqiang Gao </a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">Anchong Wu</a>.
-
-
-I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">PaperPanza.</a> Looking for any Co-Working or intern.
+I am also a co-founder of a startup. View our project at <a href="https://paperpanza.com">PaperPanza</a>. I'm currently seeking co-working opportunities or internships.
 </span>
 
 
