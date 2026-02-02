@@ -18,8 +18,8 @@ I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">
 Looking for any Co-Working or intern.
 
 {% include base_path %}
-
-## Publications（全部）
+## Interest
+## Publications
 
 <ul>
 {% for post in site.publications reversed %}
