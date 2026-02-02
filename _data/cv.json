@@ -1,22 +1,22 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
+    "name": "Sherry(Shurui) Liu",
+    "email": "liushr29@mail2.sysu.edu.cn",
+    "phone": "+86 15066883213",
+    "website": "https://howccc.github.io",
     "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "China, Guangdong, Guangzhou",
+      "countryCode": "CHN",
+      "region": "Asia"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1"
       },
       {
         "network": "ORCID",
@@ -25,19 +25,19 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "HowCCC",
+        "url": "https://github.com/HowCCC"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "SUN YAT-SEN University",
+      "area": "LLM, 3D Generation",
+      "studyType": "Master",
+      "startDate": "2025.6",
+      "endDate": "2028.6",
       "gpa": null,
       "courses": []
     },
@@ -62,7 +62,7 @@
   ],
   "skills": [],
   "languages": [],
-  "interests": [],
+  "interests": ["Enhancing LLM, 3D & Video Generation"],
   "references": [],
   "publications": [
     {
