@@ -16,3 +16,13 @@ During my undergraduate studies, I was supervised by Professor <a href="https://
 I am also a Co-Founder of a startup, View our Project @<a href="paperpanza.com">PaperPanza.</a>
 
 Looking for any Co-Working or intern.
+
+{% include base_path %}
+
+## Publications（全部）
+
+<ul>
+{% for post in site.publications reversed %}
+  <li><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%Y" }}</li>
+{% endfor %}
+</ul>
