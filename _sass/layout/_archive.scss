@@ -220,9 +220,21 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
     align-items: start;
+    /* prevent items from collapsing or overlapping when content is long */
+    grid-auto-rows: minmax(160px, auto);
   }
 
   /* Ensure cards render horizontally by default and align tops across columns */
+  .archive__grid > .card__item {
+    /* make sure flex items don't wrap or allow the body to force the width */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
   .archive__grid > .card__item {
     display: flex;
     flex-direction: row;
