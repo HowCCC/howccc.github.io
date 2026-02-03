@@ -30,8 +30,8 @@
 
     {% if include.type == "card" %}
 
-      {% if teaser %}
-        <div class="archive__item-teaser">
+      <div class="archive__item-teaser">
+        {% if teaser %}
           <img src=
             {% if teaser contains "://" %}
               "{{ teaser }}"
@@ -39,8 +39,10 @@
               "{{ teaser | prepend: "/images/" | prepend: base_path }}"
             {% endif %}
             alt="">
-        </div>
-      {% endif %}
+        {% else %}
+          <div class="archive__item-teaser--empty" aria-hidden="true"></div>
+        {% endif %}
+      </div>
 
       <div class="archive__item-body">
         <h2 class="archive__item-title" itemprop="headline">
