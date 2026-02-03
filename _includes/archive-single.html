@@ -55,6 +55,22 @@
           <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
         {% endif %}
 
+        {%- comment -%} Authors line for card view {%- endcomment -%}
+        {% assign authors_list = '' %}
+        {% if post.authors %}
+          {% assign authors_list = post.authors | split: ',' %}
+        {% elsif post.citation %}
+          {% assign cit = post.citation | strip_html | replace: '&quot;','"' %}
+          {% assign authors_str = cit | split: '(' | first | strip %}
+          {% assign authors_list = authors_str | split: ',' %}
+        {% endif %}
+
+        {% if authors_list and authors_list != '' %}
+          <p class="archive__item-authors">
+            {% for a in authors_list %}{% assign name = a | strip %}{% if name == site.author.name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% if post.corresponding_authors and post.corresponding_authors contains name %}*{% elsif post.corresponding and post.corresponding == name %}*{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %}
+          </p>
+        {% endif %}
+
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}

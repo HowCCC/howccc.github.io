@@ -256,6 +256,21 @@
   .archive__grid > .card__item .archive__item-body {
     flex: 1 1 64% !important;
   }
+
+  /* Authors line styling inside card */
+  .archive__grid > .card__item .archive__item-authors {
+    margin: 0 0 0.5rem;
+    color: var(--global-text-color-light);
+    font-size: $type-size-7;
+    line-height: 1.25;
+  }
+
+  /* Strongly enforce horizontal layout in case other rules interfere */
+  .archive__grid > .card__item, .archive__grid > .card__item .archive__item-body {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
 }
 
 /*
