@@ -67,7 +67,7 @@
 
         {% if authors_list and authors_list != '' %}
           <p class="archive__item-authors">
-            {% for a in authors_list %}{% assign name = a | strip %}{% if name == site.author.name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% if post.corresponding_authors and post.corresponding_authors contains name %}*{% elsif post.corresponding and post.corresponding == name %}*{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %}
+            {% for a in authors_list %}{% assign name = a | strip %}{% if name == site.author.name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% if post.corresponding_authors and post.corresponding_authors contains name %}*{% elsif post.corresponding and post.corresponding == name %}*{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% if post.venue %} <span class="archive__item-venue"> — <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</span>{% endif %}
           </p>
         {% endif %}
 

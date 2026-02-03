@@ -265,6 +265,14 @@
     line-height: 1.25;
   }
 
+  .archive__grid > .card__item .archive__item-venue {
+    margin-left: 0.5rem;
+    color: var(--global-text-color-light);
+    font-style: normal;
+    font-weight: normal;
+    font-size: $type-size-7;
+  }
+
   /* Strongly enforce horizontal layout in case other rules interfere */
   .archive__grid > .card__item, .archive__grid > .card__item .archive__item-body {
     display: flex !important;
