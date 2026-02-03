@@ -334,9 +334,13 @@
   }
 
   /* Strongly enforce horizontal layout in case other rules interfere */
-  .archive__grid > .card__item, .archive__grid > .card__item .archive__item-body {
+  .archive__grid > .card__item {
     display: flex !important;
     flex-direction: row !important;
+  }
+  .archive__grid > .card__item .archive__item-body {
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   /* Emergency overrides: ensure image is left, text (including title) is right, prevent overlap */
