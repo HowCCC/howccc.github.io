@@ -227,10 +227,26 @@
 .page__content .archive--cards {
   .archive__grid {
     grid-template-columns: 1fr !important;
+    width: 100% !important;
   }
   .card__item {
-    max-width: none;
-    width: 100%;
+    display: flex !important;
+    max-width: none !important;
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+  .card__item .archive__item-teaser {
+    flex: 0 0 36% !important;
+    min-width: 200px !important;
+  }
+  .card__item .archive__item-teaser img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+  .card__item .archive__item-body {
+    flex: 1 1 64% !important;
   }
 }
 
