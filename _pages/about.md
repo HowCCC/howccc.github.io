@@ -28,26 +28,10 @@ redirect_from:
 
 ## Publications
 
-<ul>
-{% for post in site.publications reversed %}
-  {%- comment -%} Build an authors list (works with comma-separated string, array, or citation fallback) {%- endcomment -%}
-  {% if post.authors %}
-    {% if post.authors contains ',' %}
-      {% assign authors_list = post.authors | split: ',' %}
-    {% else %}
-      {% assign authors_list = post.authors %}
-    {% endif %}
-  {% elsif post.citation %}
-    {% assign cit = post.citation | strip_html | replace: '&quot;','"' %}
-    {% assign authors_str = cit | split: '(' | first | strip %}
-    {% assign authors_list = authors_str | split: ',' %}
-  {% else %}
-    {% assign authors_list = '' %}
-  {% endif %}
-
-  <li>
-    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
-    {% if authors_list and authors_list != '' %}, {% for a in authors_list %}{% assign name = a | strip %}{% if name == site.author.name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% if post.corresponding_authors and post.corresponding_authors contains name %}*{% elsif post.corresponding and post.corresponding == name %}*{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}{% if post.venue %}, {{ post.venue }}{% endif %}
-  </li>
-{% endfor %}
-</ul>
+<div class="archive archive--cards">
+  <div class="archive__grid">
+    {% for post in site.publications reversed %}
+      {% include archive-single.html type="card" %}
+    {% endfor %}
+  </div>
+</div>
