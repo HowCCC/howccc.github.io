@@ -23,13 +23,17 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include archive-single.html type="card" %}
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <div class="archive archive--cards">
+    <div class="archive__grid">
+      {% for post in site.publications reversed %}
+        {% include archive-single.html type="card" %}
+      {% endfor %}
+    </div>
+  </div>
 {% endif %}
 
 
