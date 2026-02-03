@@ -339,6 +339,47 @@
     flex-direction: row !important;
   }
 
+  /* Emergency overrides: ensure image is left, text (including title) is right, prevent overlap */
+  .archive--cards .archive__grid > .card__item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    position: relative !important;
+    clear: both !important;
+    box-sizing: border-box !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .archive--cards .archive__grid > .card__item .archive__item-teaser {
+    float: none !important;
+    margin-right: 1rem !important;
+    flex: 0 0 36% !important;
+    min-width: 160px !important;
+    max-width: 40% !important;
+  }
+
+  .archive--cards .archive__grid > .card__item .archive__item-teaser img {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover !important;
+  }
+
+  .archive--cards .archive__grid > .card__item .archive__item-body {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+
+  .archive--cards .archive__grid > .card__item .archive__item-title {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
 }
 
 /*
