@@ -23,8 +23,11 @@ redirect_from:
 
 
 ## News
+
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">*2023.06* — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.</span>
+
 ![Teaching]({{ base_path }}/images/teaching.png)
+
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">*2022.06* — Awarded the **National Scholarship** , one of the highest honors for undergraduates in China (top 0.2%)</span>
 
 ## Publications
