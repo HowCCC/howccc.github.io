@@ -38,7 +38,7 @@ redirect_from:
 <div class="archive archive--cards">
   <div class="archive__grid">
     {% for post in site.publications reversed %}
-      {% include archive-single.html type="card" %}
+      {% include archive-single-publication-row.html %}
     {% endfor %}
   </div>
 </div>
