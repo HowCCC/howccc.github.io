@@ -15,6 +15,7 @@ redirect_from:
 </div>
 
 {% include base_path %}
+<section class="page__content" itemprop="text">
 ## Interests
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
@@ -35,3 +36,4 @@ redirect_from:
     {% endfor %}
   </div>
 </div>
+</section>
