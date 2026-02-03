@@ -156,11 +156,31 @@
    ========================================================================== */
 
 .card__item {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
   background: var(--global-background-color);
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
   padding: 1rem;
   margin-bottom: 1.5rem;
+
+  .archive__item-teaser {
+    flex: 0 0 36%;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .archive__item-body {
+    flex: 1 1 64%;
+  }
 
   .archive__item-title {
     margin-bottom: 0.25rem;
@@ -172,24 +192,17 @@
     color: var(--global-text-color-light);
   }
 
-  .archive__item-teaser {
-    margin-top: 0.75rem;
-    border-radius: $border-radius;
-    overflow: hidden;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
-
   .archive__item-excerpt {
     margin-top: 0.75rem;
   }
 
   @include breakpoint($small) {
-    @include gallery(5 of 10);
+    display: block;
+    .archive__item-teaser {
+      max-height: 200px;
+      margin-bottom: 0.75rem;
+      flex: none;
+    }
   }
 
   @include breakpoint($medium) {

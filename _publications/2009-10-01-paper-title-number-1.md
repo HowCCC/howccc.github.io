@@ -4,7 +4,7 @@ authors: "Bin Hu, Chenqiang Gao, Shurui Liu, Junjie Guo, Fang Chen, Fangcen Liu,
 collection: publications
 category: manuscripts
 corresponding_authors: "Chenqiang Gao"
-teaser: "teaching.png"
+teaser: "cmdiff.png"
 # permalink: /publication/2009-10-01-paper-title-number-1
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 # date: 2009-10-01
