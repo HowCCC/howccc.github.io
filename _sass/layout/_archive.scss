@@ -226,26 +226,34 @@
 /* Ensure on single page content (e.g., Home) cards expand to full content width */
 .page__content .archive--cards {
   .archive__grid {
+    /* force block layout so each card becomes a full-width block on Home */
+    display: block !important;
     grid-template-columns: 1fr !important;
     width: 100% !important;
   }
-  .card__item {
+  /* ensure each child card is full width and uses horizontal layout */
+  .archive__grid > .card__item {
     display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
+    align-items: stretch !important;
     max-width: none !important;
     width: 100% !important;
-    align-items: stretch !important;
+    margin-bottom: 1.25rem !important;
+    padding: 1rem !important;
   }
-  .card__item .archive__item-teaser {
+  .archive__grid > .card__item .archive__item-teaser {
     flex: 0 0 36% !important;
-    min-width: 200px !important;
+    min-width: 220px !important;
+    max-width: 40% !important;
   }
-  .card__item .archive__item-teaser img {
+  .archive__grid > .card__item .archive__item-teaser img {
     width: 100% !important;
-    height: auto !important;
+    height: 160px !important;
     display: block !important;
     object-fit: cover !important;
   }
-  .card__item .archive__item-body {
+  .archive__grid > .card__item .archive__item-body {
     flex: 1 1 64% !important;
   }
 }
