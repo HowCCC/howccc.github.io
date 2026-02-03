@@ -223,6 +223,17 @@
   }
 }
 
+/* Ensure on single page content (e.g., Home) cards expand to full content width */
+.page__content .archive--cards {
+  .archive__grid {
+    grid-template-columns: 1fr !important;
+  }
+  .card__item {
+    max-width: none;
+    width: 100%;
+  }
+}
+
 /*
    Features
    ========================================================================== */
