@@ -23,15 +23,13 @@ redirect_from:
 
 ## News
 
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">*2026.03* — One paper was accepted by <p><span style="color: red;">CVPR 2026.</span></p></span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2026.03</i> — One paper was accepted by <span style="color: red; font-style: italic;">CVPR 2026.</span></span>
 
+- <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2023.06</i> — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.</span>
 
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">*2023.06* — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.</span>
+  ![Teaching]({{ base_path }}/images/teaching.png)
 
-![Teaching]({{ base_path }}/images/teaching.png)
-
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">*2022.06* — Awarded the **National Scholarship** , one of the highest honors for undergraduates in China (top 0.2%)</span>
-
+- <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2022.06</i> — Awarded the **National Scholarship**, one of the highest honors for undergraduates in China (top 0.2%)</span>
 
 ## Publications
 
