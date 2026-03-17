@@ -23,7 +23,7 @@ redirect_from:
 
 ## News
 
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">*2026.3* — One paper was accepted by CVPR Findings 2026.</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">*2026.03* — One paper was accepted by CVPR Findings 2026.</span>
 
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">*2023.06* — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.</span>
