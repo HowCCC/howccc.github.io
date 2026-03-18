@@ -441,6 +441,14 @@
   line-height: 1.3;
   word-break: break-word;
 }
+.pub-row__title a {
+  color: #e3a5fb; /* 淡紫色 */
+  text-decoration: none;
+}
+.pub-row__title a:hover {
+  color: #e3a5fb;
+  text-decoration: underline;
+}
 
 .pub-row__authors {
   margin: 0 0 0.4rem;

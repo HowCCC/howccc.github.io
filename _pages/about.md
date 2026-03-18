@@ -15,6 +15,16 @@ redirect_from:
 </div>
 
 {% include base_path %}
+<style>
+.page__content a,
+.page__content a:visited {
+  color: #e3a5fb !important;
+}
+.page__content a:hover {
+  color: #e3a5fb !important;
+  text-decoration: underline;
+}
+</style>
 ## Interests
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
@@ -33,7 +43,7 @@ redirect_from:
 
 ## Publications
 
-<p>Selected publications here.</p>
+<p>Selected Publications. * Corresponding author.</p>
 
 <div class="publication-grid">
   {% for post in site.publications reversed %}
