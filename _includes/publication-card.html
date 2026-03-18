@@ -28,10 +28,15 @@
 
   <div class="publication-card__content">
     <h3 class="publication-card__title">
-      {% if post.link %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+      {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+      {% endif %}
+      {% if post.collection == 'publications' and post.venue %}
+        <span class="pub-row__venue publication-card__venue"> <i>{{ post.venue }}</i></span>
       {% endif %}
     </h3>
 
@@ -48,10 +53,6 @@
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
       </p>
-    {% endif %}
-
-    {% if post.collection == 'publications' and post.venue %}
-      <p class="publication-card__meta">{{ post.venue }}{% if post.date %}, {{ post.date | date: '%Y' }}{% endif %}</p>
     {% endif %}
   </div>
 </div>

@@ -513,6 +513,15 @@
   word-break: break-word;
 }
 
+.publication-card__venue {
+  margin: 0;
+  color: #c00;
+  font-size: $type-size-8;
+  font-style: italic;
+  font-weight: normal;
+  display: inline;
+}
+
 .publication-card__meta {
   margin: 0;
   color: var(--global-text-color-light);
