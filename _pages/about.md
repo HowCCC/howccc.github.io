@@ -12,6 +12,9 @@ redirect_from:
   <p>I am also the co-founder of ElysianAI, a startup developing AI research assistants. View our project <a href="https://paperpanza.com">@PaperPanza</a>. I'm currently seeking co-working opportunities or internships.</p>
 
   <p><span style="color: red;">Phone: +86 15066883213</span></p>
+
+  <p>Looking for any internship opportunities and collaborations.</p>
+
 </div>
 
 {% include base_path %}
@@ -29,6 +32,8 @@ redirect_from:
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video generation.</span>
+
 
 
 ## News
@@ -49,4 +54,12 @@ redirect_from:
   {% for post in site.publications reversed %}
     {% include publication-card.html post=post %}
   {% endfor %}
+</div>
+
+## Publications
+
+<div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
+  <p>I am leading the "Concise Generation" project, which provides detailed guidance on modern generative pipelines. As part of this initiative, I am curating a series of concise engineering tutorials that specifically deconstruct generative models from an engineering and code centric perspective.View <a href="howccc.github.io">@here</a></p>
+
+![ConciseGeneration]({{ base_path }}/images/concisegeneration.png)
 </div>
