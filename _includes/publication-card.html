@@ -1,0 +1,57 @@
+{% include base_path %}
+
+{% assign teaser = post.teaser | default: post.header.teaser | default: site.teaser %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+{% assign authors_list = '' %}
+{% if post.authors %}
+  {% assign authors_list = post.authors | split: ',' %}
+{% elsif post.citation %}
+  {% assign cit = post.citation | strip_html | replace: '&quot;','"' %}
+  {% assign authors_str = cit | split: '(' | first | strip %}
+  {% assign authors_list = authors_str | split: ',' %}
+{% endif %}
+
+<div class="publication-card">
+  <div class="publication-card__teaser">
+    {% if teaser %}
+      <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ title }} teaser" loading="lazy">
+    {% else %}
+      <div class="publication-card__teaser--empty">No teaser</div>
+    {% endif %}
+  </div>
+
+  <div class="publication-card__content">
+    <h3 class="publication-card__title">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+      {% endif %}
+    </h3>
+
+    {% if authors_list != '' %}
+      <p class="publication-card__authors">
+        {% for author in authors_list %}
+          {% assign name = author | strip %}
+          {% if name == 'Shurui Liu' or name == site.author.name %}
+            <strong>{{ name }}</strong>
+          {% else %}
+            {{ name }}
+          {% endif %}
+          {% if post.corresponding_authors and post.corresponding_authors contains name %}*{% endif %}
+          {% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    {% if post.collection == 'publications' and post.venue %}
+      <p class="publication-card__meta">{{ post.venue }}{% if post.date %}, {{ post.date | date: '%Y' }}{% endif %}</p>
+    {% endif %}
+  </div>
+</div>

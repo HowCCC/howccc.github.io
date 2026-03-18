@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
-  <p>Greetings! Here is Sherry(刘书睿). I am a Master's student at the School of Computer Science of SYSU(中山大学). During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">@Chenqiang Gao</a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">@Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">@Ancong Wu</a>.</p>
+  <p>Greetings! Here is Sherry(刘书睿). I am a Master student @ <a href="https://www.sysu.edu.cn/"> SYSU(中山大学).</a> During my undergraduate studies, I was supervised by Professor <a href="https://ise.sysu.edu.cn/teacher/teacher01/1411154.htm">@Chenqiang Gao</a>. Currently, I am jointly supervised by Professors <a href="https://cse.sysu.edu.cn/teacher/ZhengWeishi">@Weishi Zheng</a> and <a href="https://cse.sysu.edu.cn/teacher/WuAncong">@Ancong Wu</a>.</p>
 
   <p>I am also the co-founder of ElysianAI, a startup developing AI research assistants. View our project <a href="https://paperpanza.com">@PaperPanza</a>. I'm currently seeking co-working opportunities or internships.</p>
 
@@ -33,10 +33,10 @@ redirect_from:
 
 ## Publications
 
-<p>Selected publications (teaser left, title and authors right):</p>
+<p>Selected publications (teaser left, title and authors on the right):</p>
 
-<div class="publication-cards">
+<div class="publication-grid">
   {% for post in site.publications reversed %}
-    {% include archive-single-publication-row.html %}
+    {% include publication-card.html post=post %}
   {% endfor %}
 </div>
