@@ -437,25 +437,24 @@
 
 .pub-row__title {
   margin: 0 0 0.4rem;
-  font-size: $type-size-8;
+  font-size: $type-size-5;
   line-height: 1.3;
+  font-style: italic;
   word-break: break-word;
 }
 .pub-row__title a {
   color: #e3a5fb; /* 淡紫色 */
-  font-style: italic;
   text-decoration: none;
 }
 .pub-row__title a:hover {
-  color: #e3a5fb;
-  font-style: italic;
+  color: #884d8a;
   text-decoration: underline;
 }
 
 .pub-row__authors {
   margin: 0 0 0.4rem;
   color: var(--global-text-color-light);
-  font-size: $type-size-8;
+  font-size: $type-size-7;
   line-height: 1.4;
   word-break: break-word;
 }
@@ -463,7 +462,7 @@
 .pub-row__venue {
   margin: 0;
   color: #c00;
-  font-size: $type-size-8;
+  font-size: $type-size-5;
   font-style: italic;
   font-weight: normal;
   display: inline;
