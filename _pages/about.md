@@ -59,7 +59,7 @@ redirect_from:
 ## Publications
 
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
-  <p>I am leading the "Concise Generation" project, which provides detailed guidance on modern generative pipelines. As part of this initiative, I am curating a series of concise engineering tutorials that specifically deconstruct generative models from an engineering and code centric perspective.View <a href="howccc.github.io">@here</a></p>
+  <p>I am leading the "Concise Generation" project, which provides detailed guidance on modern generative pipelines. As part of this initiative, I am curating a series of concise engineering tutorials that specifically deconstruct generative models from an engineering and code centric perspective.View <a href="https://howccb.github.io/ConciseGeneration/DDPM/">@here</a></p>
 
 ![ConciseGeneration]({{ base_path }}/images/concisegeneration.png)
 </div>
