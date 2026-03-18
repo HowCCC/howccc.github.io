@@ -32,7 +32,7 @@ redirect_from:
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation</span>
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video generation.</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video Generation.</span>
 
 
 
@@ -43,6 +43,10 @@ redirect_from:
 - <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2023.06</i> — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.</span>
 
   ![Teaching]({{ base_path }}/images/teaching.png)
+
+- <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2022.12</i> — Launch the project "Concise Generation" which provided detailed guidance for modern generation pipeline.</span>
+
+
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2022.06</i> — Awarded the **National Scholarship**, one of the highest honors for undergraduates in China (top 0.2%)</span>
 
@@ -56,10 +60,12 @@ redirect_from:
   {% endfor %}
 </div>
 
-## Publications
+## Misc
 
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
-  <p>I am leading the "Concise Generation" project, which provides detailed guidance on modern generative pipelines. As part of this initiative, I am curating a series of concise engineering tutorials that specifically deconstruct generative models from an engineering and code centric perspective.View <a href="https://howccb.github.io/ConciseGeneration/DDPM/">@here</a></p>
-
-![ConciseGeneration]({{ base_path }}/images/concisegeneration.png)
+  <p>I'm leading the "Concise Generation" project, which provides detailed guidance on modern generative pipelines. As part of this initiative, I am curating a series of concise engineering tutorials that specifically deconstruct generative models from an engineering and code centric perspective. View <a href="">@here</a></p>
+  
 </div>
+
+  ![ConciseGeneration]({{ base_path }}/images/concisegeneration.png)
+
