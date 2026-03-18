@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Shurui Liu(Sherry)"
 title_separator          : "-"
 name                     : &name "Shurui Liu"
-description              : &description "Shurui Liu's Homepage"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Shurui Liu's Pages"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://howccc.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,8 +26,8 @@ author:
   avatar           : "ava.jpg"
   name             : "Shurui Liu(刘书睿)"
   pronouns         : "he/him"  
-  bio              : "25Fall Master @SYSU"
-  location         : "Canton, Guangdong, China"
+  bio              : "25Fall M.S.@SYSU"
+  location         : "Canton, China"
   employer         : "SUN YAT-SEN UNIVERSITY"
   uri              : # URL
   email            : "liushr29@mail2.sysu.edu.cn" 
