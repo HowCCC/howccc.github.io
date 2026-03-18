@@ -33,7 +33,7 @@ redirect_from:
 
 ## Publications
 
-<p>Selected publications (teaser left, title and authors on the right):</p>
+<p>Selected publications here.</p>
 
 <div class="publication-grid">
   {% for post in site.publications reversed %}
