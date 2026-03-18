@@ -33,14 +33,10 @@ redirect_from:
 
 ## Publications
 
+<p>Selected publications (teaser left, title and authors right):</p>
 
-<section class="page__content" itemprop="text">
-
-<div class="archive archive--cards">
-  <div class="archive__grid">
-    {% for post in site.publications reversed %}
-      {% include archive-single-publication-row.html %}
-    {% endfor %}
-  </div>
+<div class="publication-cards">
+  {% for post in site.publications reversed %}
+    {% include archive-single-publication-row.html %}
+  {% endfor %}
 </div>
-</section>
