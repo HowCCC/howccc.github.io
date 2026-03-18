@@ -391,8 +391,8 @@
   display: grid;
   grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
   gap: 1rem;
-  align-items: start;
-  width: 80%;
+  align-items: stretch;
+  width: 100%;
   box-sizing: border-box;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -403,7 +403,8 @@
 }
 
 .publication-card__teaser {
-  width: 80%;
+  width: 100%;
+  height: 100%;
   border-radius: $border-radius;
   overflow: hidden;
   display: flex;
@@ -413,9 +414,9 @@
 }
 
 .publication-card__teaser img {
-  width: 80%;
-  height: auto;
-  max-height: 300px;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
   object-fit: contain;
   display: block;
 }
