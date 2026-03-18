@@ -32,7 +32,7 @@ redirect_from:
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
 - <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation</span>
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video Generation.</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video Generation</span>
 
 
 
