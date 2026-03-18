@@ -48,6 +48,9 @@
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
+      {% if post.collection == 'publications' and post.venue %}
+        <span class="pub-row__venue publication-card__venue"> <i>{{ post.venue }}</i></span>
+      {% endif %}
     </h3>
 
     {% if authors_list and authors_list != '' %}
@@ -67,8 +70,6 @@
 
     {% if post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.collection == 'publications' %}
-      <p class="pub-row__venue publication-card__venue">Published in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
     {% endif %}
   </div>
 </div>

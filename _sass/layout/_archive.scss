@@ -452,8 +452,11 @@
 
 .pub-row__venue {
   margin: 0;
-  color: var(--global-text-color-light);
-  font-size: $type-size-7;
+  color: #c00;
+  font-size: $type-size-8;
+  font-style: italic;
+  font-weight: normal;
+  display: inline;
 }
 
 @include breakpoint($small) {
