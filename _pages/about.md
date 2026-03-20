@@ -44,7 +44,7 @@ redirect_from:
 
   ![Teaching]({{ base_path }}/images/teaching.png)
 
-- <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2022.12</i> — Launch the project "Concise Generation" which provided detailed guidance for modern generation pipeline.</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2022.12</i> — Launch the project **Concise Generation** which provided detailed guidance for modern generation pipeline.</span>
 
 
 
