@@ -58,10 +58,10 @@
       {% endif %}
       {% if author.weixin %}
         <li class="weixin-tooltip">
-          <a href="javascript:void(0);" class="weixin-link" aria-label="WeChat">
-            <img src="images/WeChat-App-Icon-Logo.wine.png" alt="WeChat" class="weixin-logo icon-pad-right" />
+          <button type="button" class="weixin-link" aria-label="WeChat">
+            <img src="/images/wechat.svg" alt="WeChat" class="weixin-logo" />
             <span class="weixin-text">WeChat</span>
-          </a>
+          </button>
           <div class="weixin-qr-tooltip" aria-hidden="true">
             <img src="{% if author.weixin contains '://' %}{{ author.weixin }}{% else %}{{ author.weixin | prepend: base_path }}{% endif %}" alt="WeChat QR Code" />
           </div>

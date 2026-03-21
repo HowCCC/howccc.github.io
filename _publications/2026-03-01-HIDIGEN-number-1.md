@@ -2,7 +2,7 @@
 title: "HiDiGen: Hierarchical Diffusion for B-Rep Generation with Explicit Topological Constraints"
 authors: "Shurui Liu, Weide Chen, Ancong Wu"
 collection: publications
-category: manuscripts
+category: conferences
 corresponding_authors: "Ancong Wu"
 teaser: "hidigen.png"
 # permalink: /publication/2009-10-01-paper-title-number-1
