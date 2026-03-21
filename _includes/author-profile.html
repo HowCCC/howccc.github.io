@@ -59,7 +59,8 @@
       {% if author.weixin %}
         <li class="weixin-tooltip">
           <a href="#" onclick="return false;">
-            <i class="fab fa-fw fa-weixin icon-pad-right"></i>WeChat
+            <img src="/images/wechat.svg" alt="WeChat" class="weixin-logo icon-pad-right" />
+            WeChat
           </a>
           <div class="weixin-qr-tooltip">
             <img src="{% if author.weixin contains '://' %}{{ author.weixin }}{% else %}{{ author.weixin | prepend: base_path }}{% endif %}" alt="WeChat QR Code" />
