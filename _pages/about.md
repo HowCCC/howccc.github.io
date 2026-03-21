@@ -63,21 +63,21 @@ redirect_from:
 </div>
 
 ## Miscs
-<!-- 修正后的代码 -->
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
-  
-  <p>
-    I'm leading "Concise Generation Guided" curating code centric tutorials to deconstruct generative models. 
-    View <a href="https://your-link-here">@here</a>.
-  </p>
-  
-  <div style="text-align: center; margin: 1rem 0;">
-    <img src="{{ base_path }}/images/concisegeneration.png" 
-         alt="ConciseGeneration" 
-         class="about-image-hover"
-         width="500" />
-  </div>
-  
+  <ul>
+    <li>
+      <p>I'm leading "Concise Generation Guided" curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">@here</a>.</p>
+      <div style="text-align: center; margin: 1rem 0;">
+        <img src="{{ base_path }}/images/concisegeneration.png" 
+             alt="ConciseGeneration" 
+             class="about-image-hover"
+             width="500" />
+      </div>
+    </li>
+    <li>
+      <p>Swiming🏊 or Tennis ball🎾</p>
+    </li>
+  </ul>
 </div>
 
 
