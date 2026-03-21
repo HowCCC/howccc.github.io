@@ -84,6 +84,7 @@ author:
   youtube          : # Username
   zhihu            : # Username
   weixin            : sherryliu2003
+  xiaohongshu      : "https://www.xiaohongshu.com/user/profile/60c812340000000020026f7a" # replace with your real profile URL
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

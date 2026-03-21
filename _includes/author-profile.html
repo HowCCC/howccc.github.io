@@ -184,7 +184,24 @@
             <span class="weixin-text">WeChat</span>
           </a>
         </li>
+      {% endif %}
+      {% assign xiaohongshu_url = author.xiaohongshu | default: site.author.xiaohongshu %}
+      {% if xiaohongshu_url %}
+        <li>
+          <a href="{% if xiaohongshu_url contains '://' %}{{ xiaohongshu_url }}{% else %}{{ xiaohongshu_url | prepend: base_path }}{% endif %}"
+             class="xiaohongshu-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open Xiaohongshu profile in new tab">
+            <img src="/images/xiaohongshu.jpg" alt="Xiaohongshu" class="weixin-logo" />
+            <span class="weixin-text">Xiaohongshu</span>
+          </a>
+        </li>
       {% endif %}      
+
+
+
+
 
 
 
