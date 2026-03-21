@@ -75,7 +75,7 @@ redirect_from:
       </div>
     </li>
     <li>
-      <p>🏊 & 🎾 are my vibe.</p>
+      <p>🏊 & 🎾 & 🎧 & 📸 are my vibe.</p>
     </li>
   </ul>
 </div>
