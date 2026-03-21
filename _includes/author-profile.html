@@ -56,6 +56,16 @@
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
       {% endif %}
+      {% if author.weixin %}
+        <li class="weixin-tooltip">
+          <a href="#" onclick="return false;">
+            <i class="fab fa-fw fa-weixin icon-pad-right"></i>WeChat
+          </a>
+          <div class="weixin-qr-tooltip">
+            <img src="{% if author.weixin contains '://' %}{{ author.weixin }}{% else %}{{ author.weixin | prepend: base_path }}{% endif %}" alt="WeChat QR Code" />
+          </div>
+        </li>
+      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
       {% endif %}                        
