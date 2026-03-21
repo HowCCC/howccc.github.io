@@ -202,7 +202,7 @@
 
 
       {% assign x_url = author.x | default: site.author.x %}
-      {% if x %}
+      {% if x_url %}
         <li>
           <a href="{% if x_url contains '://' %}{{ x_url }}{% else %}{{ x_url | prepend: base_path }}{% endif %}"
              class="x-link"
