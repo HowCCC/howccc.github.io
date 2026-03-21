@@ -81,5 +81,3 @@ redirect_from:
 </div>
 
 
-</span>
-
