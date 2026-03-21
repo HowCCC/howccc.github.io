@@ -232,7 +232,10 @@
   visibility: visible;
 }
 
-.author__urls .social-icons li i,
+.author__urls .social-icons li i {
+  font-size: 1em;
+}
+
 .author__urls .social-icons li img {
   width: 1em;
   height: 1em;
