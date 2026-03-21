@@ -63,7 +63,7 @@ redirect_from:
 </div>
 
 ## Miscs
-
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
   <p>I'm leading "Concise Generation Guided" curating code centric tutorials to deconstruct generative models. View <a href="">@here</a>.</p>
   <div style="text-align: center; margin: 1rem 0;">
@@ -76,3 +76,7 @@ redirect_from:
 
   <!-- ![ConciseGeneration]({{ base_path }}/images/concisegeneration.png)
    -->
+
+
+</span>
+
