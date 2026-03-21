@@ -30,9 +30,9 @@ redirect_from:
 </style>
 ## Interests
 
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent</span>
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation</span>
-- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video Generation</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Enhancing LLM & Agent.</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Native 3D Generation & Interactive 3D Scene Generation.</span>
+- <span style="font-family: 'FangSong', 'STFangsong', serif;">Video Generation.</span>
 
 
 
@@ -75,7 +75,7 @@ redirect_from:
       </div>
     </li>
     <li>
-      <p>Swiming🏊 or Tennis ball🎾</p>
+      <p>🏊 & 🎾 are my vibe.</p>
     </li>
   </ul>
 </div>
