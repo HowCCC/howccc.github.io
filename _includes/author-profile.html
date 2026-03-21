@@ -56,19 +56,6 @@
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
       {% endif %}
-      {% assign weixin_qr = author.weixin_qr | default: site.author.weixin_qr %}
-      {% if weixin_qr %}
-        <li>
-          <a href="{% if weixin_qr contains '://' %}{{ weixin_qr }}{% else %}{{ weixin_qr | prepend: base_path }}{% endif %}"
-             class="weixin-link"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Open WeChat QR code in new tab">
-            <img src="/images/WeChat-App-Icon-Logo.wine(1).png" alt="WeChat" class="weixin-logo" />
-            <span class="weixin-text">WeChat</span>
-          </a>
-        </li>
-      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
       {% endif %}                        
@@ -183,7 +170,24 @@
       {% endif %}
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
+      {% endif %}    
+      
+      {% assign weixin_qr = author.weixin_qr | default: site.author.weixin_qr %}
+      {% if weixin_qr %}
+        <li>
+          <a href="{% if weixin_qr contains '://' %}{{ weixin_qr }}{% else %}{{ weixin_qr | prepend: base_path }}{% endif %}"
+             class="weixin-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open WeChat QR code in new tab">
+            <img src="/images/WeChat-App-Icon-Logo.wine(1).png" alt="WeChat" class="weixin-logo" />
+            <span class="weixin-text">WeChat</span>
+          </a>
+        </li>
       {% endif %}      
+
+
+
     </ul>
   </div>
 </div>
