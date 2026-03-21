@@ -66,7 +66,7 @@ redirect_from:
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
   <ul>
     <li>
-      <p>I'm leading "Concise Generation Guided" curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">@here</a>.</p>
+      <p>I'm leading Concise Generation Guided curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">@here</a>.</p>
       <div style="text-align: center; margin: 1rem 0;">
         <img src="{{ base_path }}/images/concisegeneration.png" 
              alt="ConciseGeneration" 
