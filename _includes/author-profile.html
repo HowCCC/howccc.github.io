@@ -201,6 +201,21 @@
 
 
 
+      {% assign x_url = author.x | default: site.author.x %}
+      {% if x %}
+        <li>
+          <a href="{% if x_url contains '://' %}{{ x_url }}{% else %}{{ x_url | prepend: base_path }}{% endif %}"
+             class="x-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open x profile in new tab">
+            <img src="/images/x.jpg" alt="X" class="weixin-logo" />
+            <span class="weixin-text">X</span>
+          </a>
+        </li>
+      {% endif %}     
+
+
 
 
 
