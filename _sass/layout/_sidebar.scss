@@ -235,16 +235,29 @@
   visibility: visible;
 }
 
-.author__urls .social-icons li i {
-  font-size: 1em;
+.author__urls .social-icons li {
+  white-space: nowrap;
 }
 
+.author__urls .social-icons li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  text-decoration: none;
+}
+
+.author__urls .social-icons li i,
 .author__urls .social-icons li img,
 .author__urls .social-icons li .weixin-logo {
-  width: 1em;
-  height: 1em;
+  width: 1em !important;
+  height: 1em !important;
   object-fit: contain;
   vertical-align: middle;
+}
+
+.author__urls .social-icons li .weixin-text {
+  display: inline-block;
+  font-size: 0.95em;
 }
 
 
