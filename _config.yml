@@ -23,7 +23,7 @@ repository               : "HowCCC/howccc.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "ava.jpg"
+  avatar           : "avatar2.jpg"
   name             : "Shurui Liu(刘书睿)"
   pronouns         : "he/him"  
   bio              : "25Fall M.S.@SYSU"
