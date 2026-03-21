@@ -42,7 +42,9 @@ redirect_from:
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2023.06</i> — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.</span>
 
-  ![Teaching]({{ base_path }}/images/teaching.png)
+  <div style="text-align: center; margin: 1rem 0;">
+    <img src="{{ base_path }}/images/teaching.png" alt="Teaching" class="about-image-hover" style="max-width: 100%; height: auto;" />
+  </div>
 
 - <span style="font-family: 'FangSong', 'STFangsong', serif;"><i>2022.12</i> — Launch the project **Concise Generation** which provided detailed guidance for modern generation pipeline.</span>
 
@@ -64,9 +66,12 @@ redirect_from:
 
 <div style="font-family: 'FangSong', 'STFangsong', '仿宋', serif;">
   <p>I'm leading "Concise Generation Guided" curating code centric tutorials to deconstruct generative models. View <a href="">@here</a>.</p>
-  <img src="{{ base_path }}/images/concisegeneration.png" 
-     alt="ConciseGeneration" 
-     width="600" />
+  <div style="text-align: center; margin: 1rem 0;">
+    <img src="{{ base_path }}/images/concisegeneration.png" 
+       alt="ConciseGeneration" 
+       class="about-image-hover"
+       width="600" />
+  </div>
 </div>
 
   <!-- ![ConciseGeneration]({{ base_path }}/images/concisegeneration.png)

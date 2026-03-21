@@ -549,6 +549,17 @@
   font-size: $type-size-7;
 }
 
+/* About page image hover effect */
+.about-image-hover {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border-radius: $border-radius;
+}
+
+.about-image-hover:hover {
+  box-shadow: 0 10px 20px rgba(#000, 0.18);
+  transform: translateY(-2px) scale(1.02);
+}
+
 @include breakpoint($small) {
   .publication-card {
     grid-template-columns: 1fr;
