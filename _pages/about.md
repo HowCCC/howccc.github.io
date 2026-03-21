@@ -70,7 +70,7 @@ redirect_from:
     <img src="{{ base_path }}/images/concisegeneration.png" 
        alt="ConciseGeneration" 
        class="about-image-hover"
-       width="600" />
+       width="400" />
   </div>
 </div>
 
