@@ -56,14 +56,16 @@
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
       {% endif %}
-      {% if author.weixin %}
+      {% assign weixin_handle = author.weixin | default: site.author.weixin %}
+      {% assign weixin_qr = author.weixin_qr | default: site.author.weixin_qr %}
+      {% if weixin_qr %}
         <li class="weixin-tooltip">
           <button type="button" class="weixin-link" aria-label="WeChat">
             <img src="/images/wechat.svg" alt="WeChat" class="weixin-logo" />
             <span class="weixin-text">WeChat</span>
           </button>
           <div class="weixin-qr-tooltip" aria-hidden="true">
-            <img src="{% if author.weixin contains '://' %}{{ author.weixin }}{% else %}{{ author.weixin | prepend: base_path }}{% endif %}" alt="WeChat QR Code" />
+            <img src="{% if weixin_qr contains '://' %}{{ weixin_qr }}{% else %}{{ weixin_qr | prepend: base_path }}{% endif %}" alt="WeChat QR Code" />
           </div>
         </li>
       {% endif %}

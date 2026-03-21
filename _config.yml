@@ -39,7 +39,8 @@ author:
   inspire-hep      : # URL
   impactstory      : # URL
   # orcid            : "https://orcid.org/my-orcid?orcid=0009-0005-5194-6650"  
-  weixin           : "/images/wechat.jpg"  # Path to your WeChat QR code image  
+  weixin            : sherryliu2003
+  weixin_qr         : "/images/wechat.jpg"  # Path to your WeChat QR code image  
   # semantic         : # URL
   # ssrn             : # URL
   # pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
