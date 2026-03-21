@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Shurui Liu(Sherry)"
 title_separator          : "-"
 name                     : &name "Shurui Liu"
@@ -97,7 +97,7 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  Helllllllllll# filename of teaser fallback teaser image placed in /images/ for social media previews
+teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
