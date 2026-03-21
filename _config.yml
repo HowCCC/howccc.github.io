@@ -25,9 +25,9 @@ author:
   # Biographic information
   avatar           : "avatar2.jpg"
   name             : "Shurui Liu(刘书睿)"
-  pronouns         : "he/him"  
-  bio              : "25Fall M.S.@SYSU"
-  location         : "Canton, China"
+  # pronouns         : "he/him"  
+  bio              : "M.S. @ SYSU"
+  location         : "Canton, P.R.China"
   employer         : "SUN YAT-SEN UNIVERSITY"
   uri              : # URL
   email            : "liushr29@mail2.sysu.edu.cn" 
@@ -97,7 +97,7 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+teaser                   :  Helllllllllll# filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
