@@ -24,7 +24,7 @@ redirect_from:
 .page__content li,
 .page__content span,
 .page__content div {
-  font-family: 'Gentium', serif !important;
+  font-family: 'Adobe Caslon Pro', 'Caslon', serif !important;
 }
 .page__content a,
 .page__content a:visited {
