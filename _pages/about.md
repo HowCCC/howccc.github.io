@@ -43,6 +43,7 @@ redirect_from:
 
 /* 3. 核心修复：确保出版物卡片内的字体不被干扰 */
 .publication-grid,
+.publication-grid a,  /* 确保链接也恢复 */
 .publication-card__authors,
 .publication-card__venue,
 .publication-card__title {
