@@ -42,11 +42,11 @@ redirect_from:
 
 .page__content a,
 .page__content a:visited {
-  color: #e3a5fb !important;
+  color: #c264e7 !important;
   text-decoration: none !important;
 }
 .page__content a:hover {
-  color: #e3a5fb !important;
+  color: #c264e7 !important;
   text-decoration: underline !important;
 }
 </style>
