@@ -44,10 +44,8 @@ redirect_from:
 /* 3. 核心修复：确保出版物卡片内的字体不被干扰 */
 /* 强化版修复：确保出版物区域内所有元素恢复默认字体 */
 .publication-grid, 
-.publication-grid *, /* 选中 publication-grid 下的所有子元素 */
-.publication-card__title, 
-.publication-card__authors, 
-.publication-card__venue {
+/* .publication-grid *, 选中 publication-grid 下的所有子元素 */
+.publication-card__authors {
   font-family: italic !important;
   /* font-style: normal !important; 额外确保不会被强制斜体 */
 }
