@@ -56,7 +56,7 @@ redirect_from:
 .publication-grid span, 
 .publication-grid em, 
 .publication-grid i {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
+  font-family: italic !important;
 }
 
 
