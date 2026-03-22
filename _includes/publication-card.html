@@ -49,7 +49,7 @@
           {% else %}
             {{ name }}
           {% endif %}
-          {% if post.corresponding_authors and post.corresponding_authors contains name %}*{% endif %}
+          {% if post.corresponding_authors and post.corresponding_authors contains name %}✉{% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
       </p>
