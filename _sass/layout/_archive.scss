@@ -532,6 +532,7 @@
   font-size: $type-size-8;
   line-height: 1.0;
   word-break: break-word;
+  font-style: italic;
 }
 
 .publication-card__venue {
@@ -671,4 +672,9 @@
       }
     }
   }
+}
+.publication-card__authors, 
+.archive__item-authors, 
+.pub-row__authors {
+  font-style: italic !important;
 }
