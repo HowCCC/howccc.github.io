@@ -94,7 +94,7 @@ redirect_from:
 
 ## Publications
 
-<p> ✉ denotes corresponding author. * denotes equal contribution</p>
+<p> ✉ denotes corresponding author. * denotes equal contribution. </p>
 
 <div class="publication-grid">
   {% for post in site.publications reversed %}
