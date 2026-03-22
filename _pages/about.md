@@ -48,8 +48,8 @@ redirect_from:
 .publication-card__title, 
 .publication-card__authors, 
 .publication-card__venue {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
-  font-style: normal !important; /* 额外确保不会被强制斜体 */
+  font-family: italic !important;
+  /* font-style: normal !important; 额外确保不会被强制斜体 */
 }
 
 /* 如果你的 publication-card.html 里用了特定的 span 或 em */
