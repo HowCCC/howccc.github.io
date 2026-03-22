@@ -19,13 +19,21 @@ redirect_from:
 
 {% include base_path %}
 <style>
+.page__content {
+  font-family: 'Gentium', serif;
+}
 .page__content a,
 .page__content a:visited {
   color: #e3a5fb !important;
+  text-decoration: none !important;
 }
 .page__content a:hover {
   color: #e3a5fb !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
+}
+/* Publication authors keep default font */
+.publication-card__authors {
+  font-family: inherit !important;
 }
 </style>
 ## Interests
