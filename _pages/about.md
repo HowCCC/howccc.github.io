@@ -19,13 +19,27 @@ redirect_from:
 
 {% include base_path %}
 <style>
+/* 1. 引入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 .page__content,
 .page__content p,
 .page__content li,
 .page__content span,
 .page__content div {
-  font-family: 'Adobe Caslon Pro', 'Caslon', serif !important;
+  /* 2. 修改优先级：将 Libre Baskerville 放在最前面 */
+  font-family: 'Libre Baskerville', 'Adobe Caslon Pro', 'Caslon', serif !important;
+  line-height: 1.6; /* 建议稍微增加行高，Libre Baskerville 这种字体在大行距下更美观 */
 }
+
+/* 3. 针对 News 部分的斜体进行优化 */
+.page__content i, 
+.page__content em {
+  font-family: 'Libre Baskerville', serif !important;
+  font-style: italic !important;
+  color: #555; /* 稍微调浅一点斜体的颜色，会显得更有高级感 */
+}
+
 .page__content a,
 .page__content a:visited {
   color: #e3a5fb !important;
@@ -34,10 +48,6 @@ redirect_from:
 .page__content a:hover {
   color: #e3a5fb !important;
   text-decoration: underline !important;
-}
-/* Publication authors keep default font */
-.publication-card__authors {
-  font-family: inherit !important;
 }
 </style>
 ## Interests
