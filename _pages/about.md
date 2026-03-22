@@ -29,7 +29,7 @@ redirect_from:
 .page__content div {
   /* 2. 修改优先级：将 Libre Baskerville 放在最前面 */
   font-family: 'Libre Baskerville', 'Adobe Caslon Pro', 'Caslon', serif !important;
-  line-height: 1.3; /* 建议稍微增加行高，Libre Baskerville 这种字体在大行距下更美观 */
+  line-height: 1.0; /* 建议稍微增加行高，Libre Baskerville 这种字体在大行距下更美观 */
 }
 
 /* 3. 针对 News 部分的斜体进行优化 */
@@ -37,7 +37,7 @@ redirect_from:
 .page__content em {
   font-family: 'Libre Baskerville', serif !important;
   font-style: italic !important;
-  color: #555; /* 稍微调浅一点斜体的颜色，会显得更有高级感 */
+  color: #898585; /* 稍微调浅一点斜体的颜色，会显得更有高级感 */
 }
 
 
@@ -54,11 +54,11 @@ redirect_from:
 
 .page__content a,
 .page__content a:visited {
-  color: #c264e7 !important;
+  color: #0b75bc !important;
   text-decoration: none !important;
 }
 .page__content a:hover {
-  color: #c264e7 !important;
+  color: #0b75bc !important;
   text-decoration: underline !important;
 }
 </style>
