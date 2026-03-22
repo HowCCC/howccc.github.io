@@ -50,12 +50,12 @@ redirect_from:
   /* font-style: normal !important; 额外确保不会被强制斜体 */
 }
 
-/* 如果你的 publication-card.html 里用了特定的 span 或 em */
+/* 如果你的 publication-card.html 里用了特定的 span 或 em
 .publication-grid span, 
 .publication-grid em, 
 .publication-grid i {
   font-family: italic !important;
-}
+} */
 
 
 .page__content a,
