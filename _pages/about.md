@@ -42,15 +42,22 @@ redirect_from:
 
 
 /* 3. 核心修复：确保出版物卡片内的字体不被干扰 */
-.publication-grid,
-.publication-grid a,  /* 确保链接也恢复 */
-.publication-card__authors,
-.publication-card__venue,
-.publication-card__title {
-  /* 恢复为默认字体，或者你指定的其他字体 */
+/* 强化版修复：确保出版物区域内所有元素恢复默认字体 */
+.publication-grid, 
+.publication-grid *, /* 选中 publication-grid 下的所有子元素 */
+.publication-card__title, 
+.publication-card__authors, 
+.publication-card__venue {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
+  font-style: normal !important; /* 额外确保不会被强制斜体 */
 }
 
+/* 如果你的 publication-card.html 里用了特定的 span 或 em */
+.publication-grid span, 
+.publication-grid em, 
+.publication-grid i {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
+}
 
 
 .page__content a,
