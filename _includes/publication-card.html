@@ -17,6 +17,10 @@
   {% assign authors_list = authors_str | split: ',' %}
 {% endif %}
 
+{% assign paper_link = post.paperurl | default: post.paper_url %}
+{% assign project_link = post.projecturl | default: post.project_url | default: post.project %}
+{% assign code_link = post.codeurl | default: post.code_url | default: post.code %}
+
 <div class="publication-card">
   <div class="publication-card__teaser">
     {% if teaser %}
@@ -28,26 +32,34 @@
 
   <div class="publication-card__content">
     <h3 class="publication-card__title">
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
-      {% elsif post.link %}
-        <a href="{{ post.link }}">{{ title }}</a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}">{{ title }}</a>
-      {% endif %}
+      <span class="publication-card__title-text">{{ title }}</span>
       {% if post.collection == 'publications' and post.venue %}
         <span class="pub-row__venue publication-card__venue"> <i>{{ post.venue }}</i></span>
       {% endif %}
     </h3>
 
+    {% if paper_link or project_link or code_link %}
+      <p class="publication-card__resources"><em>{% if paper_link %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">[paper]</a>{% endif %}{% if project_link %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer">[project]</a>{% endif %}{% if code_link %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer">[code]</a>{% endif %}</em></p>
+    {% endif %}
+
     {% if authors_list != '' %}
       <p class="publication-card__authors">
         {% for author in authors_list %}
           {% assign name = author | strip %}
+          {% assign author_entry = site.data.authors[name] %}
+          {% assign author_uri = author_entry.uri %}
           {% if name == 'Shurui Liu' or name == site.author.name %}
-            <strong>{{ name }}</strong>
+            {% if author_uri %}
+              <a href="{{ author_uri }}" target="_blank" rel="noopener noreferrer"><strong>{{ name }}</strong></a>
+            {% else %}
+              <strong>{{ name }}</strong>
+            {% endif %}
           {% else %}
-            {{ name }}
+            {% if author_uri %}
+              <a href="{{ author_uri }}" target="_blank" rel="noopener noreferrer">{{ name }}</a>
+            {% else %}
+              {{ name }}
+            {% endif %}
           {% endif %}
           {% if post.corresponding_authors and post.corresponding_authors contains name %}✉{% endif %}
           {% if forloop.last == false %}, {% endif %}

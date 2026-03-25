@@ -526,6 +526,16 @@
   word-break: break-word;
 }
 
+.publication-card__title-text {
+  color: #000;
+}
+
+.publication-card__resources {
+  margin: 0 0 0.4rem;
+  font-size: $type-size-7;
+  line-height: 1.2;
+}
+
 .publication-card__authors {
   margin: 0 0 0.4rem;
   color: var(--global-text-color-light);
@@ -542,6 +552,11 @@
   font-style: italic;
   font-weight: normal;
   display: inline;
+}
+
+.page__content .publication-card__venue,
+.page__content .publication-card__venue i {
+  color: #c00 !important;
 }
 
 .publication-card__meta {
@@ -678,4 +693,3 @@
 .pub-row__authors {
   font-style: italic !important;
 }
-

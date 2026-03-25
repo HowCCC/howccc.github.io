@@ -55,7 +55,7 @@
     line-height: 1.5;
   }
 
-  img {
+  .author__avatar img {
     width: 100%;
   }
 }
@@ -220,6 +220,8 @@
 }
 
 .author__urls .social-icons li i,
+.author__urls .social-icons li svg,
+.author__urls .social-icons li .svg-inline--fa,
 .author__urls .social-icons li img,
 .author__urls .social-icons li .weixin-logo {
   width: 1em !important;
@@ -230,14 +232,25 @@
   vertical-align: middle;
 }
 
+.author__urls .social-icons li .icon-box {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+}
+.author__urls .social-icons li .icon-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+  display: inline-block;
+}
+
 .author__urls .social-icons li .weixin-text {
   display: inline-block;
   font-size: 0.95em;
 }
 
-.sidebar img,
 .sidebar .author__avatar img {
-  width: auto;
   max-width: 100%;
 }
 

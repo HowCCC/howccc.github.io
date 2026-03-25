@@ -183,9 +183,18 @@
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
     text-decoration: none;
+    border-radius: 999px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 
     &:hover {
       color: var(--global-masthead-link-color-hover);
+      background: rgba(255, 255, 255, 0.35);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.65);
     }
   }
 
@@ -222,15 +231,6 @@
         a {
           margin-right: 0;
         }
-      }
-    }
-
-    #theme-toggle {
-      a {
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
       }
     }
 
@@ -317,6 +317,14 @@
       }
     }
   }
+}
+
+.masthead:hover .greedy-nav {
+  background: transparent;
+}
+
+.masthead:hover .greedy-nav button {
+  background-color: transparent;
 }
 
 

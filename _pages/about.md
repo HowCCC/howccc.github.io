@@ -78,19 +78,22 @@ redirect_from:
 
 ## News
 
-- <i>2026.03</i> — One paper was accepted by <span style="color: red; font-style: italic;">CVPR 2026.</span>
-
-- <i>2023.06</i> — I participated in a teaching volunteer program in Meizhou, Guangdong, providing educational support to local children.
-
-  <div style="text-align: center; margin: 1rem 0;">
-    <img src="{{ base_path }}/images/teaching.png" alt="Teaching" class="about-image-hover" style="max-width: 100%; height: auto;" />
-  </div>
-
-- <i>2022.12</i> — Launch the project **Concise Generation** which provided detailed guidance for modern generation pipeline.
-
-
-
-- <i>2022.06</i> — Awarded the **National Scholarship**, one of the highest honors for undergraduates in China (top 0.2%)
+<ul>
+{% assign news_items = site.news | sort: 'date' | reverse %}
+{% for item in news_items %}
+  <li>
+    <i>{{ item.date | date: "%Y.%m" }}</i> — {{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}
+    {% if item.image %}
+      <div style="text-align: center; margin: 1rem 0;">
+        <img src="{{ base_path }}/images/{{ item.image }}" alt="{{ item.image_alt | default: '' }}" class="about-image-hover" style="max-width: 100%; height: auto;" />
+      </div>
+    {% endif %}
+    {% if item.content and item.content != '' %}
+      {{ item.content }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
 
 ## Publications
 
@@ -119,5 +122,4 @@ redirect_from:
     </li>
   </ul>
 </div>
-
 

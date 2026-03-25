@@ -1,18 +1,21 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+Shurui Liu:
+  name        : "Shurui Liu"
+  uri         : "https://howccc.github.io/"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Chenqiang Gao:
+  name        : "Chenqiang Gao"
+  uri         : "https://gaocq.github.io/"
+
+Ancong Wu:
+  name        : "Ancong Wu"
+  uri         : "https://www.isee-ai.cn/~wuancong/index.html"
+
+Fangcen Liu:
+  name        : "Fangcen Liu"
+  uri         : "https://liufangcen.github.io/"
+
+Wei-Shi Zheng:
+  name        : "Wei-Shi Zheng"
+  uri         : "https://isee-ai.cn/~zhwshi/"

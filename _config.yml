@@ -26,7 +26,6 @@ author:
   avatar           : "avatar2.jpg"
   name             : "Shurui Liu(刘书睿)"
   # pronouns         : "he/him"  
-  bio              : "M.S. @ SYSU"
   location         : "Canton, P.R. China"
   employer         : "SUN YAT-SEN UNIVERSITY"
   uri              : # URL
@@ -232,6 +231,8 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  news:
+    output: false
   portfolio:
     output: true
     permalink: /:collection/:path/
