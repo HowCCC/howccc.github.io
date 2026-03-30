@@ -14,13 +14,13 @@ redirect_from:
 <style>
   .small-text {
     color: #e8b3f1;
-    font-size: 12px;
+    font-size: 14px;
   }
 </style>
 
 <p><span class="small-text">Phone: +86 15066883213</span></p>
 <p><span class="small-text">
-  <a href="">[Google Scholar]</a>    <a href="">[Github]</a>
+  <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1">[Google Scholar]</a>    <a href="https://github.com/HowCCC/">[Github]</a>
 </span></p>
 
 
