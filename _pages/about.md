@@ -20,8 +20,7 @@ redirect_from:
 
 <p><span class="small-text">Phone: +86 15066883213</span></p>
 <p><span class="small-text">
-  <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1">[@Google Scholar]</a>    <a href="https://github.com/HowCCC/">[@Github]    <a href="liushr29@mail2.sysu.edu.cn">[@Email]</a>
-</span></p>
+  <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1">[Google Scholar]</a>    <a href="https://github.com/HowCCC/">[Github]    <a href="liushr29@mail2.sysu.edu.cn">[Email]</a></span></p>
 
 
   <p>Looking for any internship opportunities and collaborations.</p>
