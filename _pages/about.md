@@ -13,7 +13,7 @@ redirect_from:
 
   <style>
     .small-text {
-      color: #e8b3f1;
+      color: #82c2e7;
       font-size: 14px;
     }
     /* 可选：让链接颜色也跟随字体颜色，或者保持默认蓝色 */
@@ -82,11 +82,11 @@ redirect_from:
 
 .page__content a,
 .page__content a:visited {
-  color: #e8b3f1 !important;
+  color: #82c2e7 !important;
   text-decoration: none !important;
 }
 .page__content a:hover {
-  color: #e8b3f1 !important;
+  color: #82c2e7 !important;
   text-decoration: underline !important;
 }
 </style>
