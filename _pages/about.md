@@ -11,8 +11,17 @@ redirect_from:
 
   <p>I am also the co-founder of ElysianAI, a startup developing AI research assistants. View our project <a href="https://paperpanza.com">@PaperPanza</a>.</p>
 
-  <p><span style="color: #e8b3f1;">Phone: +86 15066883213</span></p>
-  <p><span style="color: #e8b3f1;"><a href="">@Google Scholar</a>    <a href="">@Github</a></span></p>
+<style>
+  .small-text {
+    color: #e8b3f1;
+    font-size: 12px;
+  }
+</style>
+
+<p><span class="small-text">Phone: +86 15066883213</span></p>
+<p><span class="small-text">
+  <a href="">[Google Scholar]</a>    <a href="">[Github]</a>
+</span></p>
 
 
   <p>Looking for any internship opportunities and collaborations.</p>
