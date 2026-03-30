@@ -60,11 +60,11 @@ redirect_from:
 
 .page__content a,
 .page__content a:visited {
-  color: #de1f1f !important;
+  color: #e8b3f1 !important;
   text-decoration: none !important;
 }
 .page__content a:hover {
-  color: #de1f1f !important;
+  color: #e8b3f1 !important;
   text-decoration: underline !important;
 }
 </style>
