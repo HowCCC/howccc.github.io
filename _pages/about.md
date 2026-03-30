@@ -11,20 +11,32 @@ redirect_from:
 
   <p>I am also the co-founder of ElysianAI, a startup developing AI research assistants. View our project <a href="https://paperpanza.com">@PaperPanza</a>.</p>
 
-<style>
-  .small-text {
-    color: #e8b3f1;
-    font-size: 14px;
-  }
-</style>
+  <style>
+    .small-text {
+      color: #e8b3f1;
+      font-size: 14px;
+    }
+    /* 可选：让链接颜色也跟随字体颜色，或者保持默认蓝色 */
+    .small-text a {
+      color: inherit; 
+      text-decoration: underline;
+    }
+    .small-text a:hover {
+      opacity: 0.8;
+    }
+  </style>
 
-<p><span class="small-text">Phone: +86 15066883213</span></p>
-<p><span class="small-text">
-  <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1">[Google Scholar]</a>    <a href="https://github.com/HowCCC/">[Github]    <a href="liushr29@mail2.sysu.edu.cn">[Email]</a></span></p>
-
+  <p><span class="small-text">Phone: +86 15066883213</span></p>
+  
+  <!-- 修复部分开始 -->
+  <p><span class="small-text">
+    <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1">[Google Scholar]</a> &nbsp;&nbsp;&nbsp; 
+    <a href="https://github.com/HowCCC/">[Github]</a> &nbsp;&nbsp;&nbsp; 
+    <a href="mailto:liushr29@mail2.sysu.edu.cn">[Email]</a>
+  </span></p>
+  <!-- 修复部分结束 -->
 
   <p>Looking for any internship opportunities and collaborations.</p>
-
 </div>
 
 {% include base_path %}
