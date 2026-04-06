@@ -10,8 +10,8 @@ teaser: "hidigen.png"
 # date: 2009-10-01
 venue: 'CVPR Findings 2026.'
 # slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://arxiv.org/pdf/2503.09514'
-projecturl: "https://project-page"
+paperurl: 'https://arxiv.org/pdf/2604.02847v1'
+# projecturl: "https://project-page"
 # codeurl: "https://github.com/your-repo"
 # bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
