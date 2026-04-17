@@ -190,6 +190,13 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+  text-align: center;
+}
+
+.sidebar .author__name--sub {
+  margin-top: 0.2rem;
+  font-size: 0.9em;
+  font-weight: normal;
 }
 
 .sidebar .author__desktop {
@@ -387,11 +394,11 @@
 @include breakpoint($large) {
   .sidebar {
     padding-right: 1.25rem;
-    border-right: 1px solid rgba(73, 78, 82, 0.22);
+    border-right: 1px solid rgba(73, 78, 82, 0.12);
   }
 
   html[data-theme="dark"] .sidebar {
-    border-right-color: rgba(255, 255, 255, 0.24);
+    border-right-color: rgba(255, 255, 255, 0.14);
   }
 
   .sidebar > div[itemscope] {
@@ -423,7 +430,7 @@
   }
 
   .sidebar .author__name {
-    text-align: left;
+    text-align: center;
   }
 
   .sidebar .author__urls-wrapper {

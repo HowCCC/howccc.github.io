@@ -11,19 +11,25 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{% if site.show_masthead == false %}no-masthead {% endif %}{% if site.show_default_footer == false %}no-default-footer{% endif %}">
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% unless site.show_masthead == false %}
+      {% include masthead.html %}
+    {% endunless %}
 
     {{ content }}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+    {% unless site.show_default_footer == false %}
+      <div class="page__footer">
+        <footer>
+          {% include footer/custom.html %}
+          {% include footer.html %}
+        </footer>
+      </div>
+    {% else %}
+      <div class="site-minimal-note">{{ site.minimal_footer_text | default: "@Shurui Liu 2026" }}</div>
+    {% endunless %}
 
     {% include scripts.html %}
 

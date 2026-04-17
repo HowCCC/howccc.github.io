@@ -22,6 +22,14 @@ body {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+
+  &.no-masthead {
+    padding-top: 0;
+  }
+
+  &.no-default-footer {
+    padding-bottom: 2.5rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

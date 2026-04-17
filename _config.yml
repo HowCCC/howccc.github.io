@@ -17,6 +17,9 @@ url                      : https://howccc.github.io # The base hostname & protoc
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HowCCC/howccc.github.io"
+show_masthead            : false
+show_default_footer      : false
+minimal_footer_text      : "@Shurui Liu 2026"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,8 +27,9 @@ repository               : "HowCCC/howccc.github.io"
 author:
   # Biographic information
   avatar           : "avatar2.jpg"
-  name             : "Shurui Liu(刘书睿)"
-  # pronouns         : "he/him"  
+  name             : "Shurui Liu"
+  name_zh          : "\u5218\u4e66\u777f"
+  # pronouns         : "he/him"
   location         : "Canton, China"
   # employer         : "SUN YAT-SEN UNIVERSITY"
   uri              : # URL

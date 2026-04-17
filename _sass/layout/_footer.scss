@@ -94,3 +94,13 @@
     }
   }
 }
+
+.site-minimal-note {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.25rem 0 1.5rem;
+  text-align: center;
+  color: var(--global-text-color-light);
+  font-family: $global-font-family;
+  font-size: $type-size-7;
+}

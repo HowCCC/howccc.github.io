@@ -16,9 +16,11 @@ layout: compress
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cv-layout.css">
   </head>
 
-  <body class="cv-layout">
+  <body class="cv-layout{% if site.show_masthead == false %} no-masthead{% endif %}{% if site.show_default_footer == false %} no-default-footer{% endif %}">
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% unless site.show_masthead == false %}
+      {% include masthead.html %}
+    {% endunless %}
 
     <div id="main" role="main">
       <div class="container">
@@ -26,12 +28,16 @@ layout: compress
       </div>
     </div>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+    {% unless site.show_default_footer == false %}
+      <div class="page__footer">
+        <footer>
+          {% include footer/custom.html %}
+          {% include footer.html %}
+        </footer>
+      </div>
+    {% else %}
+      <div class="site-minimal-note">{{ site.minimal_footer_text | default: "@Shurui Liu 2026" }}</div>
+    {% endunless %}
 
     {% include scripts.html %}
 
