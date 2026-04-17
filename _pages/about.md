@@ -235,10 +235,16 @@ redirect_from:
   background: #fff;
   transition: all 0.15s;
 }
-.pub-links a:hover {
-  background: #2a7ae2;
-  color: #fff !important;
-  border-color: #2a7ae2;
+.pub-links a:visited {
+  color: #495057 !important;
+}
+.pub-links a:hover,
+.pub-links a:active,
+.pub-links a:focus {
+  background: #f1f3f5;
+  color: #495057 !important;
+  border-color: #ced4da;
+  text-decoration: none !important;
 }
 
 @media (max-width: 600px) {
@@ -260,7 +266,15 @@ html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
 html[data-theme="dark"] .pub-venue { color: red; }
 html[data-theme="dark"] .pub-links a { background: #4a4a4a; color: #eaeaea !important; border-color: #666; }
-html[data-theme="dark"] .pub-links a:hover { background: #0ea1c5; color: #fff !important; border-color: #0ea1c5; }
+html[data-theme="dark"] .pub-links a:visited { color: #eaeaea !important; }
+html[data-theme="dark"] .pub-links a:hover,
+html[data-theme="dark"] .pub-links a:active,
+html[data-theme="dark"] .pub-links a:focus {
+  background: #5a5a5a;
+  color: #eaeaea !important;
+  border-color: #7a7a7a;
+  text-decoration: none !important;
+}
 html[data-theme="dark"] .pub-img { background: #4a4a4a; }
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-track { background: #3a3a3a; }
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-thumb { background: #666; }
@@ -346,14 +360,19 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
           <div class="pub-venue">{{ post.venue }}</div>
         {% endif %}
 
-        {% if post.projecturl or post.paperurl or post.codeurl or post.bibtexurl or post.slidesurl or post.link %}
+        {% assign project_link = post.projecturl | default: post.project_url | default: post.project %}
+        {% assign paper_link = post.paperurl | default: post.paper_url | default: post.pdfurl | default: post.pdf_url %}
+        {% assign code_link = post.codeurl | default: post.code_url %}
+        {% assign bib_link = post.bibtexurl | default: post.bibtex_url %}
+        {% assign slides_link = post.slidesurl | default: post.slides_url %}
+        {% if project_link or paper_link or code_link or bib_link or slides_link or post.link %}
           <div class="pub-links">
-            {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">Page</a>{% endif %}
-            {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
-            {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
-            {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" target="_blank" rel="noopener noreferrer">Bib</a>{% endif %}
-            {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
-            {% if post.link and post.link != post.projecturl and post.link != post.paperurl and post.link != post.codeurl and post.link != post.bibtexurl and post.link != post.slidesurl %}
+            {% if project_link %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
+            {% if paper_link %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
+            {% if code_link %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+            {% if bib_link %}<a href="{{ bib_link }}" target="_blank" rel="noopener noreferrer">Bib</a>{% endif %}
+            {% if slides_link %}<a href="{{ slides_link }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
+            {% if post.link and post.link != project_link and post.link != paper_link and post.link != code_link and post.link != bib_link and post.link != slides_link %}
               <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Link</a>
             {% endif %}
           </div>

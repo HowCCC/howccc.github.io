@@ -557,10 +557,16 @@
   background: #fff;
   transition: all 0.15s;
 }
-.pub-links a:hover {
-  background: #2a7ae2;
-  color: #fff !important;
-  border-color: #2a7ae2;
+.pub-links a:visited {
+  color: #495057 !important;
+}
+.pub-links a:hover,
+.pub-links a:active,
+.pub-links a:focus {
+  background: #f1f3f5;
+  color: #495057 !important;
+  border-color: #ced4da;
+  text-decoration: none !important;
 }
 
 @media (max-width: 600px) {
@@ -582,7 +588,15 @@ html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
 html[data-theme="dark"] .pub-venue { color: red; }
 html[data-theme="dark"] .pub-links a { background: #4a4a4a; color: #eaeaea !important; border-color: #666; }
-html[data-theme="dark"] .pub-links a:hover { background: #0ea1c5; color: #fff !important; border-color: #0ea1c5; }
+html[data-theme="dark"] .pub-links a:visited { color: #eaeaea !important; }
+html[data-theme="dark"] .pub-links a:hover,
+html[data-theme="dark"] .pub-links a:active,
+html[data-theme="dark"] .pub-links a:focus {
+  background: #5a5a5a;
+  color: #eaeaea !important;
+  border-color: #7a7a7a;
+  text-decoration: none !important;
+}
 html[data-theme="dark"] .pub-img { background: #4a4a4a; }
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-track { background: #3a3a3a; }
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-thumb { background: #666; }
@@ -624,7 +638,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   </div>
 
   <div class="news-item">
-    <span class="news-date">2022.06</span> Awarded the <strong>National Scholarship</strong>, one of the highest honors for undergraduates in China (top 0.2%)
+    <span class="news-date">2022.06</span> Awarded the National Scholarship, one of the highest honors for undergraduates in China (top 0.2%)
 
     
     
@@ -686,10 +700,15 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
         
 
         
+        
+        
+        
+        
+        
           <div class="pub-links">
-            
+            <a href="https://project-page" target="_blank" rel="noopener noreferrer">Project</a>
             <a href="https://arxiv.org/pdf/2604.02847v1" target="_blank" rel="noopener noreferrer">PDF</a>
-            
+            <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer">Code</a>
             
             
             
@@ -769,6 +788,11 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
           <div class="pub-venue">arXiv preprint.</div>
         
 
+        
+        
+        
+        
+        
         
           <div class="pub-links">
             
