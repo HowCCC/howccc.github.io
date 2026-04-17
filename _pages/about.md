@@ -26,7 +26,7 @@ redirect_from:
     }
   </style>
 
-  <p><span class="small-text">Phone: +86 15066883213</span></p>
+  <!-- <p><span class="small-text">Phone: +86 15066883213</span></p> -->
   
   <!-- 修复部分开始 -->
   <p><span class="small-text">

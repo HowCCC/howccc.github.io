@@ -257,6 +257,15 @@
   font-size: 0.95em;
 }
 
+/* Accent colors for key contact icons */
+.sidebar .author__item--location .fa-location-dot {
+  color: #ff5a5f;
+}
+
+.sidebar .author__item--email .fa-envelope {
+  color: #3b82f6;
+}
+
 .sidebar .author__avatar img {
   max-width: 100%;
 }
