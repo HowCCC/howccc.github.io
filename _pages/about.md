@@ -350,7 +350,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
               {% else %}
                 {{ name }}
               {% endif %}
-              {% if post.corresponding_authors and post.corresponding_authors contains name %}*{% elsif post.corresponding and post.corresponding == name %}*{% endif %}
+              {% if post.corresponding_authors and post.corresponding_authors contains name %}&#9993;{% elsif post.corresponding and post.corresponding == name %}&#9993;{% endif %}
               {% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </div>

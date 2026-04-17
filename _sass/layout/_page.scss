@@ -23,6 +23,12 @@
     @include suffix(2 of 12);
   }
 
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    .sidebar + & .page__inner-wrap {
+      padding-left: 1.75rem;
+    }
+  }
+
   .page__inner-wrap {
     @include full();
 

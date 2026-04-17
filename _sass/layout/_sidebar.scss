@@ -379,3 +379,75 @@
     }
   }
 }
+
+/*
+   Desktop sidebar spacing/alignment tuning
+   ========================================================================== */
+
+@include breakpoint($large) {
+  .sidebar {
+    padding-right: 1.25rem;
+    border-right: 1px solid rgba(73, 78, 82, 0.22);
+  }
+
+  html[data-theme="dark"] .sidebar {
+    border-right-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .sidebar > div[itemscope] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar .author__avatar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar .author__avatar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar .author__content {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar .author__name {
+    text-align: left;
+  }
+
+  .sidebar .author__urls-wrapper {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin-top: 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar .author__urls {
+    width: auto;
+    text-align: left;
+  }
+
+  .sidebar .author__urls .social-icons li {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.35rem 0;
+  }
+
+  .sidebar .author__urls .social-icons li a,
+  .sidebar .author__urls .social-icons li .weixin-link {
+    justify-content: flex-start;
+  }
+}
