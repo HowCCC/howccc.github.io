@@ -1,0 +1,3 @@
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+  Please add the following to your Gemfile to avoid polling for changes:
+    gem 'wdm', '>= 0.1.0'

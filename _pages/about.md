@@ -29,11 +29,11 @@ redirect_from:
   <!-- <p><span class="small-text">Phone: +86 15066883213</span></p> -->
   
   <!-- 修复部分开始 -->
-  <p><span class="small-text">
+  <!-- <p><span class="small-text">
     <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1">[Google Scholar]</a> &nbsp;&nbsp;&nbsp; 
     <a href="https://github.com/HowCCC/">[Github]</a> &nbsp;&nbsp;&nbsp; 
     <a href="mailto:liushr29@mail2.sysu.edu.cn">[Email]</a>
-  </span></p>
+  </span></p> -->
   <!-- 修复部分结束 -->
 
   <p>Looking for any internship opportunities and collaborations.</p>
@@ -215,10 +215,10 @@ redirect_from:
   margin-bottom: 3px;
   line-height: 1.5;
 }
-.pub-note {
-  font-size: 13px;
+.page__content p.pub-note {
+  font-size: 14px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.0;
 }
 .pub-venue {
   font-size: 13px;
