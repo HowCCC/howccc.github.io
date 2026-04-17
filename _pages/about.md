@@ -215,6 +215,11 @@ redirect_from:
   margin-bottom: 3px;
   line-height: 1.5;
 }
+.pub-note {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
 .pub-venue {
   font-size: 13px;
   color: red;
@@ -264,6 +269,7 @@ html[data-theme="dark"] .news-item { color: #eaeaea; border-bottom-color: #555; 
 html[data-theme="dark"] .pub-card { background: #3a3a3a; border-color: #555; }
 html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
+html[data-theme="dark"] .pub-note { color: #ccc; }
 html[data-theme="dark"] .pub-venue { color: red; }
 html[data-theme="dark"] .pub-links a { background: #4a4a4a; color: #eaeaea !important; border-color: #666; }
 html[data-theme="dark"] .pub-links a:visited { color: #eaeaea !important; }
@@ -310,7 +316,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
 
 ## Publications
 
-<p> ✉ denotes corresponding author. * denotes equal contribution. </p>
+<p class="pub-note"> ✉ denotes corresponding author. * denotes equal contribution. </p>
 
 <div class="pub-scroll-container">
   {% assign publication_items = site.publications | sort: 'date' | reverse %}
