@@ -393,6 +393,6 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   <div class="news-item">🏊/🎾/🎧/🎿 are my vibe.</div>
   <div class="news-item">I'm leading a project curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">[here]</a>.</div>
   <div class="news-item">I have delivered some documents for Web3. <a href="{{ '/teaching/consensus.pdf' | relative_url }}">[Consensus]</a></div>
-  <div class="news-item">I aligned with <a href="https://en.wikipedia.org/wiki/Bitter_lesson">[The bitter lession] by Rich Sutton and <a href="[https://en.wikipedia.org/wiki/Bitter_lesson](https://udlbook.github.io/udlbook/)">[Understanding Deep Learning]</a> by Simon J.D. Prince.</div>
+  <div class="news-item">I aligned with <a href="https://en.wikipedia.org/wiki/Bitter_lesson">[The bitter lession]</a> by Rich Sutton and <a href="[https://en.wikipedia.org/wiki/Bitter_lesson](https://udlbook.github.io/udlbook/)">[Understanding Deep Learning]</a> by Simon J.D. Prince.</div>
 
 </div>
