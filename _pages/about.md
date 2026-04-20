@@ -390,7 +390,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
 
 ## Miscs
 <div>
-  <div class="news-item">I'm leading Concise Generation Guided curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">[here]</a>.</div>
+  <div class="news-item">I'm leading a project curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">[here]</a>.</div>
   <div class="news-item">I have delivered some documents for Web3. <a href="{{ '/teaching/consensus.pdf' | relative_url }}">[Consensus]</a></div>
   <div class="news-item">🏊/🎾/🎧/🎿 are my vibe.</div>
 </div>
