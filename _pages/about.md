@@ -394,6 +394,6 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   <div class="news-item">I'm leading a project curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">[here]</a>.</div>
   <div class="news-item">I have delivered some documents for Web3. <a href="{{ '/teaching/consensus.pdf' | relative_url }}">[Consensus]</a></div>
   <div class="news-item">I stand by <a href="https://en.wikipedia.org/wiki/Bitter_lesson">[The bitter lession]</a> by Rich Sutton, <a href="https://dl.acm.org/doi/10.1145/168304.168306">[Keeping the Neural Networks Simple]</a> by Geoffrey Hinton
- and <a href="https://udlbook.github.io/udlbook/">[Understanding Deep Learning]</a> by Simon J.D. Prince. Aligning with these insight and bruised by my own setbacks, I'vef developed a near allergic reaction to any hank crafted OPTIMIZATION.</div>
+ and <a href="https://udlbook.github.io/udlbook/">[Understanding Deep Learning]</a> by Simon J.D. Prince. Aligning with these insight and bruised by my own setbacks, I've developed a near allergic reaction to any HAND CRAFTED OPTIMIZATION, firmly gravitating toward the robust predictability of the Scaling Laws.</div>
 
 </div>
