@@ -1,6 +1,6 @@
 ---
 title: "DrawingsDreamer: A Unified Multi-View Engineering Drawings Generation Model"
-authors: "Shuhrui Liu, Weide Chen, Changwang Yi, Ancong Wu"
+authors: "Shurui Liu, Weide Chen, Changwang Yi, Ancong Wu"
 collection: publications
 category: manuscripts
 corresponding_authors: "Ancong Wu"
