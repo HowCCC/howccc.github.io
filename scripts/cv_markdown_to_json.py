@@ -269,7 +269,7 @@ def parse_publications(pub_dir):
                 "name": front_matter.get('title', ''),
                 "publisher": front_matter.get('venue', ''),
                 "releaseDate": front_matter.get('date', ''),
-                "website": front_matter.get('paperurl', ''),
+                "website": front_matter.get('paperurl', '') or front_matter.get('paper_url', '') or front_matter.get('pdfurl', '') or front_matter.get('pdf_url', ''),
                 "summary": front_matter.get('excerpt', '')
             }
             

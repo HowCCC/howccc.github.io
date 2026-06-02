@@ -1,0 +1,17 @@
+{%- assign href = include.href | to_s | strip -%}
+{%- if href != '' -%}
+  {%- assign first_two = href | slice: 0, 2 -%}
+  {%- assign first_one = href | slice: 0, 1 -%}
+  {%- if href contains '://' or first_two == '//' or href contains 'mailto:' or href contains 'tel:' or first_one == '#' or first_one == '?' -%}
+    {{- href -}}
+  {%- else -%}
+    {%- if first_two == './' -%}
+      {%- assign href = href | remove_first: './' -%}
+      {%- assign first_one = href | slice: 0, 1 -%}
+    {%- endif -%}
+    {%- if first_one != '/' -%}
+      {%- assign href = '/' | append: href -%}
+    {%- endif -%}
+    {{- href | relative_url -}}
+  {%- endif -%}
+{%- endif -%}

@@ -40,11 +40,15 @@
   </div>
 
   <div class="pub-row__body publication-card__content">
+    {% assign paper_href = post.paperurl | default: post.paper_url | default: post.pdfurl | default: post.pdf_url %}
+    {% assign post_href = post.link %}
+    {% capture paper_link %}{% include resolve-link.html href=paper_href %}{% endcapture %}
+    {% capture post_link %}{% include resolve-link.html href=post_href %}{% endcapture %}
     <h3 class="pub-row__title publication-card__title">
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
-      {% elsif post.link %}
-        <a href="{{ post.link }}">{{ title }}</a>
+      {% if paper_link != '' %}
+        <a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+      {% elsif post_link != '' %}
+        <a href="{{ post_link }}">{{ title }}</a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}

@@ -366,20 +366,27 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
           <div class="pub-venue">{{ post.venue }}</div>
         {% endif %}
 
-        {% assign project_link = post.projecturl | default: post.project_url | default: post.project %}
-        {% assign paper_link = post.paperurl | default: post.paper_url | default: post.pdfurl | default: post.pdf_url %}
-        {% assign code_link = post.codeurl | default: post.code_url %}
-        {% assign bib_link = post.bibtexurl | default: post.bibtex_url %}
-        {% assign slides_link = post.slidesurl | default: post.slides_url %}
-        {% if project_link or paper_link or code_link or bib_link or slides_link or post.link %}
+        {% assign project_href = post.projecturl | default: post.project_url | default: post.project %}
+        {% assign paper_href = post.paperurl | default: post.paper_url | default: post.pdfurl | default: post.pdf_url %}
+        {% assign code_href = post.codeurl | default: post.code_url %}
+        {% assign bib_href = post.bibtexurl | default: post.bibtex_url %}
+        {% assign slides_href = post.slidesurl | default: post.slides_url %}
+        {% assign post_href = post.link %}
+        {% capture project_link %}{% include resolve-link.html href=project_href %}{% endcapture %}
+        {% capture paper_link %}{% include resolve-link.html href=paper_href %}{% endcapture %}
+        {% capture code_link %}{% include resolve-link.html href=code_href %}{% endcapture %}
+        {% capture bib_link %}{% include resolve-link.html href=bib_href %}{% endcapture %}
+        {% capture slides_link %}{% include resolve-link.html href=slides_href %}{% endcapture %}
+        {% capture post_link %}{% include resolve-link.html href=post_href %}{% endcapture %}
+        {% if project_link != '' or paper_link != '' or code_link != '' or bib_link != '' or slides_link != '' or post_link != '' %}
           <div class="pub-links">
-            {% if project_link %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
-            {% if paper_link %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
-            {% if code_link %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
-            {% if bib_link %}<a href="{{ bib_link }}" target="_blank" rel="noopener noreferrer">Bib</a>{% endif %}
-            {% if slides_link %}<a href="{{ slides_link }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
-            {% if post.link and post.link != project_link and post.link != paper_link and post.link != code_link and post.link != bib_link and post.link != slides_link %}
-              <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Link</a>
+            {% if project_link != '' %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
+            {% if paper_link != '' %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
+            {% if code_link != '' %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+            {% if bib_link != '' %}<a href="{{ bib_link }}" target="_blank" rel="noopener noreferrer">Bib</a>{% endif %}
+            {% if slides_link != '' %}<a href="{{ slides_link }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
+            {% if post_link != '' and post_link != project_link and post_link != paper_link and post_link != code_link and post_link != bib_link and post_link != slides_link %}
+              <a href="{{ post_link }}" target="_blank" rel="noopener noreferrer">Link</a>
             {% endif %}
           </div>
         {% endif %}
