@@ -135,8 +135,15 @@ redirect_from:
 .news-date {
   font-weight: bold;
   color: #e0527a;
-  min-width: 100px;
-  display: inline-block;
+}
+.news-item__body {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  column-gap: 0.5rem;
+  align-items: start;
+}
+.news-item__summary {
+  min-width: 0;
 }
 .news-image {
   margin-top: 8px;
@@ -310,7 +317,10 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% for item in news_items %}
   <div class="news-item">
-    <span class="news-date">{{ item.date | date: "%Y.%m" }}</span> {{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}
+    <div class="news-item__body">
+      <span class="news-date">{{ item.date | date: "%Y.%m" }}</span>
+      <span class="news-item__summary">{{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+    </div>
     {% if item.image %}
       <div class="news-image" style="text-align: center;">
         <img src="{{ base_path }}/images/{{ item.image }}" alt="{{ item.image_alt | default: '' }}" class="about-image-hover" style="max-width: 100%; height: auto;" />
