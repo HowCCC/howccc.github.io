@@ -19,7 +19,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HowCCC/howccc.github.io"
 show_masthead            : false
 show_default_footer      : false
-minimal_footer_text      : "@Shurui Liu 2026"
+minimal_footer_text      : "Copyright © 2026 Shurui Liu"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
