@@ -41,7 +41,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1"
   inspire-hep      : # URL
   impactstory      : # URL
-  # orcid            : "https://orcid.org/my-orcid?orcid=0009-0005-5194-6650"  
+  # orcid            : "https://orcid.org/0009-0005-5194-6650"  
   weixin            : sherryliu2003
   weixin_qr         : "/images/qr/wechat-qr-code.jpg"  # Path to your WeChat QR code image
   # semantic         : # URL
@@ -88,7 +88,7 @@ author:
   zhihu            : # Username
   weixin            : sherryliu2003
   xiaohongshu      : "https://www.xiaohongshu.com/user/profile/60c812340000000020026f7a" # replace with your real profile URL
-  x                : "howccc.github.io"
+  # x                : "howccc.github.io"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

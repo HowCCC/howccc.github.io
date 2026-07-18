@@ -343,6 +343,10 @@ html[data-theme="dark"] .author__urls.social-icons li.author__primary-item .auth
   border-radius: 50%;
 }
 
+html[data-theme="dark"] .sidebar .author__item--x .author__icon img {
+  filter: invert(1);
+}
+
 .sidebar .author__avatar img {
   max-width: 100%;
   aspect-ratio: 1;

@@ -74,7 +74,7 @@
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw icon-pad-right"></i>Impactstory</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+        <li><a href="{{ author.orcid }}"><img src="{{ '/assets/icons/academic/orcid.svg' | relative_url }}" class="icon-pad-right" alt="" aria-hidden="true">ORCID</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
@@ -246,7 +246,7 @@
              target="_blank"
              rel="noopener noreferrer"
              aria-label="Open x profile in new tab">
-            <span class="author__icon"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i></span>
+            <span class="author__icon"><img src="{{ '/assets/icons/social/x.svg' | relative_url }}" alt="" aria-hidden="true"></span>
             <span class="author__label">X</span>
           </a>
         </li>
