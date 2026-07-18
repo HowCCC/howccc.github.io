@@ -502,7 +502,7 @@
   display: grid;
   grid-template-columns: minmax(160px, 240px) minmax(0, 1fr);
   gap: 1rem;
-  align-items: stretch;
+  align-items: center;
   padding: 1rem;
   border: 1px solid var(--global-border-color);
   background: var(--global-background-color);
@@ -566,6 +566,10 @@
 }
 
 /* About page image hover effect */
+.page__content > h2 {
+  font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive;
+}
+
 .about-image-hover {
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   border-radius: $border-radius;

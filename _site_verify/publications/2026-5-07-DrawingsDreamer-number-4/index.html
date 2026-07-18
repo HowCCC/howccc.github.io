@@ -1,0 +1,427 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>DrawingsDreamer: A Unified Multi-View Engineering Drawings Generation Model - Shurui Liu(Shane)</title>
+
+
+
+<meta name="description" content="">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-05-07T00:00:00+00:00">
+
+
+
+  <link rel="canonical" href="https://howccc.github.io/publications/2026-5-07-DrawingsDreamer-number-4/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Shurui(Shane) Liu",
+      "url" : "https://howccc.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Shurui Liu(Shane)"> 
+<meta property="og:title" content="DrawingsDreamer: A Unified Multi-View Engineering Drawings Generation Model">
+
+  <meta property="og:type" content="article">
+
+
+  <meta property="og:description" name="description" content="">
+
+
+  <meta property="og:url" content="https://howccc.github.io/publications/2026-5-07-DrawingsDreamer-number-4/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://howccc.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Shurui Liu(Shane) Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://howccc.github.io/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="https://howccc.github.io/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://howccc.github.io/images/icon.jpg"/>
+<link rel="icon" type="image/jpg" href="https://howccc.github.io/images/icon.jpg"/>
+<!-- <link rel="icon" type="image/png" href="https://howccc.github.io/images/favicon-32x32.png" sizes="32x32"/> -->
+<!-- <link rel="icon" type="image/png" href="https://howccc.github.io/images/favicon-192x192.png" sizes="192x192"/> -->
+<link rel="manifest" href="https://howccc.github.io/images/manifest.json"/>
+<link rel="icon" href="/images/icon.jpg"/>
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="no-masthead no-default-footer">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://howccc.github.io/images/ava.jpg" class="author-avatar-hover" alt="Shurui(Shane) Liu" fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    
+      <h3 class="author__name">Shurui(Shane) Liu</h3>
+      <h3 class="author__name author__name--sub">刘书睿</h3>
+    
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop author__primary-item author__item--location">
+          <span class="author__entry">
+            <span class="author__icon"><i class="fas fa-fw fa-location-dot" aria-hidden="true"></i></span>
+            <span class="author__label">Canton, China</span>
+          </span>
+        </li>
+      
+      
+      
+      
+        <li class="author__primary-item author__item--email">
+          <a href="mailto:liushr29@mail2.sysu.edu.cn" class="author__entry">
+            <span class="author__icon"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></span>
+            <span class="author__label">email</span>
+          </a>
+        </li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+        <li class="author__primary-item author__item--scholar">
+          <a href="https://scholar.google.com/citations?user=dmqhrO0AAAAJ&hl=en&authuser=1" class="author__entry">
+            <span class="author__icon">
+              <svg class="icon icon-scholar" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="16" r="14" fill="#e8f0fe"></circle>
+                <rect x="6.5" y="10" width="19" height="14.5" rx="4" fill="#ffffff"></rect>
+                <rect x="9.5" y="13" width="13" height="2.2" rx="1.1" fill="#8ab4f8"></rect>
+                <rect x="9.5" y="16.5" width="13" height="2.2" rx="1.1" fill="#669df6"></rect>
+                <rect x="9.5" y="20" width="9" height="2.2" rx="1.1" fill="#4285f4"></rect>
+                <path d="M4 11 L16 5 L28 11 L16 17 Z" fill="#1a73e8"></path>
+                <rect x="14.7" y="17.1" width="2.6" height="4.4" rx="1.3" fill="#1a73e8"></rect>
+                <circle cx="26.5" cy="14.2" r="1.5" fill="#f9ab00"></circle>
+              </svg>
+            </span>
+            <span class="author__label">google scholar</span>
+          </a>
+        </li>
+      
+            
+      
+      
+                              
+      
+      
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li class="author__primary-item author__item--github">
+          <a href="https://github.com/HowCCC" class="author__entry">
+            <span class="author__icon"><i class="fab fa-fw fa-github" aria-hidden="true"></i></span>
+            <span class="author__label">github</span>
+          </a>
+        </li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+          
+      
+      
+      
+        <li class="author__primary-item author__item--wechat">
+          <a href="https://howccc.github.io/images/wechat.jpg"
+             class="weixin-link author__entry"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open WeChat QR code in new tab">
+            <span class="author__icon">
+              <svg class="icon icon-wechat" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="16" r="14" fill="#07C160"></circle>
+                <ellipse cx="13" cy="14" rx="7.6" ry="6.1" fill="#ffffff"></ellipse>
+                <path d="M8.8 18.3L9.5 22.3L12.9 19.8" fill="#ffffff"></path>
+                <ellipse cx="21.2" cy="19.8" rx="5.6" ry="4.8" fill="#ffffff"></ellipse>
+                <path d="M18.3 23L18.8 25.8L21 23.8" fill="#ffffff"></path>
+                <circle cx="10.2" cy="13.5" r="1.05" fill="#1f5132"></circle>
+                <circle cx="15.8" cy="13.5" r="1.05" fill="#1f5132"></circle>
+                <circle cx="19.3" cy="19.1" r="0.95" fill="#1f5132"></circle>
+                <circle cx="23" cy="19.1" r="0.95" fill="#1f5132"></circle>
+              </svg>
+            </span>
+            <span class="author__label">wechat</span>
+          </a>
+        </li>
+      
+      
+      
+        <li class="author__primary-item author__item--xiaohongshu">
+          <a href="https://www.xiaohongshu.com/user/profile/60c812340000000020026f7a"
+             class="xiaohongshu-link author__entry"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open Xiaohongshu profile in new tab">
+            <span class="author__icon">
+              <svg class="icon icon-xhs" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="2.5" y="2.5" width="27" height="27" rx="6.8" fill="#ff2442"></rect>
+                <path d="M8.6 11.2C10.3 9.5 13.1 9.5 14.8 11.2L16.2 12.6C17.4 13.8 19.3 13.8 20.5 12.6L22.1 11"
+                      fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9.2 15.3H22.8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                <rect x="7.2" y="18.5" width="17.6" height="6.7" rx="3.2" fill="#ffffff"></rect>
+                <text x="16" y="23.1" text-anchor="middle" font-size="5.3" font-weight="700" fill="#ff2442">RED</text>
+              </svg>
+            </span>
+            <span class="author__label">xiaohongshu</span>
+          </a>
+        </li>
+            
+
+
+
+      
+      
+        <li class="author__primary-item author__item--x">
+          <a href="https://howccc.github.iohowccc.github.io"
+             class="x-link author__entry"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Open x profile in new tab">
+            <span class="author__icon"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i></span>
+            <span class="author__label">x</span>
+          </a>
+        </li>
+           
+
+
+
+
+
+
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="DrawingsDreamer: A Unified Multi-View Engineering Drawings Generation Model">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="May 07, 2026">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">DrawingsDreamer: A Unified Multi-View Engineering Drawings Generation Model
+</h1>
+          
+        
+        
+        
+          <p>Published in <i>NeurIPS 2026 Underreview.</i>, 2026 </p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://bsky.app/intent/compose?text=https://howccc.github.io/publications/2026-5-07-DrawingsDreamer-number-4/" class="btn btn--bluesky" title="Share on Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://howccc.github.io/publications/2026-5-07-DrawingsDreamer-number-4/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://howccc.github.io/publications/2026-5-07-DrawingsDreamer-number-4/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://www.addtoany.com/add_to/mastodon?linkurl=https%3A%2F%2Fhowccc.github.io%2Fpublications%2F2026-5-07-DrawingsDreamer-number-4%2F" class="btn btn--mastodon" title="Share on Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
+
+  <a href="https://x.com/intent/post?text=https://howccc.github.io/publications/2026-5-07-DrawingsDreamer-number-4/" class="btn btn--x" title="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+</section>
+
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="https://howccc.github.io/publications/2026-03-01-HIDIGEN-number-2/" class="pagination--pager" title="HiDiGen: Hierarchical Diffusion for B-Rep Generation with Explicit Topological Constraints
+">Previous</a>
+    
+    
+      <a href="https://howccc.github.io/publications/2026-5-08-ForgeCAD-number-3/" class="pagination--pager" title="ForgeCAD: Reformulating Drawings-to-CAD Generation as a Symbolic Routing Task
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    
+      <div class="site-minimal-note">@Shurui Liu 2026</div>
+    
+
+    <script type="module" src="https://howccc.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

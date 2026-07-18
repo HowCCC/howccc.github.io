@@ -164,7 +164,7 @@ redirect_from:
 
 .pub-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 10px;
@@ -177,18 +177,27 @@ redirect_from:
 }
 .pub-img {
   flex-shrink: 0;
-  flex-basis: 180px;
-  width: 180px;
+  flex-basis: 210px;
+  width: 210px;
   border-radius: 6px;
   margin-right: 18px;
   background: #e9ecef;
   overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.pub-img:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.16);
+  transform: translateY(-2px);
 }
 .pub-img img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
+  transition: transform 0.2s;
+}
+.pub-img:hover img {
+  transform: scale(1.04);
 }
 .pub-img .placeholder {
   width: 100%;
@@ -205,12 +214,12 @@ redirect_from:
 }
 .pub-title {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 5px;
   line-height: 1.4;
 }
 .pub-authors {
-  font-size: 13px;
+  font-size: 12px;
   color: #555;
   margin-bottom: 3px;
   line-height: 1.5;
@@ -221,7 +230,7 @@ redirect_from:
   line-height: 1.0;
 }
 .pub-venue {
-  font-size: 13px;
+  font-size: 12px;
   color: red;
   font-style: italic;
   margin-bottom: 8px;
@@ -232,7 +241,7 @@ redirect_from:
   padding: 3px 10px;
   margin-right: 6px;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 11px;
   border: 1px solid #dee2e6;
   border-radius: 4px;
   color: #495057 !important;
@@ -351,8 +360,12 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
             {% assign author_list = post.authors | split: ',' %}
             {% for author in author_list %}
               {% assign name = author | strip %}
+              {% assign author_entry = site.data.authors[name] %}
+              {% assign author_uri = author_entry.uri %}
               {% if name == site.author.name or name == "Shurui Liu" %}
-                <strong>{{ name }}</strong>
+                {% if author_uri %}<a href="{{ author_uri }}" target="_blank" rel="noopener noreferrer"><strong>{{ name }}</strong></a>{% else %}<strong>{{ name }}</strong>{% endif %}
+              {% elsif author_uri %}
+                <a href="{{ author_uri }}" target="_blank" rel="noopener noreferrer">{{ name }}</a>
               {% else %}
                 {{ name }}
               {% endif %}
@@ -397,7 +410,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
 
 ## Miscs
 <div>
-  <div class="news-item">🏊/🎾/🎧/🎿 are my vibe.</div>
+  <div class="news-item">🏊/🎾/🎧 are my vibe.</div>
   <div class="news-item">I'm leading a project curating code centric tutorials to deconstruct generative models. View <a href="https://your-link-here">[here]</a>.</div>
   <div class="news-item">I have delivered some documents for Web3. <a href="{{ '/teaching/BlockChain_zh.pdf' | relative_url }}">[中文版]</a></div>
   <!-- <div class="news-item">I stand by <a href="https://en.wikipedia.org/wiki/Bitter_lesson">[The bitter lession]</a> by Rich Sutton, <a href="https://dl.acm.org/doi/10.1145/168304.168306">[Keeping the Neural Networks Simple]</a> by Geoffrey Hinton

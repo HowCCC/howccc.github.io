@@ -1,0 +1,76 @@
+Configuration file: C:/Users/liushurui/howccc.github.io/_config.yml
+            Source: C:/Users/liushurui/howccc.github.io
+       Destination: C:/Users/liushurui/howccc.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 7.061 seconds.
+ Auto-regeneration: enabled for 'C:/Users/liushurui/howccc.github.io'
+LiveReload address: http://127.0.0.1:35729
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2026-06-02 05:57:52
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+        LiveReload: Browser connected
+[2026-06-02 05:57:53] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:9 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.5108098 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:57:58
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1887383 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:58:03
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.6123254 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:58:09
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-06-02 05:58:12] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:18 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.3403675 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:58:14
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1566863 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-06-02 05:58:19
+                    jekyll-serve.out.log
+                    _publications/2026-5-07-DrawingsDreamer-number-4.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2943977 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:58:25
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-06-02 05:58:25] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine. @ io_fillbuf - fd:12 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.1046741 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:58:30
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-06-02 05:58:31] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine. @ io_fillbuf - fd:11 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.1796763 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-06-02 05:58:35
+                    jekyll-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-06-02 05:58:36] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine. @ io_fillbuf - fd:13 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'

@@ -2,6 +2,12 @@
    SIDEBAR
    ========================================================================== */
 
+@font-face {
+  font-family: "Sidebar Comic Sans";
+  src: url("../fonts/comic-sans-ms-regular.ttf") format("truetype");
+  font-display: swap;
+}
+
 /*
    Default
    ========================================================================== */
@@ -188,13 +194,14 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive;
   font-size: $type-size-5;
   text-align: center;
 }
 
 .sidebar .author__name--sub {
-  margin-top: 0.2rem;
+  font-family: $sans-serif;
+  margin-top: 0.8rem;
   font-size: 0.9em;
   font-weight: normal;
 }
@@ -208,12 +215,12 @@
 
 /* WeChat QR Code Tooltip */
 
-.author__urls .social-icons li {
+.author__urls.social-icons li {
   white-space: nowrap;
 }
 
-.author__urls .social-icons li a,
-.author__urls .social-icons li .weixin-link {
+.author__urls.social-icons li a,
+.author__urls.social-icons li .weixin-link {
   display: inline-flex;
   align-items: center;
   gap: 0.35em;
@@ -226,11 +233,11 @@
   cursor: pointer;
 }
 
-.author__urls .social-icons li i,
-.author__urls .social-icons li svg,
-.author__urls .social-icons li .svg-inline--fa,
-.author__urls .social-icons li img,
-.author__urls .social-icons li .weixin-logo {
+.author__urls.social-icons li i,
+.author__urls.social-icons li svg,
+.author__urls.social-icons li .svg-inline--fa,
+.author__urls.social-icons li img,
+.author__urls.social-icons li .weixin-logo {
   width: 1em !important;
   height: 1em !important;
   min-width: 1em !important;
@@ -239,13 +246,13 @@
   vertical-align: middle;
 }
 
-.author__urls .social-icons li .icon-box {
+.author__urls.social-icons li .icon-box {
   display: inline-block;
   width: 1em;
   height: 1em;
   line-height: 1;
 }
-.author__urls .social-icons li .icon-box img {
+.author__urls.social-icons li .icon-box img {
   width: 100% !important;
   height: 100% !important;
   object-fit: contain;
@@ -253,44 +260,73 @@
 }
 
 /* Unified layout for the core sidebar entries */
-.author__urls .social-icons li.author__primary-item {
-  margin: 0.35rem 0;
+.author__urls.social-icons li.author__primary-item {
+  margin: 0.4rem 0;
+  min-height: 2.25rem;
 }
 
-.author__urls .social-icons li.author__primary-item .author__entry {
+.author__urls.social-icons li.author__primary-item .author__entry {
   display: grid;
-  grid-template-columns: 1.8em auto;
-  column-gap: 0.75em;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  column-gap: 0.5rem;
   align-items: center;
+  min-height: 2.25rem;
   text-decoration: none;
   color: inherit;
+  border-radius: 5px;
+  padding: 0 0.25rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.author__urls .social-icons li.author__primary-item .author__icon {
+.author__urls.social-icons li.author__primary-item .author__entry:hover {
+  background: rgba(#000, 0.04);
+  box-shadow: 0 5px 12px rgba(#000, 0.14);
+  transform: translateY(-1px);
+}
+
+html[data-theme="dark"] .author__urls.social-icons li.author__primary-item .author__entry:hover {
+  background: rgba(#fff, 0.08);
+  box-shadow: 0 5px 12px rgba(#000, 0.28);
+}
+
+.author__urls.social-icons li.author__primary-item .author__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.8em;
-  min-width: 1.8em;
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
 }
 
-.author__urls .social-icons li.author__primary-item .author__icon > i,
-.author__urls .social-icons li.author__primary-item .author__icon > svg,
-.author__urls .social-icons li.author__primary-item .author__icon > .svg-inline--fa,
-.author__urls .social-icons li.author__primary-item .author__icon > img {
-  width: 1em !important;
-  height: 1em !important;
-  min-width: 1em !important;
-  min-height: 1em !important;
+.author__urls.social-icons li.author__primary-item .author__icon > i,
+.author__urls.social-icons li.author__primary-item .author__icon > svg,
+.author__urls.social-icons li.author__primary-item .author__icon > .svg-inline--fa,
+.author__urls.social-icons li.author__primary-item .author__icon > img {
+  width: 1.35rem !important;
+  height: 1.35rem !important;
+  min-width: 1.35rem !important;
+  min-height: 1.35rem !important;
+  transition: transform 0.2s ease;
 }
 
-.author__urls .social-icons li.author__primary-item .author__label {
+.author__urls.social-icons li.author__primary-item .author__entry:hover .author__icon > i,
+.author__urls.social-icons li.author__primary-item .author__entry:hover .author__icon > svg,
+.author__urls.social-icons li.author__primary-item .author__entry:hover .author__icon > .svg-inline--fa,
+.author__urls.social-icons li.author__primary-item .author__entry:hover .author__icon > img {
+  transform: scale(1.08);
+}
+
+.author__urls.social-icons li.author__primary-item .author__label {
+  font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive !important;
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  line-height: 1.3;
   text-align: left;
   white-space: nowrap;
 }
 
-.author__urls .social-icons li.author__primary-item a.author__entry,
-.author__urls .social-icons li.author__primary-item a.author__entry:hover {
+.author__urls.social-icons li.author__primary-item a.author__entry,
+.author__urls.social-icons li.author__primary-item a.author__entry:hover {
   text-decoration: none;
 }
 
@@ -309,6 +345,8 @@
 
 .sidebar .author__avatar img {
   max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 
@@ -485,12 +523,12 @@
 
   .sidebar .author__urls-wrapper {
     display: inline-block;
-    width: 15.5em;
+    width: 16.5rem;
     max-width: 100%;
     margin-top: 0.75rem;
     margin-left: auto;
     margin-right: auto;
-    transform: translateX(3rem);
+    transform: none;
   }
 
   .sidebar .author__urls {
@@ -499,50 +537,51 @@
     text-align: left;
   }
 
-  .sidebar .author__urls .social-icons li.author__primary-item {
-    margin: 0.35rem 0;
+  .sidebar .author__urls.social-icons li.author__primary-item {
+    margin: 0.4rem 0;
     width: 100%;
     box-sizing: border-box;
   }
 
-  .sidebar .author__urls .social-icons li.author__primary-item .author__entry {
+  .sidebar .author__urls.social-icons li.author__primary-item .author__entry {
     display: grid;
     width: 100%;
     box-sizing: border-box;
-    grid-template-columns: 1.8em minmax(0, 1fr);
-    column-gap: 0.75em;
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    column-gap: 0.5rem;
     align-items: center;
     justify-items: start;
     margin-bottom: 0;
     padding-right: 0;
   }
 
-  .sidebar .author__urls .social-icons li.author__primary-item .author__icon {
+  .sidebar .author__urls.social-icons li.author__primary-item .author__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.8em;
-    min-width: 1.8em;
+    width: 2.25rem;
+    height: 2.25rem;
+    min-width: 2.25rem;
   }
 
-  .sidebar .author__urls .social-icons li.author__primary-item .author__icon > i,
-  .sidebar .author__urls .social-icons li.author__primary-item .author__icon > svg,
-  .sidebar .author__urls .social-icons li.author__primary-item .author__icon > .svg-inline--fa,
-  .sidebar .author__urls .social-icons li.author__primary-item .author__icon > img {
-    width: 1em !important;
-    height: 1em !important;
-    min-width: 1em !important;
-    min-height: 1em !important;
+  .sidebar .author__urls.social-icons li.author__primary-item .author__icon > i,
+  .sidebar .author__urls.social-icons li.author__primary-item .author__icon > svg,
+  .sidebar .author__urls.social-icons li.author__primary-item .author__icon > .svg-inline--fa,
+  .sidebar .author__urls.social-icons li.author__primary-item .author__icon > img {
+    width: 1.35rem !important;
+    height: 1.35rem !important;
+    min-width: 1.35rem !important;
+    min-height: 1.35rem !important;
   }
 
-  .sidebar .author__urls .social-icons li.author__primary-item .author__label {
+  .sidebar .author__urls.social-icons li.author__primary-item .author__label {
     justify-self: start;
     text-align: left;
     white-space: nowrap;
   }
 
-  .sidebar .author__urls .social-icons li.author__primary-item a.author__entry,
-  .sidebar .author__urls .social-icons li.author__primary-item a.author__entry:hover {
+  .sidebar .author__urls.social-icons li.author__primary-item a.author__entry,
+  .sidebar .author__urls.social-icons li.author__primary-item a.author__entry:hover {
     text-decoration: none;
   }
 }

@@ -26,7 +26,7 @@ minimal_footer_text      : "@Shurui Liu 2026"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "ava.jpg"
+  avatar           : "profile/shurui-liu.jpg"
   name             : "Shurui(Shane) Liu"
   name_zh          : "\u5218\u4e66\u777f"
   # pronouns         : "he/him"
@@ -43,7 +43,7 @@ author:
   impactstory      : # URL
   # orcid            : "https://orcid.org/my-orcid?orcid=0009-0005-5194-6650"  
   weixin            : sherryliu2003
-  weixin_qr         : "/images/wechat.jpg"  # Path to your WeChat QR code image  
+  weixin_qr         : "/images/qr/wechat-qr-code.jpg"  # Path to your WeChat QR code image
   # semantic         : # URL
   # ssrn             : # URL
   # pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
