@@ -338,7 +338,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
 <p class="pub-note"> ✉ denotes corresponding author. * denotes equal contribution. </p>
 
 <div class="pub-scroll-container">
-  {% assign publication_items = site.publications | sort: 'date' | reverse %}
+  {% assign publication_items = site.publications | sort: 'order' | reverse %}
   {% for post in publication_items %}
     {% if post.teaser %}
       {% assign teaser = post.teaser %}

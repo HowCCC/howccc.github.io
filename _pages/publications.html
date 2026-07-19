@@ -10,12 +10,13 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
+{% assign publication_items = site.publications | sort: 'order' | reverse %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in publication_items %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -29,7 +30,7 @@ author_profile: true
 {% else %}
   <div class="archive archive--cards">
     <div class="archive__grid">
-      {% for post in site.publications reversed %}
+      {% for post in publication_items %}
         {% include archive-single.html type="card" %}
       {% endfor %}
     </div>
