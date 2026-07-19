@@ -182,6 +182,10 @@ redirect_from:
 .pub-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.pub-card--first-author {
+  background: #fff4f6;
+  border-color: #f3c7d2;
+}
 .pub-img {
   flex-shrink: 0;
   flex-basis: 210px;
@@ -283,6 +287,7 @@ redirect_from:
 html[data-theme="dark"] .news-date { color: #f48fb1; }
 html[data-theme="dark"] .news-item { color: #eaeaea; border-bottom-color: #555; }
 html[data-theme="dark"] .pub-card { background: #3a3a3a; border-color: #555; }
+html[data-theme="dark"] .pub-card.pub-card--first-author { background: rgba(224, 82, 122, 0.12); border-color: rgba(224, 82, 122, 0.4); }
 html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
 html[data-theme="dark"] .pub-note { color: #ccc; }
@@ -348,7 +353,8 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
       {% assign teaser = nil %}
     {% endif %}
 
-    <div class="pub-card">
+    {% assign first_author = post.authors | split: ',' | first | strip %}
+    <div class="pub-card{% if first_author == site.author.name or first_author == 'Shurui Liu' %} pub-card--first-author{% endif %}">
       <div class="pub-img">
         {% if teaser %}
           <img src=
