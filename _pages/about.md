@@ -366,6 +366,14 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   font-weight: 700;
   margin-bottom: 2px;
 }
+.experience-role a {
+  color: #e0527a !important;
+  text-decoration: none !important;
+}
+.experience-role a:hover,
+.experience-mentor a:hover {
+  text-decoration: underline !important;
+}
 .experience-time,
 .experience-mentor {
   color: #555;
@@ -374,7 +382,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   margin-top: 2px;
 }
 .experience-mentor a {
-  color: #495057 !important;
+  color: #e0527a !important;
   text-decoration: none !important;
 }
 .experience-description {
@@ -387,7 +395,8 @@ html[data-theme="dark"] .experience-info,
 html[data-theme="dark"] .experience-time,
 html[data-theme="dark"] .experience-mentor,
 html[data-theme="dark"] .experience-description { color: #d6d6d6; }
-html[data-theme="dark"] .experience-mentor a { color: #eaeaea !important; }
+html[data-theme="dark"] .experience-role a,
+html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
 @media (max-width: 700px) {
   .experience-grid { grid-template-columns: 1fr; }
 }
@@ -522,7 +531,10 @@ html[data-theme="dark"] .experience-mentor a { color: #eaeaea !important; }
         {% endif %}
       </div>
       <div class="experience-info">
-        <div class="experience-role">{{ experience.company }} &middot; {{ experience.role }}</div>
+        <div class="experience-role">
+          {% if experience.company_url %}<a href="{{ experience.company_url }}" target="_blank" rel="noopener noreferrer">{{ experience.company }}</a>{% else %}{{ experience.company }}{% endif %}
+          &middot; {{ experience.role }}
+        </div>
         <div class="experience-time">{{ experience.period }}</div>
         <div class="experience-mentor">Mentor:
           {% if experience.mentors %}
@@ -536,6 +548,37 @@ html[data-theme="dark"] .experience-mentor a { color: #eaeaea !important; }
           {% endif %}
         </div>
         {% if experience.content != empty %}<div class="experience-description">{{ experience.content }}</div>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+## Education
+
+<div class="experience-grid education-grid">
+  {% assign education_items = site.educations | sort: 'order' | reverse %}
+  {% for education in education_items %}
+    <div class="experience-card education-card">
+      <div class="experience-logo education-logo">
+        {% if education.logo contains "://" %}
+          <img src="{{ education.logo }}" alt="{{ education.institution | escape }} logo">
+        {% else %}
+          <img src="{{ education.logo | relative_url }}" alt="{{ education.institution | escape }} logo">
+        {% endif %}
+      </div>
+      <div class="experience-info education-info">
+        <div class="experience-role education-role">
+          {% if education.institution_url %}<a href="{{ education.institution_url }}" target="_blank" rel="noopener noreferrer">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %} &middot;
+          {% if education.school_url %}<a href="{{ education.school_url }}" target="_blank" rel="noopener noreferrer">{{ education.school }}</a>{% else %}{{ education.school }}{% endif %}
+          &middot; {{ education.stage }}
+        </div>
+        <div class="experience-time education-time">{{ education.period }}</div>
+        <div class="experience-mentor education-supervisor">Supervisor:
+          {% for supervisor in education.supervisors %}
+            {% if supervisor.url %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% else %}{{ supervisor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+        {% if education.content != empty %}<div class="experience-description education-description">{{ education.content }}</div>{% endif %}
       </div>
     </div>
   {% endfor %}

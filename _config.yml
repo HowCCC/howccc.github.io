@@ -239,6 +239,8 @@ collections:
     output: false
   experiences:
     output: false
+  educations:
+    output: false
   portfolio:
     output: true
     permalink: /:collection/:path/
