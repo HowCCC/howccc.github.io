@@ -237,6 +237,8 @@ collections:
     permalink: /:collection/:path/
   news:
     output: false
+  experiences:
+    output: false
   portfolio:
     output: true
     permalink: /:collection/:path/

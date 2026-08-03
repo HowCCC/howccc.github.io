@@ -183,8 +183,8 @@ redirect_from:
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .pub-card--first-author {
-  background: #fff4f6;
-  border-color: #f3c7d2;
+  background: #eef0f2;
+  border-color: #d5d9dd;
 }
 .pub-img {
   flex-shrink: 0;
@@ -287,7 +287,7 @@ redirect_from:
 html[data-theme="dark"] .news-date { color: #f48fb1; }
 html[data-theme="dark"] .news-item { color: #eaeaea; border-bottom-color: #555; }
 html[data-theme="dark"] .pub-card { background: #3a3a3a; border-color: #555; }
-html[data-theme="dark"] .pub-card.pub-card--first-author { background: rgba(224, 82, 122, 0.12); border-color: rgba(224, 82, 122, 0.4); }
+html[data-theme="dark"] .pub-card.pub-card--first-author { background: #3a3a3a; border-color: #555; }
 html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
 html[data-theme="dark"] .pub-note { color: #ccc; }
@@ -307,6 +307,77 @@ html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-track { backgro
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-thumb { background: #666; }
 html[data-theme="dark"] .news-section::-webkit-scrollbar-track { background: #3a3a3a; }
 html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #666; }
+</style>
+
+<style>
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 24px;
+}
+.experience-card {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+.experience-logo {
+  display: flex;
+  flex: 0 0 76px;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  margin-right: 14px;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+.experience-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.experience-info {
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.experience-role {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.experience-time,
+.experience-mentor {
+  color: #555;
+}
+.experience-mentor {
+  margin-top: 2px;
+}
+.experience-mentor a {
+  color: #495057 !important;
+  text-decoration: underline !important;
+}
+.experience-description {
+  margin-top: 6px;
+  color: #495057;
+}
+html[data-theme="dark"] .experience-card { background: #3a3a3a; border-color: #555; }
+html[data-theme="dark"] .experience-logo { background: #4a4a4a; }
+html[data-theme="dark"] .experience-info,
+html[data-theme="dark"] .experience-time,
+html[data-theme="dark"] .experience-mentor,
+html[data-theme="dark"] .experience-description { color: #d6d6d6; }
+html[data-theme="dark"] .experience-mentor a { color: #eaeaea !important; }
+@media (max-width: 700px) {
+  .experience-grid { grid-template-columns: 1fr; }
+}
 </style>
 ## Interests
 
@@ -419,6 +490,39 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
             {% endif %}
           </div>
         {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+## Experience
+
+<div class="experience-grid">
+  {% assign experience_items = site.experiences | sort: 'order' | reverse %}
+  {% for experience in experience_items %}
+    <div class="experience-card">
+      <div class="experience-logo">
+        {% if experience.logo contains "://" %}
+          <img src="{{ experience.logo }}" alt="{{ experience.company | escape }} logo">
+        {% else %}
+          <img src="{{ experience.logo | relative_url }}" alt="{{ experience.company | escape }} logo">
+        {% endif %}
+      </div>
+      <div class="experience-info">
+        <div class="experience-role">{{ experience.company }} &middot; {{ experience.role }}</div>
+        <div class="experience-time">{{ experience.period }}</div>
+        <div class="experience-mentor">Mentor:
+          {% if experience.mentors %}
+            {% for mentor in experience.mentors %}
+              {% if mentor.url %}<a href="{{ mentor.url }}" target="_blank" rel="noopener noreferrer">{{ mentor.name }}</a>{% else %}{{ mentor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% elsif experience.mentor_url %}
+            <a href="{{ experience.mentor_url }}" target="_blank" rel="noopener noreferrer">{{ experience.mentor }}</a>
+          {% else %}
+            {{ experience.mentor }}
+          {% endif %}
+        </div>
+        {% if experience.content != empty %}<div class="experience-description">{{ experience.content }}</div>{% endif %}
       </div>
     </div>
   {% endfor %}

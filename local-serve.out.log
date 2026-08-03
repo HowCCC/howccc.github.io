@@ -1,0 +1,3363 @@
+Configuration file: _config.yml
+            Source: C:/Users/liushurui/Self_Profile/howccc.github.io
+       Destination: C:/Users/liushurui/Self_Profile/howccc.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 6.161 seconds.
+ Auto-regeneration: enabled for 'C:/Users/liushurui/Self_Profile/howccc.github.io'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+[2026-08-03 07:27:46] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+[2026-08-03 07:27:46] ERROR '/does-not-exist/' not found.
+[2026-08-03 07:27:46] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+      Regenerating: 1 file(s) changed at 2026-08-03 07:27:47
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6054985 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:27:51
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7895563 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:27:56
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9072804 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:01
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8921845 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:06
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:28:09] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 4.8306552 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:11
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5781657 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:16
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.827491 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:20
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6226341 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:25
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8368357 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6417292 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:35
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6433121 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8067506 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2406554 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:50
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1563828 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:28:55
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7318933 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:00
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9393102 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:05
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7525589 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:09
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.194049 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:15
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 6.6039464 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:21
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 6.5575479 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:28
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.3949262 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:33
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.6912365 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 6.0081472 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:45
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.5914631 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:51
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 6.0238207 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:29:57
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:30:03] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 6.053751 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:03
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.3729833 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:08
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.6661455 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:30:17] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.1473522 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:19
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1069764 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:25
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2022745 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.5463993 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:35
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1752619 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:41
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.6349772 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:46
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.5190811 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:52
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.8155845 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:30:58
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.7912496 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.5087983 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:09
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2883243 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:15
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1521767 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:20
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1737476 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:25
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0736655 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.107897 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:35
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.176085 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:40
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0846293 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:46
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0654029 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:51
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2357941 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:31:56
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1364399 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:01
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.7399593 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:07
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1956626 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:12
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1213352 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:17
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1740347 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:23
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2464431 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:28
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2473908 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:33
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.341213 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9860624 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0620674 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:49
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1432737 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:54
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1832391 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:32:59
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0302624 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1629705 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:10
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.369224 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:15
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2210879 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:20
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.141242 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:26
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.193225 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:31
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0299681 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:36
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5121423 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:40
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5072621 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:45
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6430147 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:50
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5848915 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:54
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6269163 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:33:59
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.549683 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1154087 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:09
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7559962 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1195306 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:19
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8465943 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:24
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9944649 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:29
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9668964 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:34
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.97628 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.131285 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7256965 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:49
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.113416 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:54
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.4547029 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:34:59
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0725325 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:05
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1444512 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:10
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7774278 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:15
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9939792 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:20
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0723517 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:35:25
+                    local-serve.out.log
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8061388 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9400821 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:35
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8903955 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:40
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9147681 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:45
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:35:45] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 4.6588671 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:49
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7448676 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:54
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.820126 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:35:59
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6315938 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6632043 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:08
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9819645 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:13
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:36:17] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 4.9633986 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:18
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9363533 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:23
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0636779 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:29
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:36:30] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.0641005 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:34
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7394663 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0814099 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6935874 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:48
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7217105 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:53
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6389315 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:36:58
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6518096 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:03
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.3787234 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:07
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.641966 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:12
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9005052 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:17
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.054908 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:22
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.328443 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:27
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8348836 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:32
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0214792 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:37
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8496171 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:42
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7848554 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:47
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7416295 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:52
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1733723 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:37:57
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0109767 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:02
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0380411 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:07
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9085235 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:38:12
+                    local-serve.out.log
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7459014 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:17
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8714081 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:22
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.4202303 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:27
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1888357 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:33
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:38:37] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:14 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.0555918 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:38
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8945619 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:43
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7865093 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:47
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7952457 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:52
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1285488 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:38:57
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.897569 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:02
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.909767 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:07
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6915191 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:12
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7672668 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:17
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6061094 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:22
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6289071 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:26
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7304233 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:31
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7096812 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:36
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.810704 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:41
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.084129 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:46
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1647769 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:51
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9059155 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:39:56
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7822344 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:01
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8419682 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:06
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7403628 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:11
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6896446 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:15
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9342506 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:20
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6464524 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:25
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6729453 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6464412 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:35
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5825179 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6397021 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7185579 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:49
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0110091 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:54
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1603972 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:40:59
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1592537 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:41:04
+                    local-serve.out.log
+                    images/vast_logo.webp
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8204179 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:09
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6227725 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7259438 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:19
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7037777 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:23
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7377623 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:28
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.755402 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:33
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8088091 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:38
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.288657 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:43
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.3560298 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:49
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8820811 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:53
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9407542 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:41:58
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9964362 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9535178 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:09
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9741622 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8625565 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:18
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9879691 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:24
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8622211 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:28
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9996687 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:34
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1262071 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1069587 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1773685 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:49
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.3753441 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:42:55
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9835576 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:00
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8480058 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0426912 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:10
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.781166 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7807417 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:19
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7479983 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:43:24
+                    local-serve.out.log
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6874844 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:29
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1498045 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:43:34
+                    local-serve.out.log
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9658475 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.23093 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:44
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1629432 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:50
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1012909 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:43:55
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:43:56] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:12 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 4.8114727 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:00
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7799195 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:04
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0407167 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:10
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9250626 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:44:18] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 5.3308343 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:44:20
+                    local-serve.out.log
+                    _publications/2026-03-01-SapGS.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9928497 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:25
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2704973 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.3062415 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:36
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8716595 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:41
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.878867 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:45
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7628205 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:50
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.787233 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:44:55
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8465338 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:00
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7277725 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:05
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7056981 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:10
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6298537 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:14
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8414261 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:19
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0858027 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:24
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6412156 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:29
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6539453 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:34
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7172941 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:39
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6485801 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:43
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7520765 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:48
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5871686 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:53
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6004011 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:45:57
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9469781 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:02
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7974644 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:07
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8986998 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:46:12
+                    local-serve.out.log
+                    _data/authors.yml
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7653426 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:46:17
+                    local-serve.out.log
+                    _data/authors.yml
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1944498 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:22
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.3270794 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:46:28
+                    local-serve.out.log
+                    _data/authors.yml
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8397503 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:33
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6962574 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:37
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7074203 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:42
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7153437 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:47
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7441811 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:52
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9233369 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:46:57
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9117119 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:02
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7547909 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:06
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8988066 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:11
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.5916194 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:16
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7053017 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:21
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6187133 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:25
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6952893 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:30
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1261805 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:35
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8469309 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:40
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9352583 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:45
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.2369263 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:51
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.878268 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:47:56
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.1117306 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:48:01
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.9931418 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:48:06
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0296731 seconds.
+                    
+      Regenerating: 3 file(s) changed at 2026-08-03 07:48:11
+                    local-serve.out.log
+                    _data/authors.yml
+                    _experiences/2026-08-vast.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 5.0781649 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:48:16
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.7066634 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:48:21
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.8319248 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-08-03 07:48:26
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.6529338 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:30
+                    local-serve.out.log
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:47
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:54
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:55
+                    local-serve.err.log
+                    local-serve.out.log
+[2026-08-03 07:48:55] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:7 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:48:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:01
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:02
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:05
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:06
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:07
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:08
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:09
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:16
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:17
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:18
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:22
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:25
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:26
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 3 file(s) changed at 2026-08-03 07:49:27
+                    local-serve.err.log
+                    local-serve.out.log
+                    _experiences/2026-08-vast.md
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:29
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:30
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:39
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:52
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:55
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:49:55] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:12 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:49:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:02
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:05
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:06
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 4 file(s) changed at 2026-08-03 07:50:07
+                    local-serve.err.log
+                    local-serve.out.log
+                    _experiences/2026-08-vast.md
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:08
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:09
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:11
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:16
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:18
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:22
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:25
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:26
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:29
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:30
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+[2026-08-03 07:50:32] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:39
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:47
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:52
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:54
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:50:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:01
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:02
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:05
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:06
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:07
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:08
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:09
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:11
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:16
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:17
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:18
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:25
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:26
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:27
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:30
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:47
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:52
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:55
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:51:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:01
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 3 file(s) changed at 2026-08-03 07:52:02
+                    local-serve.err.log
+                    local-serve.out.log
+                    _experiences/2026-08-vast.md
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:06
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:07
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:08
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:09
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:11
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:17
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:18
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:22
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:25
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:26
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:27
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:29
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:30
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:39
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:47
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:52
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:55
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:52:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:01
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:02
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:05
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:06
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:07
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:08
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:11
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:16
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:17
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:22
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:25
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:26
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:27
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:29
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:30
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:39
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 4 file(s) changed at 2026-08-03 07:53:47
+                    local-serve.err.log
+                    local-serve.out.log
+                    _experiences/2026-08-vast.md
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:52
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:54
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:55
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:53:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:02
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:05
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:06
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:07
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:09
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:11
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+[2026-08-03 07:54:14] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:6 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:16
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:17
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:22
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:25
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:26
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:27
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:29
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:39
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:40
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:49
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:50
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:51
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:53
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:54
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:55
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:56
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:57
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:58
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:54:59
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:00
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:01
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:02
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:03
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:04
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:05
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:07
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:08
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:09
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:10
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:11
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:12
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:13
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:14
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:15
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:16
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:17
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:18
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:19
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:20
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:21
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:22
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:23
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:24
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 3 file(s) changed at 2026-08-03 07:55:26
+                    local-serve.err.log
+                    local-serve.out.log
+                    _experiences/2026-08-vast.md
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:27
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:28
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:29
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:30
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:31
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:32
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:33
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:34
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:35
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:36
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:37
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:38
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:39
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:41
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:42
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:43
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:44
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:45
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:46
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:47
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
+                    
+      Regenerating: 2 file(s) changed at 2026-08-03 07:55:48
+                    local-serve.err.log
+                    local-serve.out.log
+       Jekyll Feed: Generating feed for posts
