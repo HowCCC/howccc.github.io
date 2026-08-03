@@ -153,6 +153,7 @@ redirect_from:
   max-height: 800px;
   overflow-y: auto;
   padding-right: 8px;
+  margin-top: 14px;
 }
 .pub-scroll-container::-webkit-scrollbar {
   width: 6px;
@@ -242,6 +243,17 @@ redirect_from:
   font-size: 14px;
   color: #555;
   line-height: 1.0;
+  display: inline;
+}
+.pub-highlight-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px 0 10px;
+  border-radius: 3px;
+  background: #eef0f2;
+  border: 1px solid #d5d9dd;
+  vertical-align: -1px;
 }
 .pub-venue {
   font-size: 12px;
@@ -437,7 +449,12 @@ html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
 
 ## Publications
 
-<p class="pub-note"> ✉ denotes corresponding author. * denotes equal contribution. </p>
+<p class="pub-note"> ✉ denotes corresponding author.  * denotes equal contribution. </p>
+
+
+
+<p class="pub-note pub-highlight-note"><span class="pub-highlight-swatch" aria-hidden="true"></span> indicates a highlighted paper.</p>
+
 
 <div class="pub-scroll-container">
   {% assign publication_items = site.publications | sort: 'order' | reverse %}
