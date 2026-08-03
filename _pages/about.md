@@ -338,7 +338,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   height: 76px;
   margin-right: 14px;
   border-radius: 8px;
-  background: #fff;
+  background: transparent;
   overflow: hidden;
   transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -390,7 +390,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   color: #495057;
 }
 html[data-theme="dark"] .experience-card { background: #3a3a3a; border-color: #555; }
-html[data-theme="dark"] .experience-logo { background: #4a4a4a; }
+html[data-theme="dark"] .experience-logo { background: transparent; }
 html[data-theme="dark"] .experience-info,
 html[data-theme="dark"] .experience-time,
 html[data-theme="dark"] .experience-mentor,
