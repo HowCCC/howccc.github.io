@@ -7,6 +7,9 @@ redirect_from:
   - /about.html
 ---
 <div class="about-intro">
+  <div class="hello-animation" aria-hidden="true">
+    <img src="{{ '/images/Hello!.svg' | relative_url }}" alt="">
+  </div>
   <p>Greetings! Here is Shurui Liu. I'm a 2<sup>nd</sup> year student <a href="https://www.sysu.edu.cn/">@Sun Yat-sen University.</a> During my undergraduate studies, I received my B.S. degree under the supervision of  <a href="https://gaocq.github.io/">@Prof. Chenqiang Gao(高陈强)</a>. Currently, I'm jointly supervised by <a href="https://isee-ai.cn/~zhwshi/">@Prof. Wei-Shi Zheng(鄭偉詩)</a> and <a href="https://www.isee-ai.cn/~wuancong/index.html">@Ancong Wu(吴岸聪)</a>.</p>
 
   <p>Beyond academic research, I'm the Founder of <a href="https://chat.promptlycad.com">@RoCAD</a> aiming to craft 3d asset by text. Iam also the co-founder of ElysianAI, a startup developing AI research assistants. View our project <a href="https://paperpanza.com">@PaperPanza</a>.</p>
@@ -96,6 +99,34 @@ redirect_from:
 .about-intro a {
   font-size: 15px;
   line-height: 1.55;
+}
+.hello-animation {
+  float: right;
+  width: 200px;
+  height: 110px;
+  margin: -6px 25px 8px 8px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.hello-animation img {
+  display: block;
+  width: 330px;
+  height: 330px;
+  max-width: none !important;
+  transform: translate(-60px, -118px);
+}
+@media (max-width: 600px) {
+  .hello-animation {
+    float: none;
+    width: 180px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+  .hello-animation img {
+    width: 300px;
+    height: 300px;
+    transform: translate(-55px, -108px);
+  }
 }
 
 .about-intro .small-text,
@@ -416,7 +447,136 @@ html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
 @media (max-width: 700px) {
   .experience-grid { grid-template-columns: 1fr; }
 }
+html[data-theme="dark"] .section-toc a { color: #d6d6d6; }
+html[data-theme="dark"] .section-toc a:hover { color: #f48fb1; }
+html[data-theme="dark"] .section-toc li::before { background: #3a3a3a; border-color: #777; }
+html[data-theme="dark"] .section-toc li.is-active::before { background: #f48fb1; border-color: #f48fb1; }
+@media (min-width: 1300px) {
+  .section-toc {
+    position: fixed;
+    top: 50%;
+    right: max(0px, calc((100vw - 1280px) / 2 - 4px));
+    z-index: 10;
+    width: 142px;
+    transform: translateY(-50%);
+  }
+  .section-toc__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0;
+    padding: 4px 0 4px 18px;
+    list-style: none;
+  }
+  .section-toc__list::before {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 4px;
+    border-left: 1px dashed #c5c9cd;
+    content: "";
+  }
+  .section-toc li {
+    position: relative;
+    margin: 0;
+  }
+  .section-toc li::before {
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #9da3a8;
+    border-radius: 50%;
+    background: #fff;
+    content: "";
+    transform: translateY(-50%);
+  }
+  .section-toc a {
+    color: #333;
+    font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive !important;
+    font-size: 14px;
+    line-height: 1.3;
+    text-decoration: none;
+  }
+  .section-toc a:hover,
+  .section-toc a:focus {
+    color: #e0527a;
+    text-decoration: underline;
+  }
+  .section-toc li.is-active::before {
+    border-color: #e0527a;
+    background: #e0527a;
+  }
+  .section-toc li.is-active a {
+    color: #e0527a;
+    font-weight: 700;
+  }
+}
+@media (max-width: 1299px) {
+  .section-toc { display: none; }
+}
 </style>
+
+<nav class="section-toc" aria-label="Page sections">
+  <ul class="section-toc__list">
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#honors">Honors &amp; Rewards</a></li>
+    <li><a href="#miscs">Miscs</a></li>
+  </ul>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toc = document.querySelector(".section-toc");
+  if (!toc) return;
+
+  var links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+  var sections = links.map(function (link) {
+    return document.querySelector(link.getAttribute("href"));
+  }).filter(Boolean);
+
+  function updateActiveSection() {
+    if (!sections.length) return;
+
+    var marker = window.innerHeight * 0.35;
+    var active = sections[0];
+    sections.forEach(function (section) {
+      if (section.getBoundingClientRect().top <= marker) active = section;
+    });
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+      active = sections[sections.length - 1];
+    }
+
+    links.forEach(function (link) {
+      var isActive = link.getAttribute("href") === "#" + active.id;
+      link.parentElement.classList.toggle("is-active", isActive);
+      if (isActive) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }
+
+  var ticking = false;
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      updateActiveSection();
+      ticking = false;
+    });
+  }
+
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate);
+  updateActiveSection();
+});
+</script>
+
 ## Interests
 
 <div>
@@ -538,6 +698,37 @@ html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
   {% endfor %}
 </div>
 
+## Education
+
+<div class="experience-grid education-grid">
+  {% assign education_items = site.educations | sort: 'order' | reverse %}
+  {% for education in education_items %}
+    <div class="experience-card education-card">
+      <div class="experience-logo education-logo">
+        {% if education.logo contains "://" %}
+          <img src="{{ education.logo }}" alt="{{ education.institution | escape }} logo">
+        {% else %}
+          <img src="{{ education.logo | relative_url }}" alt="{{ education.institution | escape }} logo">
+        {% endif %}
+      </div>
+      <div class="experience-info education-info">
+        <div class="experience-role education-role">
+          {% if education.institution_url %}<a href="{{ education.institution_url }}" target="_blank" rel="noopener noreferrer">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %} &middot;
+          {% if education.school_url %}<a href="{{ education.school_url }}" target="_blank" rel="noopener noreferrer">{{ education.school }}</a>{% else %}{{ education.school }}{% endif %}
+          &middot; {{ education.stage }}
+        </div>
+        <div class="experience-time education-time">{{ education.period }}</div>
+        <div class="experience-mentor education-supervisor">Supervisor:
+          {% for supervisor in education.supervisors %}
+            {% if supervisor.url %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% else %}{{ supervisor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+        {% if education.content != empty %}<div class="experience-description education-description">{{ education.content }}</div>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
 ## Experience
 
 <div class="experience-grid">
@@ -574,35 +765,18 @@ html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
   {% endfor %}
 </div>
 
-## Education
+## Honors & Rewards {#honors}
 
-<div class="experience-grid education-grid">
-  {% assign education_items = site.educations | sort: 'order' | reverse %}
-  {% for education in education_items %}
-    <div class="experience-card education-card">
-      <div class="experience-logo education-logo">
-        {% if education.logo contains "://" %}
-          <img src="{{ education.logo }}" alt="{{ education.institution | escape }} logo">
-        {% else %}
-          <img src="{{ education.logo | relative_url }}" alt="{{ education.institution | escape }} logo">
-        {% endif %}
-      </div>
-      <div class="experience-info education-info">
-        <div class="experience-role education-role">
-          {% if education.institution_url %}<a href="{{ education.institution_url }}" target="_blank" rel="noopener noreferrer">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %} &middot;
-          {% if education.school_url %}<a href="{{ education.school_url }}" target="_blank" rel="noopener noreferrer">{{ education.school }}</a>{% else %}{{ education.school }}{% endif %}
-          &middot; {{ education.stage }}
-        </div>
-        <div class="experience-time education-time">{{ education.period }}</div>
-        <div class="experience-mentor education-supervisor">Supervisor:
-          {% for supervisor in education.supervisors %}
-            {% if supervisor.url %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% else %}{{ supervisor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </div>
-        {% if education.content != empty %}<div class="experience-description education-description">{{ education.content }}</div>{% endif %}
-      </div>
+<div class="news-section honors-section">
+{% assign honor_items = site.honors | sort: 'date' | reverse %}
+{% for honor in honor_items %}
+  <div class="news-item honor-item">
+    <div class="news-item__body">
+      <span class="news-date">{{ honor.date | date: "%Y.%m" }}</span>
+      <span class="news-item__summary">{{ honor.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     </div>
-  {% endfor %}
+  </div>
+{% endfor %}
 </div>
 
 ## Miscs

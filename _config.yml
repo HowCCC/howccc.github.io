@@ -237,6 +237,8 @@ collections:
     permalink: /:collection/:path/
   news:
     output: false
+  honors:
+    output: false
   experiences:
     output: false
   educations:
