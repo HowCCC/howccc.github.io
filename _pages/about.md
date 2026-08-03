@@ -782,17 +782,19 @@ document.addEventListener("DOMContentLoaded", function () {
           &middot; {{ experience.role }}
         </div>
         <div class="experience-time">{{ experience.period }}</div>
-        <div class="experience-mentor">Mentor:
-          {% if experience.mentors %}
-            {% for mentor in experience.mentors %}
-              {% if mentor.url %}<a href="{{ mentor.url }}" target="_blank" rel="noopener noreferrer">{{ mentor.name }}</a>{% else %}{{ mentor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          {% elsif experience.mentor_url %}
-            <a href="{{ experience.mentor_url }}" target="_blank" rel="noopener noreferrer">{{ experience.mentor }}</a>
-          {% else %}
-            {{ experience.mentor }}
-          {% endif %}
-        </div>
+        {% if experience.mentors or experience.mentor %}
+          <div class="experience-mentor">Mentor:
+            {% if experience.mentors %}
+              {% for mentor in experience.mentors %}
+                {% if mentor.url %}<a href="{{ mentor.url }}" target="_blank" rel="noopener noreferrer">{{ mentor.name }}</a>{% else %}{{ mentor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            {% elsif experience.mentor_url %}
+              <a href="{{ experience.mentor_url }}" target="_blank" rel="noopener noreferrer">{{ experience.mentor }}</a>
+            {% else %}
+              {{ experience.mentor }}
+            {% endif %}
+          </div>
+        {% endif %}
         {% if experience.content != empty %}<div class="experience-description">{{ experience.content }}</div>{% endif %}
       </div>
     </div>
