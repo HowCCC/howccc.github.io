@@ -324,6 +324,10 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   border: 1px solid #e9ecef;
   border-radius: 10px;
   background: #f8f9fa;
+  transition: box-shadow 0.2s;
+}
+.experience-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .experience-logo {
   display: flex;
@@ -336,12 +340,21 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   border-radius: 8px;
   background: #fff;
   overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.experience-logo:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.16);
+  transform: translateY(-2px);
 }
 .experience-logo img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  transition: transform 0.2s;
+}
+.experience-logo:hover img {
+  transform: scale(1.04);
 }
 .experience-info {
   min-width: 0;
@@ -362,7 +375,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
 }
 .experience-mentor a {
   color: #495057 !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 .experience-description {
   margin-top: 6px;
