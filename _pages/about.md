@@ -196,6 +196,9 @@ redirect_from:
   overflow: hidden;
   transition: box-shadow 0.2s, transform 0.2s;
 }
+.pub-img.pub-img--transparent {
+  background: transparent;
+}
 .pub-img:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.16);
   transform: translateY(-2px);
@@ -303,6 +306,7 @@ html[data-theme="dark"] .pub-links a:focus {
   text-decoration: none !important;
 }
 html[data-theme="dark"] .pub-img { background: #4a4a4a; }
+html[data-theme="dark"] .pub-img.pub-img--transparent { background: transparent; }
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-track { background: #3a3a3a; }
 html[data-theme="dark"] .pub-scroll-container::-webkit-scrollbar-thumb { background: #666; }
 html[data-theme="dark"] .news-section::-webkit-scrollbar-track { background: #3a3a3a; }
@@ -448,7 +452,7 @@ html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
 
     {% assign first_author = post.authors | split: ',' | first | strip %}
     <div class="pub-card{% if first_author == site.author.name or first_author == 'Shurui Liu' %} pub-card--first-author{% endif %}">
-      <div class="pub-img">
+      <div class="pub-img{% if post.transparent_teaser %} pub-img--transparent{% endif %}">
         {% if teaser %}
           <img src=
             {% if teaser contains "://" %}
