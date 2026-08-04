@@ -339,6 +339,18 @@ html[data-theme="dark"] .author__urls.social-icons li.author__primary-item .auth
   color: #3b82f6;
 }
 
+.sidebar .author__item--cv .author__icon {
+  align-self: center;
+}
+
+.sidebar .author__item--cv .author__icon img {
+  display: block;
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
 .sidebar .author__item--scholar .icon-scholar {
   border-radius: 50%;
 }

@@ -5,7 +5,7 @@ collection: publications
 category: manuscripts
 order: 1
 corresponding_authors: "Chenqiang Gao"
-teaser: "concrete_model_01.png"
+teaser: "CMDIFF_teaser.png"
 # permalink: /publication/2009-10-01-paper-title-number-1
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 # date: 2009-10-01

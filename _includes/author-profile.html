@@ -236,6 +236,17 @@
         </li>
       {% endif %}      
 
+      <li class="author__primary-item author__item--cv">
+        <span class="author__entry">
+          <span class="author__icon"><img src="{{ '/images/pdf.png' | relative_url }}" alt="" aria-hidden="true"></span>
+          <span class="author__label">
+            CV
+            <a href="{{ '/files/zh_shuruiliu.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open Chinese CV">[zh]</a>
+            <a href="{{ '/files/en_shuruiliu.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open English CV">[en]</a>
+          </span>
+        </span>
+      </li>
+
 
 
       {% assign x_url = author.x | default: site.author.x %}
