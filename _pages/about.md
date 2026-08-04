@@ -294,7 +294,9 @@ redirect_from:
   line-height: 1.4;
 }
 .pub-links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 3px 10px;
   margin-right: 6px;
   margin-bottom: 4px;
@@ -303,8 +305,26 @@ redirect_from:
   border-radius: 4px;
   color: #495057 !important;
   text-decoration: none !important;
-  background: #fff;
+  background: transparent;
   transition: all 0.15s;
+}
+.pub-links a img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  object-fit: contain;
+  border: 0;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+.pub-links a:hover > img,
+.pub-links a:active > img,
+.pub-links a:focus > img {
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
 }
 .pub-links a:visited {
   color: #495057 !important;
@@ -312,9 +332,10 @@ redirect_from:
 .pub-links a:hover,
 .pub-links a:active,
 .pub-links a:focus {
-  background: #f1f3f5;
+  background: transparent;
   color: #495057 !important;
   border-color: #ced4da;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none !important;
 }
 
@@ -338,14 +359,15 @@ html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
 html[data-theme="dark"] .pub-note { color: #ccc; }
 html[data-theme="dark"] .pub-venue { color: red; }
-html[data-theme="dark"] .pub-links a { background: #4a4a4a; color: #eaeaea !important; border-color: #666; }
+html[data-theme="dark"] .pub-links a { background: transparent; color: #eaeaea !important; border-color: #666; }
 html[data-theme="dark"] .pub-links a:visited { color: #eaeaea !important; }
 html[data-theme="dark"] .pub-links a:hover,
 html[data-theme="dark"] .pub-links a:active,
 html[data-theme="dark"] .pub-links a:focus {
-  background: #5a5a5a;
+  background: transparent;
   color: #eaeaea !important;
   border-color: #7a7a7a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
   text-decoration: none !important;
 }
 html[data-theme="dark"] .pub-img { background: #4a4a4a; }
@@ -717,9 +739,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {% capture post_link %}{% include resolve-link.html href=post_href %}{% endcapture %}
         {% if project_link != '' or paper_link != '' or code_link != '' or bib_link != '' or slides_link != '' or post_link != '' %}
           <div class="pub-links">
-            {% if project_link != '' %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
-            {% if paper_link != '' %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">PDF</a>{% endif %}
-            {% if code_link != '' %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+            {% if paper_link != '' %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/pub_pdf.png' | relative_url }}" alt="" aria-hidden="true"><span>PDF</span></a>{% endif %}
+            {% if code_link != '' %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/code.png' | relative_url }}" alt="" aria-hidden="true"><span>Code</span></a>{% endif %}
+            {% if project_link != '' %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/url.png' | relative_url }}" alt="" aria-hidden="true"><span>Project</span></a>{% endif %}
             {% if bib_link != '' %}<a href="{{ bib_link }}" target="_blank" rel="noopener noreferrer">Bib</a>{% endif %}
             {% if slides_link != '' %}<a href="{{ slides_link }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
             {% if post_link != '' and post_link != project_link and post_link != paper_link and post_link != code_link and post_link != bib_link and post_link != slides_link %}
