@@ -26,7 +26,9 @@ minimal_footer_text      : "Copyright © 2026 Shurui Liu"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile/shurui-liu.jpg"
+#  avatar           : "profile/shurui-liu.jpg"
+  avatar           : "profile/touming.png"
+
   name             : "Shurui Liu"
   name_zh          : "\u5218\u4e66\u777f"
   # pronouns         : "he/him"
