@@ -785,7 +785,7 @@ document.addEventListener("DOMContentLoaded", function () {
   {% endfor %}
 </div>
 
-## Experience
+<!-- ## Experience
 
 <div class="experience-grid">
   {% assign experience_items = site.experiences | sort: 'order' | reverse %}
@@ -821,7 +821,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
   {% endfor %}
-</div>
+</div> -->
 
 ## Honors & Rewards {#honors}
 
