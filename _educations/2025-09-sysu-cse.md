@@ -1,9 +1,9 @@
 ---
 institution: SYSU
 # institution_url: https://www.sysu.edu.cn/
-school: CSE
+# school: CSE
 # school_url: https://cse.sysu.edu.cn/
-stage: Master of Science
+stage: Master Candidate
 period: "2025.9-present"
 supervisors:
   - name: Ancong Wu
