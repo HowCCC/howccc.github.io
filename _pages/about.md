@@ -633,6 +633,163 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<style>
+@media (min-width: 1300px) {
+  .section-toc {
+    right: max(12px, calc((100vw - 1280px) / 2 - 4px));
+    width: 188px;
+    height: 286px;
+    overflow: hidden;
+    border: 1px solid rgba(73, 78, 82, .16);
+    border-radius: 14px;
+    background: rgba(255,255,255,.88);
+    box-shadow: 0 16px 36px rgba(38, 43, 48, .12);
+    backdrop-filter: blur(12px);
+    overscroll-behavior: contain;
+    user-select: none;
+  }
+  .section-toc::before,
+  .section-toc::after {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    right: 10px;
+    height: 76px;
+    pointer-events: none;
+    content: "";
+  }
+  .section-toc::before { top: 0; background: linear-gradient(#fff, rgba(255,255,255,0)); }
+  .section-toc::after { bottom: 0; background: linear-gradient(rgba(255,255,255,0), #fff); }
+  .section-toc__list {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    gap: 0;
+    padding: 0;
+    z-index: 4;
+    transform: translateY(-50%);
+    transition: transform 220ms cubic-bezier(.2,.8,.2,1);
+  }
+  .section-toc__list::before {
+    display: none;
+  }
+  .section-toc li {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: 46px;
+    margin: 0;
+    transform: none;
+  }
+  .section-toc li::before,
+  .section-toc li::after,
+  .section-toc a::after { display: none; }
+  .section-toc a {
+    display: block;
+    width: 100%;
+    padding: 0 22px 0 12px;
+    color: #667078 !important;
+    font-size: 13px;
+    line-height: 46px;
+    text-align: right;
+    opacity: .38;
+    transform: scale(.9);
+    transition: opacity 180ms ease, color 180ms ease, transform 180ms ease;
+  }
+  .section-toc li.is-near a { opacity: .68; transform: scale(.96); }
+  .section-toc li.is-active a {
+    color: #e0527a !important;
+    opacity: 1;
+    font-weight: 700;
+    transform: scale(1.08);
+  }
+  .section-toc a:hover, .section-toc a:focus { color: #e0527a !important; opacity: 1; }
+  html[data-theme="dark"] .section-toc { background: rgba(42,42,42,.9); border-color: rgba(255,255,255,.18); }
+  html[data-theme="dark"] .section-toc::before { background: linear-gradient(#2a2a2a, rgba(42,42,42,0)); }
+  html[data-theme="dark"] .section-toc::after { background: linear-gradient(rgba(42,42,42,0), #2a2a2a); }
+  html[data-theme="dark"] .section-toc a { color: #d6d6d6 !important; }
+  html[data-theme="dark"] .section-toc li.is-active a { color: #f48fb1 !important; }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toc = document.querySelector(".section-toc");
+  if (!toc) return;
+  var links = Array.from(toc.querySelectorAll("a[href^='#']"));
+  var list = toc.querySelector(".section-toc__list");
+  var index = 0;
+  var centerOffset = 138;
+  var lockedIndex = -1;
+  var unlockTimer = null;
+  function render() {
+    links.forEach(function (link, i) {
+      var distance = Math.abs(i - index);
+      link.parentElement.classList.toggle("is-active", distance === 0);
+      link.parentElement.classList.toggle("is-near", distance === 1);
+      if (distance === 0) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+    list.style.transform = "translateY(calc(-50% + " + (centerOffset - index * 46) + "px))";
+  }
+  function choose(next, scroll) {
+    index = Math.max(0, Math.min(links.length - 1, next));
+    render();
+    if (scroll) {
+      lockedIndex = index;
+      if (unlockTimer) window.clearTimeout(unlockTimer);
+      var target = document.querySelector(links[index].getAttribute("href"));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      unlockTimer = window.setTimeout(function () {
+        lockedIndex = -1;
+        syncToPage();
+      }, 900);
+    }
+  }
+  function syncToPage() {
+    if (lockedIndex >= 0) {
+      if (index !== lockedIndex) { index = lockedIndex; render(); }
+      return;
+    }
+    var active = 0;
+    var closestDistance = Infinity;
+    links.forEach(function (link, i) {
+      var section = document.querySelector(link.getAttribute("href"));
+      if (!section) return;
+      var distance = Math.abs(section.getBoundingClientRect().top);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        active = i;
+      }
+    });
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) active = links.length - 1;
+    if (active !== index) { index = active; render(); }
+  }
+  toc.setAttribute("tabindex", "0");
+  toc.addEventListener("wheel", function (event) {
+    event.preventDefault();
+    if (Math.abs(event.deltaY) > 2) choose(index + (event.deltaY > 0 ? 1 : -1), true);
+  }, { passive: false });
+  toc.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowDown" || event.key === "ArrowRight") { event.preventDefault(); choose(index + 1, true); }
+    if (event.key === "ArrowUp" || event.key === "ArrowLeft") { event.preventDefault(); choose(index - 1, true); }
+  });
+  toc.addEventListener("click", function (event) {
+    var link = event.target.closest("a");
+    if (link) { event.preventDefault(); choose(links.indexOf(link), true); }
+  });
+  window.addEventListener("scroll", syncToPage, { passive: true });
+  window.addEventListener("resize", syncToPage);
+  render();
+  syncToPage();
+});
+</script>
+
 ## Interests
 
 <div>
@@ -761,25 +918,36 @@ document.addEventListener("DOMContentLoaded", function () {
   {% for education in education_items %}
     <div class="experience-card education-card">
       <div class="experience-logo education-logo">
-        {% if education.logo contains "://" %}
-          <img src="{{ education.logo }}" alt="{{ education.institution | escape }} logo">
-        {% else %}
-          <img src="{{ education.logo | relative_url }}" alt="{{ education.institution | escape }} logo">
+        {% if education.logo %}
+          {% if education.logo contains "://" %}
+            <img src="{{ education.logo }}" alt="{{ education.institution | escape }} logo">
+          {% else %}
+            <img src="{{ education.logo | relative_url }}" alt="{{ education.institution | escape }} logo">
+          {% endif %}
         {% endif %}
       </div>
       <div class="experience-info education-info">
         <div class="experience-role education-role">
-          {% if education.institution_url %}<a href="{{ education.institution_url }}" target="_blank" rel="noopener noreferrer">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %} &middot;
-          {% if education.school_url %}<a href="{{ education.school_url }}" target="_blank" rel="noopener noreferrer">{{ education.school }}</a>{% else %}{{ education.school }}{% endif %}
-          &middot; {{ education.stage }}
+          {% if education.institution %}
+            {% if education.institution_url %}<a href="{{ education.institution_url }}" target="_blank" rel="noopener noreferrer">{{ education.institution }}</a>{% else %}{{ education.institution }}{% endif %}
+          {% endif %}
+          {% if education.school %}
+            {% if education.institution %}&middot; {% endif %}{% if education.school_url %}<a href="{{ education.school_url }}" target="_blank" rel="noopener noreferrer">{{ education.school }}</a>{% else %}{{ education.school }}{% endif %}
+          {% endif %}
+          {% if education.stage %}
+            {% if education.institution or education.school %}&middot; {% endif %}{{ education.stage }}
+          {% endif %}
         </div>
-        <div class="experience-time education-time">{{ education.period }}</div>
-        <div class="experience-mentor education-supervisor">Supervisor:
-          {% for supervisor in education.supervisors %}
-            {% if supervisor.url %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% else %}{{ supervisor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </div>
-        {% if education.content != empty %}<div class="experience-description education-description">{{ education.content }}</div>{% endif %}
+        {% if education.period %}<div class="experience-time education-time">{{ education.period }}</div>{% endif %}
+        {% if education.supervisors and education.supervisors.size > 0 %}
+          <div class="experience-mentor education-supervisor">Supervisor:
+            {% for supervisor in education.supervisors %}
+              {% if supervisor.url %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% else %}{{ supervisor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% assign education_content = education.content | strip %}
+        {% if education_content != empty %}<div class="experience-description education-description">{{ education.content }}</div>{% endif %}
       </div>
     </div>
   {% endfor %}
