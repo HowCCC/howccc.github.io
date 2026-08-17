@@ -1,8 +1,8 @@
 ---
 institution: SYSU
-# institution_url: https://www.sysu.edu.cn/
-# school: CSE
-# school_url: https://cse.sysu.edu.cn/
+institution_url: https://www.sysu.edu.cn/
+school: CSE
+school_url: https://cse.sysu.edu.cn/
 stage: Master Candidate
 period: "2025.9-present"
 supervisors:

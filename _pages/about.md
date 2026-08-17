@@ -8,9 +8,9 @@ redirect_from:
 ---
 <div class="about-intro">
   <div class="hello-animation" aria-hidden="true">
-    <img src="{{ '/images/Hello!.svg' | relative_url }}" alt="">
+    <img src="{{ '/images/Hi.svg' | relative_url }}" alt="">
   </div>
-  <p>Greetings! Here is Shurui Liu. I'm a 2<sup>nd</sup> year student <a href="https://www.sysu.edu.cn/">@Sun Yat-sen University.</a> During my undergraduate studies, I received my B.S. degree under the supervision of  <a href="https://gaocq.github.io/">@Prof. Chenqiang Gao(高陈强)</a>. Currently, I'm jointly supervised by <a href="https://isee-ai.cn/~zhwshi/">@Prof. Wei-Shi Zheng(鄭偉詩)</a> and <a href="https://www.isee-ai.cn/~wuancong/index.html">@Ancong Wu(吴岸聪)</a>.</p>
+  <p>Greetings! Here is Shurui Liu. I'm a 2<sup>nd</sup> year student <a href="https://www.sysu.edu.cn/">@Sun Yat-sen University.</a> During my undergraduate studies, I received my B.S. degree under the supervision of  <a href="https://gaocq.github.io/">@Prof. Chenqiang Gao(高陈强)</a>. Currently, I'm jointly supervised by <a href="https://isee-ai.cn/~zhwshi/">@Prof. Wei-Shi Zheng(鄭偉詩)</a> and <a href="https://www.isee-ai.cn/~wuancong/index.html">@Ancong Wu(吴岸聪)</a>. Currently, I am interning at VAST, where I work on low-poly 3D generation.</p> 
 
   <!-- <p>Beyond academic research, I'm the Founder of <a href="https://chat.promptlycad.com">@RoCAD</a> aiming to craft 3d asset by text. Iam also the co-founder of ElysianAI, a startup developing AI research assistants. View our project <a href="https://paperpanza.com">@PaperPanza</a>.</p> -->
 
@@ -85,11 +85,11 @@ redirect_from:
 
 .page__content a,
 .page__content a:visited {
-  color: #e0527a !important;
+  color: var(--profile-accent-color) !important;
   text-decoration: none !important;
 }
 .page__content a:hover {
-  color: #e0527a !important;
+  color: var(--profile-accent-color) !important;
   text-decoration: underline !important;
 }
 
@@ -102,8 +102,8 @@ redirect_from:
 }
 .hello-animation {
   float: right;
-  width: 200px;
-  height: 110px;
+  width: 230px;
+  height: 135px;
   margin: -6px 25px 8px 8px;
   overflow: hidden;
   pointer-events: none;
@@ -113,19 +113,19 @@ redirect_from:
   width: 330px;
   height: 330px;
   max-width: none !important;
-  transform: translate(-60px, -118px);
+  transform: translate(-45px, -106px);
 }
 @media (max-width: 600px) {
   .hello-animation {
     float: none;
-    width: 180px;
-    height: 100px;
+    width: 210px;
+    height: 125px;
     margin: 0 auto 10px;
   }
   .hello-animation img {
     width: 300px;
     height: 300px;
-    transform: translate(-55px, -108px);
+    transform: translate(-40px, -96px);
   }
 }
 
@@ -165,7 +165,7 @@ redirect_from:
 }
 .news-date {
   font-weight: bold;
-  color: #e0527a;
+  color: var(--profile-accent-color);
 }
 .news-item__body {
   display: grid;
@@ -351,7 +351,7 @@ redirect_from:
   }
 }
 
-html[data-theme="dark"] .news-date { color: #f48fb1; }
+html[data-theme="dark"] .news-date { color: var(--profile-accent-color); }
 html[data-theme="dark"] .news-item { color: #eaeaea; border-bottom-color: #555; }
 html[data-theme="dark"] .pub-card { background: #3a3a3a; border-color: #555; }
 html[data-theme="dark"] .pub-card.pub-card--first-author { background: #3a3a3a; border-color: #555; }
@@ -436,7 +436,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   margin-bottom: 2px;
 }
 .experience-role a {
-  color: #e0527a !important;
+  color: var(--profile-accent-color) !important;
   text-decoration: none !important;
 }
 .experience-role a:hover,
@@ -451,7 +451,7 @@ html[data-theme="dark"] .news-section::-webkit-scrollbar-thumb { background: #66
   margin-top: 2px;
 }
 .experience-mentor a {
-  color: #e0527a !important;
+  color: var(--profile-accent-color) !important;
   text-decoration: none !important;
 }
 .experience-description {
@@ -465,14 +465,14 @@ html[data-theme="dark"] .experience-time,
 html[data-theme="dark"] .experience-mentor,
 html[data-theme="dark"] .experience-description { color: #d6d6d6; }
 html[data-theme="dark"] .experience-role a,
-html[data-theme="dark"] .experience-mentor a { color: #f48fb1 !important; }
+html[data-theme="dark"] .experience-mentor a { color: var(--profile-accent-color) !important; }
 @media (max-width: 700px) {
   .experience-grid { grid-template-columns: 1fr; }
 }
 html[data-theme="dark"] .section-toc a { color: #d6d6d6 !important; }
-html[data-theme="dark"] .section-toc a:hover { color: #f48fb1 !important; }
+html[data-theme="dark"] .section-toc a:hover { color: var(--profile-accent-color) !important; }
 html[data-theme="dark"] .section-toc li::before { background: #3a3a3a; border-color: #777; }
-html[data-theme="dark"] .section-toc li.is-active::before { background: #f48fb1; border-color: #f48fb1; }
+html[data-theme="dark"] .section-toc li.is-active::before { background: var(--profile-accent-color); border-color: var(--profile-accent-color); }
 @media (min-width: 1300px) {
   .section-toc {
     position: fixed;
@@ -522,7 +522,7 @@ html[data-theme="dark"] .section-toc li.is-active::before { background: #f48fb1;
     top: 50%;
     right: -29px;
     width: 14px;
-    border-top: 2px solid #e0527a;
+    border-top: 2px solid var(--profile-accent-color);
     content: "";
     opacity: 0;
     transform: translateY(-50%);
@@ -544,7 +544,7 @@ html[data-theme="dark"] .section-toc li.is-active::before { background: #f48fb1;
     right: -36px;
     width: 8px;
     height: 16px;
-    border: 2px solid #e0527a;
+    border: 2px solid var(--profile-accent-color);
     border-left: 0;
     border-radius: 0 10px 10px 0;
     content: "";
@@ -554,19 +554,19 @@ html[data-theme="dark"] .section-toc li.is-active::before { background: #f48fb1;
   }
   .section-toc a:hover,
   .section-toc a:focus {
-    color: #e0527a !important;
+    color: var(--profile-accent-color) !important;
     text-decoration: underline;
   }
   .section-toc li.is-active::before {
-    border-color: #e0527a;
-    background: #e0527a;
+    border-color: var(--profile-accent-color);
+    background: var(--profile-accent-color);
   }
   .section-toc li.is-active::after,
   .section-toc li.is-active a::after {
     opacity: 1;
   }
   .section-toc li.is-active a {
-    color: #e0527a !important;
+    color: var(--profile-accent-color) !important;
     font-weight: 700;
   }
 }
@@ -703,17 +703,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   .section-toc li.is-near a { opacity: .68; transform: scale(.96); }
   .section-toc li.is-active a {
-    color: #e0527a !important;
+    color: var(--profile-accent-color) !important;
     opacity: 1;
     font-weight: 700;
     transform: scale(1.08);
   }
-  .section-toc a:hover, .section-toc a:focus { color: #e0527a !important; opacity: 1; }
+  .section-toc a:hover, .section-toc a:focus { color: var(--profile-accent-color) !important; opacity: 1; }
   html[data-theme="dark"] .section-toc { background: rgba(42,42,42,.9); border-color: rgba(255,255,255,.18); }
   html[data-theme="dark"] .section-toc::before { background: linear-gradient(#2a2a2a, rgba(42,42,42,0)); }
   html[data-theme="dark"] .section-toc::after { background: linear-gradient(rgba(42,42,42,0), #2a2a2a); }
   html[data-theme="dark"] .section-toc a { color: #d6d6d6 !important; }
-  html[data-theme="dark"] .section-toc li.is-active a { color: #f48fb1 !important; }
+  html[data-theme="dark"] .section-toc li.is-active a { color: var(--profile-accent-color) !important; }
 }
 </style>
 
@@ -794,8 +794,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div>
   <div class="news-item">Enhancing LLM &amp; Agent</div>
-  <div class="news-item">Native 3D Generation &amp; Reconstruction </div>
-  <div class="news-item">Video &amp; Interactive Scene Generation</div>
+  <div class="news-item">3D AIGC &amp; Interactive Scene Generation</div>
+  <!-- <div class="news-item">Video &amp; Interactive Scene Generation</div> -->
 </div>
 
 ## News
