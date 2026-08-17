@@ -10,6 +10,6 @@ supervisors:
     url: https://www.isee-ai.cn/~wuancong/index.html
   - name: Wei-Shi Zheng
     url: https://www.isee-ai.cn/~zhwshi/
-logo: /images/CSE.png
+logo: /images/SYSU.svg
 order: 2
 ---
