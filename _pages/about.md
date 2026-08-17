@@ -469,113 +469,185 @@ html[data-theme="dark"] .experience-mentor a { color: var(--profile-accent-color
 @media (max-width: 700px) {
   .experience-grid { grid-template-columns: 1fr; }
 }
-html[data-theme="dark"] .section-toc a { color: #d6d6d6 !important; }
-html[data-theme="dark"] .section-toc a:hover { color: var(--profile-accent-color) !important; }
-html[data-theme="dark"] .section-toc li::before { background: #3a3a3a; border-color: #777; }
-html[data-theme="dark"] .section-toc li.is-active::before { background: var(--profile-accent-color); border-color: var(--profile-accent-color); }
 @media (min-width: 1300px) {
   .section-toc {
     position: fixed;
     top: 50%;
-    right: max(0px, calc((100vw - 1280px) / 2 - 4px));
+    right: 0;
     z-index: 10;
-    width: 172px;
+    width: 264px;
+    height: 340px;
+    overflow: hidden;
     transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
   }
+
+  .section-toc__arc {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .section-toc__arc path {
+    fill: #cdd2d6;
+    opacity: .76;
+    transition: fill 180ms ease, opacity 180ms ease;
+  }
+
   .section-toc__list {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    position: absolute;
+    inset: 0;
     margin: 0;
-    padding: 4px 34px 4px 0;
+    padding: 0;
     list-style: none;
   }
-  .section-toc__list::before {
-    position: absolute;
-    top: 8px;
-    bottom: 8px;
-    right: 20px;
-    border-left: 1px dashed #c5c9cd;
-    content: "";
-  }
+
   .section-toc li {
-    position: relative;
-    margin: 0;
-    text-align: right;
-  }
-  .section-toc li::before {
     position: absolute;
-    top: 50%;
-    right: -19px;
-    width: 7px;
-    height: 7px;
-    border: 1px solid #9da3a8;
-    border-radius: 50%;
-    background: #fff;
-    content: "";
-    transform: translateY(-50%);
-    transition: border-color 0.2s, background 0.2s;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: var(--wheel-opacity, 0);
+    transform: translate(var(--wheel-x, 124px), var(--wheel-y, 170px));
+    transition: transform 360ms cubic-bezier(.22, .72, .26, 1), opacity 220ms ease;
+    pointer-events: none;
   }
+
+  .section-toc li::before,
   .section-toc li::after {
     position: absolute;
-    top: 50%;
-    right: -29px;
-    width: 14px;
-    border-top: 2px solid var(--profile-accent-color);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 50%;
+    box-sizing: border-box;
     content: "";
-    opacity: 0;
-    transform: translateY(-50%);
-    transition: opacity 0.2s;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
   }
+
+  .section-toc li::before {
+    width: 6px;
+    height: 6px;
+    border: 1.5px solid #aeb5ba;
+    background: var(--global-bg-color);
+    opacity: var(--wheel-label-opacity, .58);
+    transition: width 220ms ease, height 220ms ease, opacity 180ms ease;
+  }
+
+  .section-toc li::after {
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.62);
+    transition: opacity 180ms ease, transform 260ms cubic-bezier(.22, .72, .26, 1);
+  }
+
   .section-toc a {
     position: relative;
+    z-index: 3;
     display: block;
-    color: #333 !important;
-    font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive !important;
-    font-size: 14px;
-    line-height: 1.3;
-    text-decoration: none;
+    width: max-content;
+    max-width: 154px;
+    padding: 7px 11px;
+    color: #697178 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0;
+    text-align: right;
+    text-decoration: none !important;
     white-space: nowrap;
+    opacity: var(--wheel-label-opacity, .58);
+    transform: translate(-100%, -50%);
+    transition: color 180ms ease, font-weight 180ms ease, opacity 180ms ease, transform 260ms cubic-bezier(.22, .72, .26, 1);
+    pointer-events: auto;
   }
-  .section-toc a::after {
-    position: absolute;
-    top: 50%;
-    right: -36px;
-    width: 8px;
-    height: 16px;
-    border: 2px solid var(--profile-accent-color);
-    border-left: 0;
-    border-radius: 0 10px 10px 0;
-    content: "";
-    opacity: 0;
-    transform: translateY(-50%);
-    transition: opacity 0.2s;
-  }
+
   .section-toc a:hover,
-  .section-toc a:focus {
-    color: var(--profile-accent-color) !important;
-    text-decoration: underline;
-  }
-  .section-toc li.is-active::before {
-    border-color: var(--profile-accent-color);
-    background: var(--profile-accent-color);
-  }
-  .section-toc li.is-active::after,
-  .section-toc li.is-active a::after {
+  .section-toc a:focus-visible {
+    color: #4f5960 !important;
     opacity: 1;
+    outline: none;
   }
+
+  .section-toc a:focus-visible {
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+  }
+
   .section-toc li.is-active a {
     color: var(--profile-accent-color) !important;
     font-weight: 700;
+    opacity: 1;
+    transform: translate(calc(-100% - 5px), -50%);
+  }
+
+  .section-toc li.is-active::before {
+    width: 8px;
+    height: 8px;
+    border-color: var(--profile-accent-color);
+    background: var(--profile-accent-color);
+    opacity: 1;
+  }
+
+  .section-toc li.is-active::after {
+    border-color: var(--profile-accent-color);
+    opacity: .68;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  html[data-theme="dark"] .section-toc a {
+    color: #aeb5ba !important;
+  }
+
+  html[data-theme="dark"] .section-toc__arc path {
+    fill: #626a70;
+    opacity: .68;
+  }
+
+  html[data-theme="dark"] .section-toc li::before {
+    border-color: #858d93;
+  }
+
+  html[data-theme="dark"] .section-toc li.is-active::before {
+    border-color: var(--profile-accent-color);
+  }
+
+  html[data-theme="dark"] .section-toc a:hover,
+  html[data-theme="dark"] .section-toc a:focus-visible {
+    color: #d7dbde !important;
+  }
+
+  html[data-theme="dark"] .section-toc li.is-active a {
+    color: var(--profile-accent-color) !important;
   }
 }
+
 @media (max-width: 1299px) {
   .section-toc { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-toc li,
+  .section-toc a,
+  .section-toc li::before,
+  .section-toc li::after {
+    transition: none;
+  }
 }
 </style>
 
 <nav class="section-toc" aria-label="Page sections">
+  <svg class="section-toc__arc" viewBox="0 0 264 340" aria-hidden="true" focusable="false">
+    <path d="M 224.76 41.86 A 131 131 0 0 0 224.76 298.14 Q 228 296.1 225.91 292.86 A 125.5 125.5 0 0 1 225.91 47.14 Q 228 43.9 224.76 41.86 Z"></path>
+  </svg>
   <ul class="section-toc__list">
     <li><a href="#interests">Interests</a></li>
     <li><a href="#news">News</a></li>
@@ -595,197 +667,105 @@ document.addEventListener("DOMContentLoaded", function () {
   var links = Array.from(toc.querySelectorAll('a[href^="#"]'));
   var sections = links.map(function (link) {
     return document.querySelector(link.getAttribute("href"));
-  }).filter(Boolean);
+  });
+  var index = -1;
+  var pinnedIndex = links.findIndex(function (link) {
+    return link.getAttribute("href") === window.location.hash;
+  });
 
-  function updateActiveSection() {
-    if (!sections.length) return;
+  function render() {
+    links.forEach(function (link, i) {
+      var offset = i - index;
+      var angle = offset * 25 * Math.PI / 180;
+      var visible = Math.abs(angle) <= Math.PI / 2 + .01;
+      var item = link.parentElement;
+      var x = 252 - 128 * Math.cos(angle);
+      var y = 170 + 128 * Math.sin(angle);
+      var proximity = Math.max(0, 1 - Math.abs(offset) / 4);
+      var isActive = offset === 0;
 
-    var marker = window.innerHeight * 0.35;
-    var active = sections[0];
-    sections.forEach(function (section) {
-      if (section.getBoundingClientRect().top <= marker) active = section;
-    });
-    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
-      active = sections[sections.length - 1];
-    }
+      item.style.setProperty("--wheel-x", x.toFixed(2) + "px");
+      item.style.setProperty("--wheel-y", y.toFixed(2) + "px");
+      item.style.setProperty("--wheel-opacity", visible ? "1" : "0");
+      item.style.setProperty("--wheel-label-opacity", (.34 + proximity * .42).toFixed(2));
+      item.style.pointerEvents = visible ? "auto" : "none";
+      item.classList.toggle("is-active", isActive);
 
-    links.forEach(function (link) {
-      var isActive = link.getAttribute("href") === "#" + active.id;
-      link.parentElement.classList.toggle("is-active", isActive);
       if (isActive) link.setAttribute("aria-current", "location");
       else link.removeAttribute("aria-current");
     });
   }
 
+  function syncToPage() {
+    if (pinnedIndex >= 0) {
+      if (index !== pinnedIndex) {
+        index = pinnedIndex;
+        render();
+      }
+      return;
+    }
+
+    var active = 0;
+    var marker = window.innerHeight * .36;
+
+    sections.forEach(function (section, i) {
+      if (!section) return;
+      if (section.getBoundingClientRect().top <= marker) active = i;
+    });
+
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+      active = links.length - 1;
+    }
+    if (active === index) return;
+    index = active;
+    render();
+  }
+
+  function unlockPinnedSection() {
+    if (pinnedIndex < 0) return;
+    pinnedIndex = -1;
+    requestSync();
+  }
+
+  links.forEach(function (link, linkIndex) {
+    link.addEventListener("click", function () {
+      pinnedIndex = linkIndex;
+      index = linkIndex;
+      render();
+    });
+  });
+
+  toc.addEventListener("keydown", function (event) {
+    var linkIndex = links.indexOf(document.activeElement);
+    if (linkIndex < 0) return;
+    if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+      event.preventDefault();
+      links[Math.min(links.length - 1, linkIndex + 1)].focus();
+    }
+    if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+      event.preventDefault();
+      links[Math.max(0, linkIndex - 1)].focus();
+    }
+  });
+
   var ticking = false;
-  function requestUpdate() {
+  function requestSync() {
     if (ticking) return;
     ticking = true;
     window.requestAnimationFrame(function () {
-      updateActiveSection();
+      syncToPage();
       ticking = false;
     });
   }
 
-  window.addEventListener("scroll", requestUpdate, { passive: true });
-  window.addEventListener("resize", requestUpdate);
-  updateActiveSection();
-});
-</script>
-
-<style>
-@media (min-width: 1300px) {
-  .section-toc {
-    right: max(12px, calc((100vw - 1280px) / 2 - 4px));
-    width: 188px;
-    height: 286px;
-    overflow: hidden;
-    border: 1px solid rgba(73, 78, 82, .16);
-    border-radius: 14px;
-    background: rgba(255,255,255,.88);
-    box-shadow: 0 16px 36px rgba(38, 43, 48, .12);
-    backdrop-filter: blur(12px);
-    overscroll-behavior: contain;
-    user-select: none;
-  }
-  .section-toc::before,
-  .section-toc::after {
-    position: absolute;
-    z-index: 2;
-    left: 10px;
-    right: 10px;
-    height: 76px;
-    pointer-events: none;
-    content: "";
-  }
-  .section-toc::before { top: 0; background: linear-gradient(#fff, rgba(255,255,255,0)); }
-  .section-toc::after { bottom: 0; background: linear-gradient(rgba(255,255,255,0), #fff); }
-  .section-toc__list {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    gap: 0;
-    padding: 0;
-    z-index: 4;
-    transform: translateY(-50%);
-    transition: transform 220ms cubic-bezier(.2,.8,.2,1);
-  }
-  .section-toc__list::before {
-    display: none;
-  }
-  .section-toc li {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-    justify-content: flex-end;
-    width: auto;
-    height: 46px;
-    margin: 0;
-    transform: none;
-  }
-  .section-toc li::before,
-  .section-toc li::after,
-  .section-toc a::after { display: none; }
-  .section-toc a {
-    display: block;
-    width: 100%;
-    padding: 0 22px 0 12px;
-    color: #667078 !important;
-    font-size: 13px;
-    line-height: 46px;
-    text-align: right;
-    opacity: .38;
-    transform: scale(.9);
-    transition: opacity 180ms ease, color 180ms ease, transform 180ms ease;
-  }
-  .section-toc li.is-near a { opacity: .68; transform: scale(.96); }
-  .section-toc li.is-active a {
-    color: var(--profile-accent-color) !important;
-    opacity: 1;
-    font-weight: 700;
-    transform: scale(1.08);
-  }
-  .section-toc a:hover, .section-toc a:focus { color: var(--profile-accent-color) !important; opacity: 1; }
-  html[data-theme="dark"] .section-toc { background: rgba(42,42,42,.9); border-color: rgba(255,255,255,.18); }
-  html[data-theme="dark"] .section-toc::before { background: linear-gradient(#2a2a2a, rgba(42,42,42,0)); }
-  html[data-theme="dark"] .section-toc::after { background: linear-gradient(rgba(42,42,42,0), #2a2a2a); }
-  html[data-theme="dark"] .section-toc a { color: #d6d6d6 !important; }
-  html[data-theme="dark"] .section-toc li.is-active a { color: var(--profile-accent-color) !important; }
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var toc = document.querySelector(".section-toc");
-  if (!toc) return;
-  var links = Array.from(toc.querySelectorAll("a[href^='#']"));
-  var list = toc.querySelector(".section-toc__list");
-  var index = 0;
-  var centerOffset = 138;
-  var lockedIndex = -1;
-  var unlockTimer = null;
-  function render() {
-    links.forEach(function (link, i) {
-      var distance = Math.abs(i - index);
-      link.parentElement.classList.toggle("is-active", distance === 0);
-      link.parentElement.classList.toggle("is-near", distance === 1);
-      if (distance === 0) link.setAttribute("aria-current", "location");
-      else link.removeAttribute("aria-current");
-    });
-    list.style.transform = "translateY(calc(-50% + " + (centerOffset - index * 46) + "px))";
-  }
-  function choose(next, scroll) {
-    index = Math.max(0, Math.min(links.length - 1, next));
-    render();
-    if (scroll) {
-      lockedIndex = index;
-      if (unlockTimer) window.clearTimeout(unlockTimer);
-      var target = document.querySelector(links[index].getAttribute("href"));
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-      unlockTimer = window.setTimeout(function () {
-        lockedIndex = -1;
-        syncToPage();
-      }, 900);
-    }
-  }
-  function syncToPage() {
-    if (lockedIndex >= 0) {
-      if (index !== lockedIndex) { index = lockedIndex; render(); }
-      return;
-    }
-    var active = 0;
-    var closestDistance = Infinity;
-    links.forEach(function (link, i) {
-      var section = document.querySelector(link.getAttribute("href"));
-      if (!section) return;
-      var distance = Math.abs(section.getBoundingClientRect().top);
-      if (distance < closestDistance) {
-        closestDistance = distance;
-        active = i;
-      }
-    });
-    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) active = links.length - 1;
-    if (active !== index) { index = active; render(); }
-  }
-  toc.setAttribute("tabindex", "0");
-  toc.addEventListener("wheel", function (event) {
-    event.preventDefault();
-    if (Math.abs(event.deltaY) > 2) choose(index + (event.deltaY > 0 ? 1 : -1), true);
-  }, { passive: false });
-  toc.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowDown" || event.key === "ArrowRight") { event.preventDefault(); choose(index + 1, true); }
-    if (event.key === "ArrowUp" || event.key === "ArrowLeft") { event.preventDefault(); choose(index - 1, true); }
+  window.addEventListener("scroll", requestSync, { passive: true });
+  window.addEventListener("resize", requestSync);
+  window.addEventListener("wheel", unlockPinnedSection, { passive: true });
+  window.addEventListener("touchstart", unlockPinnedSection, { passive: true });
+  window.addEventListener("keydown", function (event) {
+    var scrollKeys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "];
+    if (!toc.contains(event.target) && scrollKeys.indexOf(event.key) >= 0) unlockPinnedSection();
   });
-  toc.addEventListener("click", function (event) {
-    var link = event.target.closest("a");
-    if (link) { event.preventDefault(); choose(links.indexOf(link), true); }
-  });
-  window.addEventListener("scroll", syncToPage, { passive: true });
-  window.addEventListener("resize", syncToPage);
-  render();
   syncToPage();
 });
 </script>
