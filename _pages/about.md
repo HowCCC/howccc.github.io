@@ -940,7 +940,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         {% if education.period %}<div class="experience-time education-time">{{ education.period }}</div>{% endif %}
         {% if education.supervisors and education.supervisors.size > 0 %}
-          <div class="experience-mentor education-supervisor">Supervisor:
+          <div class="experience-mentor education-supervisor">Supv:
             {% for supervisor in education.supervisors %}
               {% if supervisor.url %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% else %}{{ supervisor.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
             {% endfor %}
