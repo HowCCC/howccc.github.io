@@ -548,7 +548,8 @@ html[data-theme="dark"] .experience-mentor a { color: var(--profile-accent-color
     transition: opacity 180ms ease, transform 260ms cubic-bezier(.22, .72, .26, 1);
   }
 
-  .section-toc a {
+  .section-toc a,
+  .section-toc a:visited {
     position: relative;
     z-index: 3;
     display: block;
@@ -603,7 +604,8 @@ html[data-theme="dark"] .experience-mentor a { color: var(--profile-accent-color
     transform: translate(-50%, -50%) scale(1);
   }
 
-  html[data-theme="dark"] .section-toc a {
+  html[data-theme="dark"] .section-toc a,
+  html[data-theme="dark"] .section-toc a:visited {
     color: #aeb5ba !important;
   }
 
