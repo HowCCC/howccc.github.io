@@ -469,6 +469,78 @@ html[data-theme="dark"] .experience-mentor a { color: var(--profile-accent-color
 @media (max-width: 700px) {
   .experience-grid { grid-template-columns: 1fr; }
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 24px;
+}
+.project-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+.project-card__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.project-card__stars {
+  display: inline-flex;
+  flex: 0 0 auto;
+  line-height: 1;
+}
+.project-card__stars img {
+  display: block;
+  width: auto;
+  height: 20px;
+  max-width: none;
+}
+.project-card__description {
+  margin-bottom: 12px;
+  color: #495057;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.project-card__repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.project-card__repo img {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+html[data-theme="dark"] .project-card {
+  background: #3a3a3a;
+  border-color: #555;
+}
+html[data-theme="dark"] .project-card__description { color: #d6d6d6; }
+html[data-theme="dark"] .project-card__repo img { filter: invert(1); }
+@media (max-width: 700px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
 @media (min-width: 1300px) {
   .section-toc {
     position: fixed;
@@ -657,6 +729,7 @@ html[data-theme="dark"] .experience-mentor a { color: var(--profile-accent-color
     <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#honors">Honors &amp; Rewards</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#miscs">Miscs</a></li>
   </ul>
 </nav>
@@ -984,6 +1057,26 @@ document.addEventListener("DOMContentLoaded", function () {
       <span class="news-item__summary">{{ honor.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     </div>
   </div>
+{% endfor %}
+</div>
+
+## Projects
+
+<div class="project-grid">
+{% for project in site.data.projects %}
+  <article class="project-card">
+    <div class="project-card__header">
+      <h3 class="project-card__title"><a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a></h3>
+      <a class="project-card__stars" href="{{ project.url }}/stargazers" target="_blank" rel="noopener noreferrer" aria-label="View stargazers for {{ project.repo }}">
+        <img src="https://img.shields.io/github/stars/{{ project.repo }}?style=social" alt="GitHub stars for {{ project.repo }}">
+      </a>
+    </div>
+    <div class="project-card__description">{{ project.description }}</div>
+    <a class="project-card__repo" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/icons/social/github.svg' | relative_url }}" alt="" aria-hidden="true">
+      <span>{{ project.repo }}</span>
+    </a>
+  </article>
 {% endfor %}
 </div>
 

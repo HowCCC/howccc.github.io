@@ -1,0 +1,4 @@
+- name: "freecad-nexus"
+  repo: "HowCCC/freecad-mcp"
+  url: "https://github.com/HowCCC/freecad-mcp"
+  description: "Connect AI assistants to FreeCAD through the MCP for modeling, assembly, machining workflows, and surface editing."

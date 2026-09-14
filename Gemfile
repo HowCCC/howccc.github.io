@@ -11,4 +11,5 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+gem 'nokogiri', '< 1.16' if RUBY_VERSION < '3.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

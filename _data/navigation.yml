@@ -17,5 +17,8 @@ main:
   - title: "Publications"
     url: /#publications
 
+  - title: "Projects"
+    url: /#projects
+
   - title: "Miscs"
     url: /#miscs
