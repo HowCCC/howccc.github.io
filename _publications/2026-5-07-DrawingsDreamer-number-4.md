@@ -3,13 +3,13 @@ title: "DrawingsDreamer: A Unified Multi-View Engineering Drawings Generation Mo
 authors: "Shurui Liu, Weide Chen, Changwang Yi, Ancong Wu"
 collection: publications
 category: manuscripts
-order: 4
+order: 5
 corresponding_authors: "Ancong Wu"
 teaser: "DrawingsDreamer.png"
 # permalink: /publication/2009-10-01-paper-title-number-1
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 # date: 2009-10-01
-venue: 'NeurIPS 2026 Underreview.'
+venue: 'NeurIPS 2026.'
 # slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 # paperurl: 'https://arxiv.org/pdf/2503.09514'
 # projecturl: "https://your-project-page"
