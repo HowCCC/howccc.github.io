@@ -2,13 +2,10 @@
 permalink: /
 title: ""
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 <div class="about-intro">
   <div class="hello-animation" aria-hidden="true">
-    <img src="{{ '/images/Hi.svg' | relative_url }}" alt="">
+    <img src="{{ '/images/hello-animation.svg' | relative_url }}" alt="">
   </div>
   <p>Greetings! Here is Shurui Liu. I'm a 2<sup>nd</sup> year student <a href="https://www.sysu.edu.cn/">@Sun Yat-sen University.</a> During my undergraduate studies, I received my B.S. degree under the supervision of  <a href="https://gaocq.github.io/">@Prof. Chenqiang Gao(高陈强)</a>. Currently, I'm jointly supervised by <a href="https://isee-ai.cn/~zhwshi/">@Prof. Wei-Shi Zheng(鄭偉詩)</a> and <a href="https://www.isee-ai.cn/~wuancong/index.html">@Ancong Wu(吴岸聪)</a>. Currently, I'm interning at VAST, where I work on low-poly 3D generation.</p> 
 
@@ -93,6 +90,24 @@ redirect_from:
   text-decoration: underline !important;
 }
 
+.page__content h2 {
+  position: relative;
+  margin-top: 2.1em;
+  padding-left: 14px;
+  color: #4b3d45;
+}
+.page__content h2::before {
+  position: absolute;
+  top: .18em;
+  bottom: .18em;
+  left: 0;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #d5207a, #ef8fba);
+  content: "";
+}
+html[data-theme="dark"] .page__content h2 { color: #f4e8ee; }
+
 .about-intro,
 .about-intro p,
 .about-intro span,
@@ -155,10 +170,27 @@ redirect_from:
   background: #888;
 }
 .news-item {
-  padding: 4px 0;
+  padding: 6px 0;
   font-size: 14px;
-  border-bottom: 1px dashed #eee;
+  border-bottom: 1px dashed #f1d8e4;
   line-height: 1.55;
+  transition: color 180ms ease, padding-left 180ms ease;
+}
+.news-item:hover {
+  padding-left: 5px;
+}
+.news-item__latest {
+  display: inline-block;
+  margin-right: 7px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #f8d5e5;
+  color: #a6155d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  vertical-align: 1px;
 }
 .news-item:last-child {
   border-bottom: none;
@@ -201,22 +233,95 @@ redirect_from:
   background: #888;
 }
 
-.pub-card {
+.pub-section-heading {
   display: flex;
   align-items: center;
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 10px;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 2.1em;
+}
+.page__content .pub-section-heading h2 {
+  flex: 1;
+  margin: 2em 0 0.5em;
+  padding-bottom: 0.5em;
+  font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive !important;
+  font-size: 1em !important;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.pub-filter-toggle {
+  appearance: none;
+  border: 1px solid #d5207a;
+  border-radius: 999px;
+  padding: 7px 13px;
+  background: transparent;
+  color: #b01863;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  line-height: 1;
+  transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+.pub-filter-toggle:hover,
+.pub-filter-toggle:focus-visible {
+  background: #fbe0ec;
+  box-shadow: 0 3px 10px rgba(213, 32, 122, .16);
+  outline: none;
+  transform: translateY(-1px);
+}
+.pub-filter-toggle[aria-pressed="true"] {
+  background: #d5207a;
+  color: #fff;
+}
+.pub-card.pub-card--filtered {
+  display: none;
+}
+html[data-theme="dark"] .pub-filter-toggle { color: #f5b6d2; border-color: #ef8fba; }
+html[data-theme="dark"] .pub-filter-toggle:hover,
+html[data-theme="dark"] .pub-filter-toggle:focus-visible { background: #5a3548; }
+html[data-theme="dark"] .pub-filter-toggle[aria-pressed="true"] { background: #d5207a; color: #fff; }
+@media (max-width: 600px) {
+  .pub-section-heading { align-items: flex-start; }
+  .pub-filter-toggle { margin-top: 3px; }
+}
+
+.pub-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f5f6f7;
+  border: 1px solid #e1e4e7;
+  border-radius: 12px;
   padding: 16px;
   margin-bottom: 16px;
-  transition: box-shadow 0.2s;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
 .pub-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: #c8cdd2;
+  box-shadow: 0 8px 22px rgba(73, 78, 82, 0.11);
+  transform: translateY(-2px);
 }
 .pub-card--first-author {
+  background: #f5f6f7;
+}
+.pub-card--highlight {
+  border: 2px solid #cfd4d8;
   background: #eef0f2;
-  border-color: #d5d9dd;
+  box-shadow: 0 4px 14px rgba(73, 78, 82, 0.08);
+}
+.pub-card--highlight::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: #b8c0c6;
+  content: "";
+}
+.pub-card--highlight:hover {
+  border-color: #b8c0c6;
+  box-shadow: 0 8px 20px rgba(73, 78, 82, 0.13);
 }
 .pub-img {
   flex-shrink: 0;
@@ -283,7 +388,7 @@ redirect_from:
   margin: 0 4px 0 10px;
   border-radius: 3px;
   background: #eef0f2;
-  border: 1px solid #d5d9dd;
+  border: 1px solid #cfd4d8;
   vertical-align: -1px;
 }
 .pub-venue {
@@ -355,6 +460,8 @@ html[data-theme="dark"] .news-date { color: var(--profile-accent-color); }
 html[data-theme="dark"] .news-item { color: #eaeaea; border-bottom-color: #555; }
 html[data-theme="dark"] .pub-card { background: #3a3a3a; border-color: #555; }
 html[data-theme="dark"] .pub-card.pub-card--first-author { background: #3a3a3a; border-color: #555; }
+html[data-theme="dark"] .pub-card--highlight { background: #404347; border-color: #777d83; }
+html[data-theme="dark"] .pub-card--highlight:hover { border-color: #969da4; }
 html[data-theme="dark"] .pub-title { color: #eaeaea; }
 html[data-theme="dark"] .pub-authors { color: #ccc; }
 html[data-theme="dark"] .pub-note { color: #ccc; }
@@ -726,7 +833,6 @@ html[data-theme="dark"] .project-card__repo img { filter: invert(1); }
     <li><a href="#interests">Interests</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#honors">Honors &amp; Rewards</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -861,7 +967,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="news-item">
     <div class="news-item__body">
       <span class="news-date">{{ item.date | date: "%Y.%m" }}</span>
-      <span class="news-item__summary">{{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      <span class="news-item__summary">{% if forloop.first %}<span class="news-item__latest">Latest</span>{% endif %}{{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     </div>
     {% if item.image %}
       <div class="news-image" style="text-align: center;">
@@ -875,7 +981,13 @@ document.addEventListener("DOMContentLoaded", function () {
 {% endfor %}
 </div>
 
-## Publications
+<div class="pub-section-heading">
+  <h2 id="publications">Publications</h2>
+  <button class="pub-filter-toggle" type="button" aria-pressed="false" aria-controls="publication-list">
+    <span class="pub-filter-toggle__show-all">Show selected</span>
+    <span class="pub-filter-toggle__show-selected" hidden>Show all</span>
+  </button>
+</div>
 
 <p class="pub-note"> ✉ denotes corresponding author.  * denotes equal contribution. </p>
 
@@ -884,7 +996,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <p class="pub-note pub-highlight-note"><span class="pub-highlight-swatch" aria-hidden="true"></span> indicates a highlighted paper.</p>
 
 
-<div class="pub-scroll-container">
+<div class="pub-scroll-container" id="publication-list">
   {% assign publication_items = site.publications | sort: 'order' | reverse %}
   {% for post in publication_items %}
     {% if post.teaser %}
@@ -896,7 +1008,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {% endif %}
 
     {% assign first_author = post.authors | split: ',' | first | strip %}
-    <div class="pub-card{% if first_author == site.author.name or first_author == 'Shurui Liu' %} pub-card--first-author{% endif %}">
+    <div class="pub-card{% if first_author == site.author.name or first_author == 'Shurui Liu' %} pub-card--first-author{% endif %}{% if post.highlight %} pub-card--highlight{% else %} pub-card--not-highlight{% endif %}">
       <div class="pub-img{% if post.transparent_teaser %} pub-img--transparent{% endif %}">
         {% if teaser %}
           <img src=
@@ -951,9 +1063,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {% capture post_link %}{% include resolve-link.html href=post_href %}{% endcapture %}
         {% if project_link != '' or paper_link != '' or code_link != '' or bib_link != '' or slides_link != '' or post_link != '' %}
           <div class="pub-links">
-            {% if paper_link != '' %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/pub_pdf.png' | relative_url }}" alt="" aria-hidden="true"><span>PDF</span></a>{% endif %}
-            {% if code_link != '' %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/code.png' | relative_url }}" alt="" aria-hidden="true"><span>Code</span></a>{% endif %}
-            {% if project_link != '' %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/url.png' | relative_url }}" alt="" aria-hidden="true"><span>Project</span></a>{% endif %}
+            {% if paper_link != '' %}<a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/publication-pdf.png' | relative_url }}" alt="" aria-hidden="true"><span>PDF</span></a>{% endif %}
+            {% if code_link != '' %}<a href="{{ code_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/code-icon.png' | relative_url }}" alt="" aria-hidden="true"><span>Code</span></a>{% endif %}
+            {% if project_link != '' %}<a href="{{ project_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ '/images/project-link.png' | relative_url }}" alt="" aria-hidden="true"><span>Project</span></a>{% endif %}
             {% if bib_link != '' %}<a href="{{ bib_link }}" target="_blank" rel="noopener noreferrer">Bib</a>{% endif %}
             {% if slides_link != '' %}<a href="{{ slides_link }}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
             {% if post_link != '' and post_link != project_link and post_link != paper_link and post_link != code_link and post_link != bib_link and post_link != slides_link %}
@@ -965,6 +1077,29 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   {% endfor %}
 </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.querySelector(".pub-filter-toggle");
+  var list = document.querySelector("#publication-list");
+  if (!toggle || !list) return;
+
+  var showAllLabel = toggle.querySelector(".pub-filter-toggle__show-all");
+  var showSelectedLabel = toggle.querySelector(".pub-filter-toggle__show-selected");
+  var cards = Array.from(list.querySelectorAll(".pub-card--not-highlight"));
+
+  toggle.addEventListener("click", function () {
+    var showingSelected = toggle.getAttribute("aria-pressed") === "true";
+    toggle.setAttribute("aria-pressed", String(!showingSelected));
+    cards.forEach(function (card) {
+      card.classList.toggle("pub-card--filtered", !showingSelected);
+    });
+    showAllLabel.hidden = !showingSelected;
+    showSelectedLabel.hidden = showingSelected;
+  });
+});
+</script>
 
 <!-- ## Education
 
@@ -1084,7 +1219,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <div>
   <div class="news-item">🏊/🎾/🎧 are my vibe.</div>
   <div class="news-item">I'm leading a project curating code centric tutorials to deconstruct generative models. View <a href="https://howccc.github.io/StupidGen/">[here]</a>.</div>
-  <div class="news-item">I have delivered some documents for Web3. <a href="{{ '/teaching/BlockChain_zh.pdf' | relative_url }}">[中文版]</a></div>
+  <div class="news-item">I have delivered some documents for Web3. <a href="{{ '/files/blockchain-zh.pdf' | relative_url }}">[中文版]</a></div>
   <!-- <div class="news-item">I stand by <a href="https://en.wikipedia.org/wiki/Bitter_lesson">[The bitter lession]</a> by Rich Sutton, <a href="https://dl.acm.org/doi/10.1145/168304.168306">[Keeping the Neural Networks Simple]</a> by Geoffrey Hinton
  and <a href="https://udlbook.github.io/udlbook/">[Understanding Deep Learning]</a> by Simon J.D. Prince. Aligning with these insight and bruised by my own setbacks, I've developed a near allergic reaction to any HAND CRAFTED OPTIMIZATION, firmly gravitating toward the robust predictability of the Scaling Laws.</div> -->
 
