@@ -2,6 +2,7 @@
 title: "ForgeCAD: Reformulating Drawings-to-CAD Generation as a Symbolic Routing Task"
 authors: "Shurui Liu, Yihao Guo, Weide Chen, Donghao Wu, Ancong Wu"
 collection: publications
+highlight: true
 category: manuscripts
 order: 4
 corresponding_authors: "Ancong Wu"
