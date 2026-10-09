@@ -14,6 +14,6 @@ venue: 'Underreview.'
 # paperurl: 'https://arxiv.org/pdf/2503.09514'
 # projecturl: "https://your-project-page"
 # codeurl: "https://github.com/your-repo"
-pdfurl: files/forgecad-camera-ready.pdf
+# pdfurl: files/forgecad-camera-ready.pdf
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
