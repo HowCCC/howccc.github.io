@@ -1195,25 +1195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 {% endfor %}
 </div>
 
-## Projects
 
-<div class="project-grid">
-{% for project in site.data.projects %}
-  <article class="project-card">
-    <div class="project-card__header">
-      <h3 class="project-card__title"><a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a></h3>
-      <a class="project-card__stars" href="{{ project.url }}/stargazers" target="_blank" rel="noopener noreferrer" aria-label="View stargazers for {{ project.repo }}">
-        <img src="https://img.shields.io/github/stars/{{ project.repo }}?style=social" alt="GitHub stars for {{ project.repo }}">
-      </a>
-    </div>
-    <div class="project-card__description">{{ project.description }}</div>
-    <a class="project-card__repo" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ '/assets/icons/social/github.svg' | relative_url }}" alt="" aria-hidden="true">
-      <span>{{ project.repo }}</span>
-    </a>
-  </article>
-{% endfor %}
-</div>
 
 ## Miscs
 <div>
