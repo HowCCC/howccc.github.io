@@ -967,7 +967,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="news-item">
     <div class="news-item__body">
       <span class="news-date">{{ item.date | date: "%Y.%m" }}</span>
-      <span class="news-item__summary">{% if forloop.first %}<span class="news-item__latest">Latest</span>{% endif %}{{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      <span class="news-item__summary">{{ item.summary | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     </div>
     {% if item.image %}
       <div class="news-image" style="text-align: center;">
