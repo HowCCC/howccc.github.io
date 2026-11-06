@@ -13,10 +13,6 @@
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar author-avatar-hover" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
   </div>
-  {% if page.profile_modes %}
-  <a class="profile-view-3d" href="#" data-profile-3d>View in 3D</a>
-  {% endif %}
-
   <div class="author__content">
     {% if author.name_zh %}
       <h3 class="author__name">{{ author.name }}</h3>

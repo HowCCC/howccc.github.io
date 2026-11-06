@@ -1,66 +1,59 @@
-/* Two presentation modes for the home page: the default 3D portrait and the original 2D profile. */
-.profile-view-3d {
-  display: block;
-  margin: -4px 0 16px;
-  color: #806600 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 11px;
-  letter-spacing: .02em;
-  text-align: center;
-  text-decoration: none !important;
+/* A photograph set behind its interactive three-dimensional counterpart. */
+.about-intro { display: flow-root; }
+.about-intro .profile-portrait {
+  position: relative;
+  float: right;
+  width: 340px;
+  height: 310px;
+  margin: -12px 0 20px 22px;
+  overflow: visible;
+  pointer-events: auto;
+  isolation: isolate;
+  perspective: 800px;
 }
-.profile-view-3d:hover { color: #f9cf00 !important; text-decoration: underline !important; }
-.profile-portrait { position: relative; }
-.profile-portrait__canvas { display: block; width: 100%; height: 100%; min-height: 135px; cursor: grab; touch-action: none; }
+.profile-portrait__backdrop {
+  position: absolute;
+  top: 26px; left: 15px;
+  width: 200px; height: 218px;
+  padding: 7px;
+  background: #fff;
+  border: 1px solid rgba(146,128,73,.18);
+  border-radius: 5px;
+  transform: rotateY(24deg) rotateZ(-8deg);
+  box-shadow: -8px 15px 28px rgba(59,51,32,.12), 1px 1px 0 rgba(249,207,0,.3);
+  z-index: 0;
+  pointer-events: none;
+}
+.about-intro .profile-portrait__backdrop img {
+  display: block; width: 100%; height: 100%; max-width: 100%;
+  object-fit: cover; object-position: 64% center;
+  transform: none; border-radius: 2px;
+}
+.profile-portrait__backdrop::before,
+.profile-portrait__backdrop::after {
+  display: none;
+}
+.about-intro .profile-portrait__canvas {
+  position: absolute; top: 0; left: 95px;
+  display: block; width: 245px; height: 280px;
+  cursor: grab; touch-action: none; z-index: 2;
+  filter: drop-shadow(8px 15px 12px rgba(45,39,24,.13));
+}
 .profile-portrait__canvas:active { cursor: grabbing; }
 .profile-portrait__caption {
-  position: absolute; right: 8px; bottom: 4px; z-index: 2;
-  color: rgba(80, 77, 68, .8);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 10px !important; line-height: 1.2 !important; letter-spacing: .02em;
+  position: absolute; bottom: 0; width: 100%;
+  color: #8a8577; text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 10px; line-height: 1.5; letter-spacing: .03em;
 }
-.profile-portrait__caption a {
-  color: #806600 !important; font-size: 10px !important; line-height: 1.2 !important;
-  text-decoration: none !important;
+@media (max-width: 700px) {
+  .about-intro .profile-portrait {
+    float: none; width: 320px; max-width: 100%; margin: 0 auto 24px;
+  }
+  .about-intro .profile-portrait__canvas { left: 24%; width: 76%; }
+  .profile-portrait__backdrop { left: 2%; width: 59%; }
 }
-.profile-portrait__caption a:hover { color: #f9cf00 !important; text-decoration: underline !important; }
-.profile-portrait__hint {
-  position: absolute; left: 8px; bottom: 4px; z-index: 2;
-  color: rgba(80,77,68,.55); font-size: 10px !important; line-height: 1.2 !important; pointer-events: none;
-}
-html.profile-3d-mode .profile-portrait {
-  float: right !important; width: 320px !important; height: auto !important;
-  margin: -18px 20px 8px 18px !important; overflow: visible !important;
-  pointer-events: auto !important;
-}
-html.profile-3d-mode .profile-portrait__canvas {
-  width: 100% !important; height: 245px !important; min-height: 245px !important;
-  pointer-events: auto !important;
-}
-html.profile-3d-mode .author__content { display: none !important; }
-html.profile-3d-mode .profile-portrait__caption { white-space: nowrap; }
-html.profile-3d-mode .profile-portrait__canvas { opacity: 1; }
-html.profile-3d-mode .profile-portrait__caption {
-  position: static !important; display: block !important; margin-top: 7px; text-align: center;
-}
-html.profile-3d-mode .profile-view-3d { display: none; }
-html.profile-3d-mode .sidebar .author__avatar { display: none; }
-html.profile-3d-mode .sidebar .author__content { margin-top: 0; }
-html.profile-3d-mode .hello-animation > img { display: none; }
-html.profile-2d-mode .profile-portrait { display: none; }
-html.profile-2d-mode .profile-portrait__canvas,
-html.profile-2d-mode .profile-portrait__caption,
-html.profile-2d-mode .profile-portrait__hint { display: none; }
-html.profile-2d-mode .profile-portrait { pointer-events: none; }
-html.profile-2d-mode .profile-portrait::after { content: ""; display: block; }
-html.profile-2d-mode .profile-portrait > img { display: block; }
-html.profile-2d-mode .profile-portrait .profile-portrait__canvas { visibility: hidden; }
-html.profile-2d-mode .profile-view-3d { display: block; }
-html.profile-2d-mode .author__content { display: block !important; }
-html.profile-2d-mode .sidebar .author__avatar { display: block; }
-@media (max-width: 600px) {
-  html.profile-3d-mode .profile-portrait { float: none !important; width: 100% !important; height: auto !important; margin: 0 auto 26px !important; }
-  html.profile-3d-mode .profile-portrait__canvas { height: 230px !important; min-height: 230px !important; }
-  html.profile-3d-mode .profile-portrait__caption { margin-top: 7px; }
-  .profile-portrait__caption { font-size: 9px; }
-}
+
+/* The combined presentation keeps contact links but removes the old 2D portrait block. */
+html.profile-3d-mode .sidebar .author__avatar,
+html.profile-3d-mode .sidebar .author__content { display: none !important; }
