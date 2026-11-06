@@ -6,13 +6,16 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
+  <div class="author__avatar" data-profile-avatar>
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}" class="author-avatar-hover" fetchpriority="high" />
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar author-avatar-hover" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
   </div>
+  {% if page.profile_modes %}
+  <a class="profile-view-3d" href="#" data-profile-3d>View in 3D</a>
+  {% endif %}
 
   <div class="author__content">
     {% if author.name_zh %}

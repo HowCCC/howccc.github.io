@@ -3,7 +3,12 @@
    ========================================================================== */
 
 :root {
-  --profile-accent-color: #d5207a93;
+  --profile-theme-color: #f9cf00;
+  --profile-accent-color: #8c7000;
+}
+
+html[data-theme="dark"] {
+  --profile-accent-color: #f9cf00;
 }
 
 /* ==========================================================================

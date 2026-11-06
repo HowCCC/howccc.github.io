@@ -2,3 +2,5 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
 {% include analytics.html %}
+
+{% if page.profile_modes %}<script type="module" src="{{ '/assets/js/profile-modes.js' | relative_url }}"></script>{% endif %}
