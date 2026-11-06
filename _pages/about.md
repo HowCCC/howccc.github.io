@@ -41,44 +41,15 @@ author_profile: true
 
 {% include base_path %}
 <style>
-/* 1. 引入字体 */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-.page__content,
-.page__content p,
-.page__content li,
-.page__content span,
-.page__content div {
-  /* 2. 修改优先级：将 Libre Baskerville 放在最前面 */
-  font-family: 'Libre Baskerville', 'Adobe Caslon Pro', 'Caslon', serif !important;
-  line-height: 1.0; /* 建议稍微增加行高，Libre Baskerville 这种字体在大行距下更美观 */
+.page__content {
+  font-family: 'Libre Baskerville', 'Adobe Caslon Pro', 'Caslon', serif;
 }
 
-/* 3. 针对 News 部分的斜体进行优化 */
-.page__content i, 
-.page__content em {
-  font-family: 'Libre Baskerville', serif !important;
-  font-style: italic !important;
-  color: #898585; /* 稍微调浅一点斜体的颜色，会显得更有高级感 */
+.about-intro {
+  line-height: 1.6;
 }
-
-
-/* 3. 核心修复：确保出版物卡片内的字体不被干扰 */
-/* 强化版修复：确保出版物区域内所有元素恢复默认字体 */
-.publication-grid, 
-/* .publication-grid *, 选中 publication-grid 下的所有子元素 */
-.publication-card__authors {
-  font-family: italic !important;
-  /* font-style: normal !important; 额外确保不会被强制斜体 */
-}
-
-/* 如果你的 publication-card.html 里用了特定的 span 或 em
-.publication-grid span, 
-.publication-grid em, 
-.publication-grid i {
-  font-family: italic !important;
-} */
-
 
 .page__content a,
 .page__content a:visited {
@@ -242,12 +213,8 @@ html[data-theme="dark"] .page__content h2 { color: #f4e8ee; }
 }
 .page__content .pub-section-heading h2 {
   flex: 1;
-  margin: 2em 0 0.5em;
+  margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive !important;
-  font-size: 1em !important;
-  font-weight: 700;
-  line-height: 1.2;
 }
 .pub-filter-toggle {
   appearance: none;
@@ -288,6 +255,7 @@ html[data-theme="dark"] .pub-filter-toggle[aria-pressed="true"] { background: #d
 }
 
 .pub-card {
+  font-family: inherit;
   position: relative;
   display: flex;
   align-items: center;

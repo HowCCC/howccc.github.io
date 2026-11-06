@@ -566,7 +566,8 @@
 }
 
 /* About page image hover effect */
-.page__content > h2 {
+.page__content > h2,
+.page__content .pub-section-heading h2 {
   font-family: "Sidebar Comic Sans", "Comic Sans MS", cursive;
   font-size: 1em;
 }

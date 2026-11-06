@@ -200,11 +200,9 @@
       {% assign weixin_qr = author.weixin_qr | default: site.author.weixin_qr %}
       {% if weixin_qr %}
         <li class="author__primary-item author__item--wechat">
-          <a href="{% if weixin_qr contains '://' %}{{ weixin_qr }}{% else %}{{ weixin_qr | prepend: base_path }}{% endif %}"
-             class="weixin-link author__entry"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Open WeChat QR code in new tab">
+          <button type="button" class="weixin-link author__entry"
+             aria-label="Show WeChat QR code" aria-haspopup="dialog"
+             aria-controls="wechat-modal" aria-expanded="false" data-wechat-open>
             <span class="author__icon">
               <svg class="icon icon-wechat" viewBox="0 0 32 32" aria-hidden="true">
                 <circle cx="16" cy="16" r="14" fill="#07C160"></circle>
@@ -219,7 +217,7 @@
               </svg>
             </span>
             <span class="author__label">WeChat</span>
-          </a>
+          </button>
         </li>
       {% endif %}
       {% assign xiaohongshu_url = author.xiaohongshu | default: site.author.xiaohongshu %}
@@ -271,3 +269,15 @@
     </ul>
   </div>
 </div>
+
+{% if weixin_qr %}
+  <dialog id="wechat-modal" class="wechat-modal" data-wechat-modal aria-labelledby="wechat-modal-title">
+    <div class="wechat-modal__card">
+      <button type="button" class="wechat-modal__close" data-wechat-close aria-label="Close WeChat QR code">&times;</button>
+      <h2 id="wechat-modal-title">WeChat</h2>
+      <img src="{% if weixin_qr contains '://' %}{{ weixin_qr }}{% else %}{{ weixin_qr | prepend: base_path }}{% endif %}" alt="WeChat QR code">
+      <p>Scan to connect with me</p>
+    </div>
+  </dialog>
+
+{% endif %}
