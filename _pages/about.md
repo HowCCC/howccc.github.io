@@ -1149,3 +1149,10 @@ document.addEventListener("DOMContentLoaded", function () {
  and <a href="https://udlbook.github.io/udlbook/">[Understanding Deep Learning]</a> by Simon J.D. Prince. Aligning with these insight and bruised by my own setbacks, I've developed a near allergic reaction to any HAND CRAFTED OPTIMIZATION, firmly gravitating toward the robust predictability of the Scaling Laws.</div> -->
 
 </div>
+
+<div class="cat-gallery" data-cat-gallery data-model-base="{{ '/assets/models/cats/' | relative_url }}" role="group" aria-label="Five interactive 3D cats">
+  <canvas class="cat-gallery__canvas" aria-label="Five interactive 3D cats"></canvas>
+  <div class="cat-gallery__controls">
+    {% for cat_number in (1..5) %}<button type="button" aria-label="Rotate cat {{ cat_number }}" data-cat-slot="{{ forloop.index0 }}"><span class="cat-gallery__status" role="status">Loading…</span></button>{% endfor %}
+  </div>
+</div>

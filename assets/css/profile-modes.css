@@ -57,3 +57,21 @@
 /* The combined presentation keeps contact links but removes the old 2D portrait block. */
 html.profile-3d-mode .sidebar .author__avatar,
 html.profile-3d-mode .sidebar .author__content { display: none !important; }
+
+/* A single row and a shared WebGL canvas keep the small gallery lightweight. */
+.cat-gallery {
+  position: relative;
+  width: 100%;
+  height: clamp(110px, 24vw, 245px);
+  margin-top: 36px;
+}
+.cat-gallery__canvas { display: block; width: 100%; height: 100%; }
+.cat-gallery__controls { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cat-gallery__controls button {
+  appearance: none; padding: 0; margin: 0; border: 0; border-radius: 12px;
+  background: transparent; box-shadow: none; cursor: grab; touch-action: pan-y;
+  color: #8a8577; font: inherit;
+}
+.cat-gallery__controls button:active { cursor: grabbing; }
+.cat-gallery__controls button:focus-visible { outline: 2px solid #d5b100; outline-offset: -3px; }
+.cat-gallery__status { font-size: 11px; }
