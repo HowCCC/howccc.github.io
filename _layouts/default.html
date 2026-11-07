@@ -28,7 +28,10 @@ layout: compress
         </footer>
       </div>
     {% else %}
-      <div class="site-minimal-note">{{ site.minimal_footer_text | default: "@Shurui Liu 2026" }}</div>
+      <div class="site-minimal-note">
+        <div>{{ site.minimal_footer_text | default: "@Shurui Liu 2026" }}</div>
+        <div class="site-minimal-note__models">All 3D models on this site were generated with Tripo.</div>
+      </div>
     {% endunless %}
 
     {% include scripts.html %}

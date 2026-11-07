@@ -103,4 +103,10 @@
   color: var(--global-text-color-light);
   font-family: $global-font-family;
   font-size: $type-size-7;
+
+  &__models {
+    margin-top: .35rem;
+    font-size: .85em;
+    opacity: .72;
+  }
 }

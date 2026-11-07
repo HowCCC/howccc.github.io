@@ -12,9 +12,10 @@
   perspective: 800px;
 }
 .profile-portrait__backdrop {
+  box-sizing: border-box;
   position: absolute;
-  top: 26px; left: 15px;
-  width: 200px; height: 218px;
+  top: 42px; left: 15px;
+  width: 216px; height: 187px;
   padding: 7px;
   background: #fff;
   border: 1px solid rgba(146,128,73,.18);
@@ -22,12 +23,28 @@
   transform: rotateY(24deg) rotateZ(-8deg);
   box-shadow: -8px 15px 28px rgba(59,51,32,.12), 1px 1px 0 rgba(249,207,0,.3);
   z-index: 0;
-  pointer-events: none;
+  transition: width 800ms cubic-bezier(.22,1,.36,1), height 800ms cubic-bezier(.22,1,.36,1), box-shadow 250ms;
+  z-index: 0;
 }
+.profile-portrait__frame-hit { appearance: none; position: absolute; top: 42px; left: 15px; width: 216px; height: 187px; padding: 0; border: 0; border-radius: 5px; background: transparent; cursor: pointer; transform: rotateY(24deg) rotateZ(-8deg); z-index: 3; }
+.profile-portrait__frame-hit:focus-visible { outline: 2px solid #b99b00; outline-offset: 5px; }
+.profile-portrait__frame-hit:hover { box-shadow: -8px 15px 28px rgba(59,51,32,.18), 1px 1px 0 rgba(249,207,0,.3); }
+.profile-portrait__frame-hit[aria-busy="true"] { cursor: progress; }
+.profile-portrait[data-profile-index="2"] .profile-portrait__backdrop {
+  top: 49px; left: 3px; width: 250px; height: 176px;
+}
+.profile-portrait[data-profile-index="2"] .profile-portrait__frame-hit { top: 49px; left: 3px; width: 250px; height: 176px; }
 .about-intro .profile-portrait__backdrop img {
-  display: block; width: 100%; height: 100%; max-width: 100%;
-  object-fit: cover; object-position: 64% center;
+  position: absolute; inset: 7px;
+  display: block; width: calc(100% - 14px); height: calc(100% - 14px); max-width: none;
+  object-fit: contain; opacity: 0;
+  transition: opacity 500ms ease;
   transform: none; border-radius: 2px;
+}
+.about-intro .profile-portrait__backdrop img.is-current { opacity: 1; }
+.profile-portrait__status { position: absolute; bottom: 19px; width: 100%; text-align: center; color: #8a8577; font-size: 10px; }
+@media (prefers-reduced-motion: reduce) {
+  .profile-portrait__backdrop, .about-intro .profile-portrait__backdrop img { transition: none; }
 }
 .profile-portrait__backdrop::before,
 .profile-portrait__backdrop::after {
@@ -51,27 +68,31 @@
     float: none; width: 320px; max-width: 100%; margin: 0 auto 24px;
   }
   .about-intro .profile-portrait__canvas { left: 24%; width: 76%; }
-  .profile-portrait__backdrop { left: 2%; width: 59%; }
+  .profile-portrait__backdrop { left: 2%; }
 }
 
 /* The combined presentation keeps contact links but removes the old 2D portrait block. */
 html.profile-3d-mode .sidebar .author__avatar,
 html.profile-3d-mode .sidebar .author__content { display: none !important; }
 
-/* A single row and a shared WebGL canvas keep the small gallery lightweight. */
-.cat-gallery {
-  position: relative;
-  width: 100%;
-  height: clamp(110px, 24vw, 245px);
-  margin-top: 36px;
+.cat-gallery { margin: 36px 0 16px; overflow-x: auto; }
+.cat-gallery__track { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.cat-tile {
+  position: relative; height: clamp(110px, 19vw, 210px); min-width: 0;
+  border-radius: 14px; cursor: grab; touch-action: pan-y;
+  background: linear-gradient(180deg, transparent 40%, rgba(190, 177, 128, .07));
 }
-.cat-gallery__canvas { display: block; width: 100%; height: 100%; }
-.cat-gallery__controls { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
-.cat-gallery__controls button {
-  appearance: none; padding: 0; margin: 0; border: 0; border-radius: 12px;
-  background: transparent; box-shadow: none; cursor: grab; touch-action: pan-y;
-  color: #8a8577; font: inherit;
+.cat-tile::before {
+  content: ''; position: absolute; bottom: 22px; left: 28%; width: 44%; height: 9px;
+  background: rgba(80, 70, 40, .12); border-radius: 50%; filter: blur(5px);
+  transform: scale(var(--shadow-scale, 1)); pointer-events: none;
 }
-.cat-gallery__controls button:active { cursor: grabbing; }
-.cat-gallery__controls button:focus-visible { outline: 2px solid #d5b100; outline-offset: -3px; }
-.cat-gallery__status { font-size: 11px; }
+.cat-tile:active { cursor: grabbing; }
+.cat-tile:focus-visible { outline: 2px solid #d5b100; outline-offset: 2px; }
+.cat-tile__canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.cat-tile__status { position: absolute; top: 45%; width: 100%; text-align: center; font-size: 10px; color: #8a8577; pointer-events: none; }
+.cat-tile__label { position: absolute; bottom: 5px; width: 100%; text-align: center; font-size: 9px; letter-spacing: .1em; color: #8a8577; pointer-events: none; }
+@media (max-width: 600px) {
+  .cat-gallery__track { min-width: 560px; gap: 5px; }
+  .cat-tile__label { font-size: 8px; }
+}
