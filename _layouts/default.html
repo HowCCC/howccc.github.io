@@ -12,6 +12,7 @@ layout: compress
   </head>
 
   <body class="{% if site.show_masthead == false %}no-masthead {% endif %}{% if site.show_default_footer == false %}no-default-footer{% endif %}">
+    {% if page.profile_modes %}{% include theme-lamp.html %}{% endif %}
 
     {% include browser-upgrade.html %}
     {% unless site.show_masthead == false %}

@@ -1,0 +1,71 @@
+/* A small, physical switch; only the bulb intercepts pointer events. */
+.theme-lamp {
+  --lamp-rest: 68;
+  position: fixed;
+  top: 0;
+  right: max(26px, env(safe-area-inset-right));
+  width: 70px;
+  height: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+.theme-lamp[hidden] { display: none; }
+.theme-lamp__cord {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  overflow: visible;
+  fill: none;
+  stroke: #a79a7d;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+.theme-lamp__bulb {
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 13px;
+  width: 44px;
+  height: 58px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 45%;
+  background: transparent;
+  box-shadow: none;
+  transition: none;
+  transform: translate(0, 68px);
+  transform-origin: 50% 0;
+  pointer-events: auto;
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-lamp__bulb:hover, .theme-lamp__bulb:active { background: transparent; }
+.theme-lamp__bulb:focus-visible { outline: 2px dashed var(--profile-accent-color); outline-offset: 6px; }
+.theme-lamp[data-dragging] .theme-lamp__bulb { cursor: grabbing; }
+.theme-lamp__bulb svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.theme-lamp__glass { fill: url(#lamp-glass); stroke: #c6a854; stroke-width: 1.3; }
+.theme-lamp__glass-top { stop-color: #fff9dd; }
+.theme-lamp__glass-bottom { stop-color: #f9cf00; stop-opacity: .65; }
+.theme-lamp__halo { fill: #f9cf00; opacity: .22; filter: blur(11px); }
+.theme-lamp__wire { fill: none; stroke: #a88539; stroke-width: 1; opacity: .65; }
+.theme-lamp__filament { fill: none; stroke: #fffbdb; stroke-width: 2; stroke-linecap: round; filter: drop-shadow(0 0 3px #e8ac19); }
+.theme-lamp__shine { fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; opacity: .8; }
+.theme-lamp__glass, .theme-lamp__halo, .theme-lamp__filament, .theme-lamp__shine { transition: opacity 250ms, stroke 250ms, fill 250ms; }
+html[data-theme="dark"] .theme-lamp__glass-top { stop-color: #b9c2c8; stop-opacity: .3; }
+html[data-theme="dark"] .theme-lamp__glass-bottom { stop-color: #697682; stop-opacity: .22; }
+html[data-theme="dark"] .theme-lamp__glass { stroke: #9d9685; }
+html[data-theme="dark"] .theme-lamp__halo { opacity: 0; }
+html[data-theme="dark"] .theme-lamp__filament { stroke: #aaa18a; filter: none; }
+html[data-theme="dark"] .theme-lamp__shine { opacity: .35; }
+html[data-theme="dark"] { color-scheme: dark; }
+html:not([data-theme="dark"]) { color-scheme: light; }
+@media (max-width: 700px) {
+  .theme-lamp { --lamp-rest: 32; right: max(8px, env(safe-area-inset-right)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-lamp * { transition: none; }
+}
+@media print { .theme-lamp { display: none; } }

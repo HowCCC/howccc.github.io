@@ -10,6 +10,11 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Restore before the first paint, without waiting for any module downloads.
+  try {
+    var savedTheme = localStorage.getItem('site-theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') document.documentElement.dataset.theme = savedTheme;
+  } catch (_) {}
 </script>
 
 <!-- For all browsers -->
